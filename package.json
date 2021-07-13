@@ -1,0 +1,128 @@
+{
+  "name": "bootstrap5-vscode",
+  "displayName": "Bootstrap 5 Quick Snippets",
+  "description": "Collection of Bootstrap 5 Snippets that will make your life easier.",
+  "icon": "bootstrap5.png",
+  "version": "0.1.1",
+  "publisher": "AnbuselvanRocky",
+  "author": {
+    "name": "Anbuselvan Rocky"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/anburocky3/bootstrap5-snippets/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anburocky3/bootstrap5-snippets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anburocky3/bootstrap5-snippets/issues"
+  },
+  "galleryBanner": {
+    "color": "#E6E0EA",
+    "theme": "light"
+  },
+  "engines": {
+    "vscode": "^1.58.0"
+  },
+  "keywords": [
+    "bootstrap",
+    "bootstrap 5",
+    "bootstrap 5 snippets",
+    "bootstrap extensions"
+  ],
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "blade",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "ejs",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "handlebars",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "latte",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "plaintext",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "razor",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "tpl",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "twig",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "django-html",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "jinja-html",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "erb",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "HTML (Eex)",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "volt",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "nunjucks",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
