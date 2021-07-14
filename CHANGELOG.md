@@ -1,9 +1,8 @@
 # Change Log
 
-All notable changes to the "bootstrap-5-quick-snippets" extension will be documented in this file.
+We are updating the **Bootstrap 5 Quick Snippet** extension in regular basis to give you the best performance while developing projects.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.1.2] - 2021-07-15
 
-## [Unreleased]
-
-- Initial release
+- Added 166 code snippets
+- Fixed lot of bugs
