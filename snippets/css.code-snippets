@@ -1,0 +1,8 @@
+{
+  "css-comment-block": {
+    "description": "Comment block",
+    "scope": "",
+    "prefix": "css-comment-block",
+    "body": "/***** ${1:Section} *****/\n    $2$0\n/***** End ${1:Section} *****/$0"
+  }
+}

@@ -122,6 +122,18 @@
       {
         "language": "nunjucks",
         "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/css.code-snippets"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/css.code-snippets"
+      },
+      {
+        "language": "sass",
+        "path": "./snippets/css.code-snippets"
       }
     ]
   }
