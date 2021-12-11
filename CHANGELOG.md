@@ -2,6 +2,17 @@
 
 We are updating the **Bootstrap 5 Quick Snippet** extension in regular basis to give you the best performance while developing projects.
 
+## [0.2.1] - 2021-12-11
+
+- Added support for `.svelte` support.
+- Added the following:
+  - `bs5-navbar-offcanvas` snippet [(Docs)](https://getbootstrap.com/docs/5.1/components/navbar/#offcanvas)
+  - `bs5-card-placeholder` snippet [(Docs)](https://getbootstrap.com/docs/5.1/components/placeholders/)
+  - `bs5-form-floating` snippet [(Docs)](https://getbootstrap.com/docs/5.1/forms/floating-labels/#example)
+  - Please tell us if you have any thing to add to the list.
+  - #### Improves:
+    - Added emoji to `openCyberDudeChannel`command
+
 ## [0.2.0] - 2021-07-22
 
 - Rewrote the extension in Typescript

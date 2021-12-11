@@ -13,8 +13,11 @@ export function activate(context: vscode.ExtensionContext) {
 		
 		vscode.env.openExternal(vscode.Uri.parse("https://www.youtube.com/results?search_query=cyberdude"));
 
-		vscode.window.showInformationMessage('That\'s great! Opening CyberDude YT Channel.', 'Website').then(selection => {
+		vscode.window.showInformationMessage('That\'s great! Opening CyberDude YT Channel. ❤️ 😊', 'Github', 'Website').then(selection => {
 			switch(selection){
+				case "Github":
+					vscode.env.openExternal(vscode.Uri.parse("https://www.github.com/anburocky3"));
+					break;		
 				case "Website":
 					vscode.env.openExternal(vscode.Uri.parse("https://www.cyberdudenetworks.com"));
 					break;					

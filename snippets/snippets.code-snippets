@@ -269,6 +269,12 @@
     "prefix": "bs5-card-pill-head",
     "body": "<div class=\"card text-center\">\n  <div class=\"card-header\">\n    <ul class=\"nav nav-pills card-header-pills\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link active\" href=\"${2:#}\">${1:Active pill}</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"${4:#}\">${3:Pill}</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link disabled\" href=\"${6:#}\">${5:Disabled pill}</a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${7:Title}</h4>\n    <p class=\"card-text\">${8:Body}</p>\n  </div>\n</div>$0"
   },
+  "bs5-card-placeholder": {
+    "description": "Card placeholder",
+    "scope": "",
+    "prefix": "bs5-card-placeholder",
+    "body": "<div class=\"card\" aria-hidden=\"true\">\n\t<img class=\"card-img-top\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n\t<div class=\"card-body\">\n\t\t<h5 class=\"card-title placeholder-glow\">\n\t\t\t<span class=\"placeholder col-6\"></span>\n\t\t</h5>\n\t\t<p class=\"card-text placeholder-glow\">\n\t\t\t<span class=\"placeholder col-7\"></span>\n\t\t\t<span class=\"placeholder col-4\"></span>\n\t\t\t<span class=\"placeholder col-4\"></span>\n\t\t\t<span class=\"placeholder col-6\"></span>\n\t\t\t<span class=\"placeholder col-8\"></span>\n\t\t</p>\n\t\t<a href=\"#\" tabindex=\"-1\" class=\"btn btn-primary disabled placeholder col-6\"></a>\n\t</div>\n</div>$0"
+  },
   "bs5-card-subtitle": {
     "description": "Card subtitle",
     "scope": "",
@@ -400,6 +406,12 @@
     "scope": "",
     "prefix": "bs5-form-file",
     "body": "<div class=\"mb-3\">\n  <label for=\"$3\" class=\"form-label\">$1</label>\n  <input type=\"file\" class=\"form-control\" name=\"$3\" id=\"$3\" placeholder=\"$2\" aria-describedby=\"${4:fileHelpId}\">\n  <small id=\"${4:fileHelpId}\" class=\"form-text text-muted\">${5:Help text}</small>\n</div>$0"
+  },
+  "bs5-form-floating": {
+    "description": "Form floating",
+    "scope": "",
+    "prefix": "bs5-form-floating",
+    "body": "<div class=\"form-floating mb-3\">\n  <input\n    type=\"${2:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\"\n    class=\"form-control\" name=\"$3\" id=\"${3:Label}\" placeholder=\"$4\">\n  <label for=\"floatingLabel\">$1</label>\n</div>$0"
   },
   "bs5-form-grid": {
     "description": "Form grid",
@@ -749,6 +761,12 @@
     "prefix": "bs5-navbar-non-responsive",
     "body": "<nav class=\"navbar navbar-expand navbar-light bg-faded\">\n    <div class=\"container\">\n        <a class=\"navbar-brand\" href=\"${2:#}\">${1:Navbar}</a>\n        <ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">\n            <li class=\"nav-item active\">\n                <a class=\"nav-link\" href=\"${4:#}\">${3:Active} <span class=\"visually-hidden\">(current)</span></a>\n            </li>\n            <li class=\"nav-item\">\n                <a class=\"nav-link\" href=\"${6:#}\">${5:Link}</a>\n            </li>\n            <li class=\"nav-item dropdown\">\n                <a class=\"nav-link dropdown-toggle\" href=\"${8:#}\" id=\"${9:dropdownId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${7:Dropdown}</a>\n                <div class=\"dropdown-menu\" aria-labelledby=\"${9:dropdownId}\">\n                    <a class=\"dropdown-item\" href=\"${11:#}\">${10:Action 1}</a>\n                    <a class=\"dropdown-item\" href=\"${13:#}\">${12:Action 2}</a>\n                </div>\n            </li>\n        </ul>\n        <form class=\"d-flex my-2 my-lg-0\">\n            <input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"${17:Search}\">\n            <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${18:Search}</button>\n        </form>\n    </div>\n</nav>$0"
   },
+  "bs5-navbar-offcanvas": {
+    "description": "Navbar offcanvas",
+    "scope": "",
+    "prefix": "bs5-navbar-offcanvas",
+    "body": "<nav class=\"navbar navbar-light bg-light fixed-top\">\n  <div class=\"container-fluid\">\n    <a class=\"navbar-brand\" href=\"${2:#}\">${1:Navbar}</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#${4:offcanvasNavbar}\"\n      aria-controls=\"${4:offcanvasNavbar}\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"offcanvas offcanvas-end\" tabindex=\"-1\" id=\"${4:offcanvasNavbar}\"\n      aria-labelledby=\"${4:offcanvasNavbar}Label\">\n      <div class=\"offcanvas-header\">\n        <h5 class=\"offcanvas-title\" id=\"${4:offcanvasNavbar}Label\">${5:Offcanvas}</h5>\n        <button type=\"button\" class=\"btn-close text-reset\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>\n      </div>\n      <div class=\"offcanvas-body\">\n        <ul class=\"navbar-nav justify-content-end flex-grow-1 pe-3\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link active\" aria-current=\"page\" href=\"${7:#}\">${6:Home}</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"${9:#}\">${8:Link}</a>\n          </li>\n          <li class=\"nav-item dropdown\">\n            <a class=\"nav-link dropdown-toggle\" href=\"${11:#}\" id=\"${12:dropdownId}\" data-bs-toggle=\"dropdown\"\n              aria-haspopup=\"true\" aria-expanded=\"false\">${10:Dropdown}</a>\n            <div class=\"dropdown-menu\" aria-labelledby=\"${12:dropdownId}\">\n              <a class=\"dropdown-item\" href=\"${14:#}\">${13:Action 1}</a>\n              <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 2}</a>\n            </div>\n          </li>\n        </ul>\n        <form class=\"d-flex\">\n          <input class=\"form-control me-2\" type=\"search\" placeholder=\"${17:Search}\" aria-label=\"Search\">\n          <button class=\"btn btn-outline-success\" type=\"submit\">${18:Search}</button>\n        </form>\n      </div>\n    </div>\n  </div>\n</nav>$0"
+  },
   "bs5-navbar-placement": {
     "description": "Navbar placement",
     "scope": "",
@@ -1005,6 +1023,6 @@
     "description": "Comment block",
     "scope": "",
     "prefix": "html-comment-block",
-    "body": "<!-- ========== Start ${1:Section} ========== -->\n    $2$0\n<!-- ========== End ${1:Section} ========== -->$0"
+    "body": "<!-- ========== Start ${1:Section} ========== -->\n$2$0\n<!-- ========== End ${1:Section} ========== -->$0"
   }
 }

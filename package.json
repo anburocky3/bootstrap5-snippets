@@ -3,7 +3,7 @@
   "displayName": "Bootstrap 5 Quick Snippets",
   "description": "Collection of Bootstrap 5 Snippets that will make your life easier.",
   "icon": "bootstrap5.png",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "AnbuselvanRocky",
   "author": {
     "name": "Anbuselvan Rocky"
@@ -137,6 +137,10 @@
       },
       {
         "language": "sass",
+        "path": "./snippets/css.code-snippets"
+      },
+      {
+        "language": "svelte",
         "path": "./snippets/css.code-snippets"
       }
     ],
