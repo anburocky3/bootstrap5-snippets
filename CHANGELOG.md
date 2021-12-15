@@ -4,6 +4,10 @@ We are updating the **Bootstrap 5 Quick Snippet** extension in regular basis to 
 
 ## [0.2.1] - 2021-12-11
 
+- Fix: formatted [README.md](./README.md)
+
+## [0.2.1] - 2021-12-11
+
 - Added support for `.svelte` support.
 - Added the following:
   - `bs5-navbar-offcanvas` snippet [(Docs)](https://getbootstrap.com/docs/5.1/components/navbar/#offcanvas)
