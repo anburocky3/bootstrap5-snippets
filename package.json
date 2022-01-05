@@ -141,7 +141,7 @@
       },
       {
         "language": "svelte",
-        "path": "./snippets/css.code-snippets"
+        "path": "./snippets/snippets.code-snippets"
       }
     ],
     "commands": [
