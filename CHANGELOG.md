@@ -2,7 +2,7 @@
 
 We are updating the **Bootstrap 5 Quick Snippet** extension in regular basis to give you the best performance while developing projects.
 
-## [0.2.2] - 2021-12-11
+## [0.2.2] - 2022-01-06
 
 - Fix: svelte snippets path in package.json [@dealeros](https://github.com/dealeros)
 
