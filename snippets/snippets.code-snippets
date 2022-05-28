@@ -195,37 +195,37 @@
     "description": "Card align",
     "scope": "",
     "prefix": "bs5-card-align",
-    "body": "<div class=\"card ${3|text-start,text-center,text-end|}\">\n  <img class=\"card-img-top\" src=\"${1:holder.js/100px180/}\" alt=\"$2\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Body}</p>\n  </div>\n</div>$0"
+    "body": "<div class=\"card ${3|text-start,text-center,text-end|}\">\n  <img class=\"card-img-top\" src=\"${1:holder.js/100px180/}\" alt=\"${4:Title}\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Body}</p>\n  </div>\n</div>$0"
   },
   "bs5-card-background-custom": {
     "description": "Card background custom",
     "scope": "",
     "prefix": "bs5-card-background-custom",
-    "body": "<div class=\"card\" style=\"background-color:${1:orangered}; border-color:${2:darkblue};\">\n  <img class=\"card-img-top\" src=\"${3:holder.js/100x180/}\" alt=\"$4\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${5:Title}</h4>\n    <p class=\"card-text\">${6:Text}</p>\n  </div>\n</div>$0"
+    "body": "<div class=\"card\" style=\"background-color:${1:orangered}; border-color:${2:darkblue};\">\n  <img class=\"card-img-top\" src=\"${3:holder.js/100x180/}\" alt=\"{5:Title}\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${5:Title}</h4>\n    <p class=\"card-text\">${6:Text}</p>\n  </div>\n</div>$0"
   },
   "bs5-card-background": {
     "description": "Card background",
     "scope": "",
     "prefix": "bs5-card-background",
-    "body": "<div class=\"card text-white ${1|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\">\n  <img class=\"card-img-top\" src=\"${2:holder.js/100px180/}\" alt=\"$3\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Text}</p>\n  </div>\n</div>$0"
+    "body": "<div class=\"card text-white ${1|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\">\n  <img class=\"card-img-top\" src=\"${2:holder.js/100px180/}\" alt=\"${4:Title}\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Text}</p>\n  </div>\n</div>$0"
   },
   "bs5-card-blockquote": {
     "description": "Card blockquote",
     "scope": "",
     "prefix": "bs5-card-blockquote",
-    "body": "<div class=\"card\">\n  <div class=\"card-body\">\n    <blockquote class=\"blockquote mb-0\">\n      <p>${1:Quote}</p>\n      <footer class=\"blockquote-footer\">${2:Footer}<cite title=\"${3:Source title}\">${3:Source title}</cite></footer>\n    </blockquote>\n  </div>\n</div>$0"
+    "body": "<div class=\"card\">\n  <div class=\"card-body\">\n    <blockquote class=\"blockquote mb-0\">\n      <p>${1:Quote}</p>\n      <footer class=\"blockquote-footer\">${2:Footer} <cite title=\"${3:Source title}\">${3:Source title}</cite></footer>\n    </blockquote>\n  </div>\n</div>$0"
   },
   "bs5-card-border": {
     "description": "Card border",
     "scope": "",
     "prefix": "bs5-card-border",
-    "body": "<div class=\"card ${1|border-primary,border-secondary,border-success,border-danger,border-warning,border-info,border-light,border-dark,border-link|}\">\n  <img class=\"card-img-top\" src=\"${2:holder.js/100px180/}\" alt=\"$3\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Text}</p>\n  </div>\n</div>$0"
+    "body": "<div class=\"card ${1|border-primary,border-secondary,border-success,border-danger,border-warning,border-info,border-light,border-dark,border-link|}\">\n  <img class=\"card-img-top\" src=\"${2:holder.js/100px180/}\" alt=\"${4:Title}\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Text}</p>\n  </div>\n</div>$0"
   },
   "bs5-card-default": {
     "description": "Card default",
     "scope": "",
     "prefix": "bs5-card-default",
-    "body": "<div class=\"card\">\n\t<img class=\"card-img-top\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n\t<div class=\"card-body\">\n\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t<p class=\"card-text\">${4:Text}</p>\n\t</div>\n</div>$0"
+    "body": "<div class=\"card\">\n\t<img class=\"card-img-top\" src=\"${1:holder.js/100x180/}\" alt=\"${4:Text}\">\n\t<div class=\"card-body\">\n\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t<p class=\"card-text\">${4:Text}</p>\n\t</div>\n</div>$0"
   },
   "bs5-card-grid": {
     "description": "Card grid",
@@ -261,7 +261,7 @@
     "description": "Card overlay",
     "scope": "",
     "prefix": "bs5-card-overlay",
-    "body": "<div class=\"card bg-dark text-white\">\n  <img class=\"card-img\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n  <div class=\"card-img-overlay\">\n    <h4 class=\"card-title\">${3:Title}</h4>\n    <p class=\"card-text\">${4:Text}</p>\n  </div>\n</div>$0"
+    "body": "<div class=\"card bg-dark text-white\">\n  <img class=\"card-img\" src=\"${1:holder.js/100x180/}\" alt=\"${3:Title}\">\n  <div class=\"card-img-overlay\">\n    <h4 class=\"card-title\">${3:Title}</h4>\n    <p class=\"card-text\">${4:Text}</p>\n  </div>\n</div>$0"
   },
   "bs5-card-pill-head": {
     "description": "Card pill head",
@@ -273,7 +273,7 @@
     "description": "Card placeholder",
     "scope": "",
     "prefix": "bs5-card-placeholder",
-    "body": "<div class=\"card\" aria-hidden=\"true\">\n\t<img class=\"card-img-top\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n\t<div class=\"card-body\">\n\t\t<h5 class=\"card-title placeholder-glow\">\n\t\t\t<span class=\"placeholder col-6\"></span>\n\t\t</h5>\n\t\t<p class=\"card-text placeholder-glow\">\n\t\t\t<span class=\"placeholder col-7\"></span>\n\t\t\t<span class=\"placeholder col-4\"></span>\n\t\t\t<span class=\"placeholder col-4\"></span>\n\t\t\t<span class=\"placeholder col-6\"></span>\n\t\t\t<span class=\"placeholder col-8\"></span>\n\t\t</p>\n\t\t<a href=\"#\" tabindex=\"-1\" class=\"btn btn-primary disabled placeholder col-6\"></a>\n\t</div>\n</div>$0"
+    "body": "<div class=\"card\" aria-hidden=\"true\">\n\t<img class=\"card-img-top\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n\t<div class=\"card-body\">\n\t\t<h5 class=\"card-title placeholder-glow\">\n\t\t\t<span class=\"placeholder col-6\">${3:Some text}</span>\n\t\t</h5>\n\t\t<p class=\"card-text placeholder-glow\">\n\t\t\t<span class=\"placeholder col-7\">${4:Some text}</span>\n\t\t\t<span class=\"placeholder col-4\">${5:Some text}</span>\n\t\t\t<span class=\"placeholder col-4\">${6:Some text}</span>\n\t\t\t<span class=\"placeholder col-6\">${7:Some text}</span>\n\t\t\t<span class=\"placeholder col-8\">${8:Some text}</span>\n\t\t</p>\n\t\t<a href=\"#\" tabindex=\"-1\" class=\"btn btn-primary disabled placeholder col-6\">${9:Some text}</a>\n\t</div>\n</div>$0"
   },
   "bs5-card-subtitle": {
     "description": "Card subtitle",
@@ -291,13 +291,13 @@
     "description": "Carousel caption",
     "scope": "",
     "prefix": "bs5-carousel-caption",
-    "body": "<div id=\"${1:carouselId}\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n\t<ol class=\"carousel-indicators\">\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"0\" class=\"active\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"1\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"2\"></li>\n\t</ol>\n\t<div class=\"carousel-inner\" role=\"listbox\">\n\t\t<div class=\"carousel-item active\">\n\t\t\t<img src=\"${2:holder.js/900x500/auto/#777:#555/text:First slide}\" alt=\"${3:First slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${4:Title}</h3>\n\t\t\t\t<p>${5:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img src=\"${6:holder.js/900x500/auto/#666:#444/text:Second slide}\" alt=\"${7:Second slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${8:Title}</h3>\n\t\t\t\t<p>${9:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img src=\"${10:holder.js/900x500/auto/#666:#444/text:Third slide}\" alt=\"${11:Third slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${12:Title}</h3>\n\t\t\t\t<p>${13:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"prev\">\n\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Previous</span>\n\t</button>\n\t<button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"next\">\n\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Next</span>\n  \t</button>\n</div>$0"
+    "body": "<div id=\"${1:carouselId}\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n\t<ol class=\"carousel-indicators\">\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"${3:First slide}\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"1\"  aria-label=\"${7:Second slide}\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"2\"  aria-label=\"${11:Third slide}\"></li>\n\t</ol>\n\t<div class=\"carousel-inner\" role=\"listbox\">\n\t\t<div class=\"carousel-item active\">\n\t\t\t<img class=\"d-block w-100\" src=\"${2:holder.js/900x500/auto/#777:#555/text:First slide}\" alt=\"${3:First slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${4:Title}</h3>\n\t\t\t\t<p>${5:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img class=\"d-block w-100\" src=\"${6:holder.js/900x500/auto/#666:#444/text:Second slide}\" alt=\"${7:Second slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${8:Title}</h3>\n\t\t\t\t<p>${9:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img class=\"d-block w-100\" src=\"${10:holder.js/900x500/auto/#666:#444/text:Third slide}\" alt=\"${11:Third slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${12:Title}</h3>\n\t\t\t\t<p>${13:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"prev\">\n\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Previous</span>\n\t</button>\n\t<button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"next\">\n\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Next</span>\n  \t</button>\n</div>$0"
   },
   "bs5-carousel-default": {
     "description": "Carousel default",
     "scope": "",
     "prefix": "bs5-carousel-default",
-    "body": "<div id=\"${1:carouselId}\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n\t<ol class=\"carousel-indicators\">\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"0\" class=\"active\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"1\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"2\"></li>\n\t</ol>\n\t<div class=\"carousel-inner\" role=\"listbox\">\n\t\t<div class=\"carousel-item active\">\n\t\t\t<img src=\"${2:holder.js/900x500/auto/#777:#555/text:First slide}\" alt=\"${3:First slide}\">\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img src=\"${4:holder.js/900x500/auto/#666:#444/text:Second slide}\" alt=\"${5:Second slide}\">\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img src=\"${6:holder.js/900x500/auto/#666:#444/text:Third slide}\" alt=\"${7:Third slide}\">\n\t\t</div>\n\t</div>\n\t<button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"prev\">\n\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Previous</span>\n\t</button>\n\t<button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"next\">\n\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Next</span>\n  \t</button>\n</div>$0"
+    "body": "<div id=\"${1:carouselId}\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n\t<ol class=\"carousel-indicators\">\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"${3:First slide}\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"1\" aria-label=\"${5:Second slide}\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"2\" aria-label=\"${7:Third slide}\"></li>\n\t</ol>\n\t<div class=\"carousel-inner\" role=\"listbox\">\n\t\t<div class=\"carousel-item active\">\n\t\t\t<img src=\"${2:holder.js/900x500/auto/#777:#555/text:First slide}\" alt=\"${3:First slide}\">\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img src=\"${4:holder.js/900x500/auto/#666:#444/text:Second slide}\" alt=\"${5:Second slide}\">\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img src=\"${6:holder.js/900x500/auto/#666:#444/text:Third slide}\" alt=\"${7:Third slide}\">\n\t\t</div>\n\t</div>\n\t<button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"prev\">\n\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Previous</span>\n\t</button>\n\t<button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"next\">\n\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Next</span>\n  \t</button>\n</div>$0"
   },
   "bs5-collapse-button": {
     "description": "Collapse button",
@@ -312,10 +312,10 @@
     "body": "<p>\n\t<a class=\"btn btn-primary\" data-bs-toggle=\"collapse\" href=\"#${2:contentId}\" aria-expanded=\"false\" aria-controls=\"${2:contentId}\">\n\t\t${1:Show}\n\t</a>\n</p>\n<div class=\"collapse\" id=\"${2:contentId}\">\n\t$3\n</div>$0"
   },
   "bs5-dropdown-alignment": {
-    "description": "Dropdown alignment",
+    "description": "Dropdown alignment: you can change the alignment by changing justify-content- class",
     "scope": "",
     "prefix": "bs5-dropdown-alignment",
-    "body": "<div class=\"btn-group\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:This dropdown's menu is end-aligned}\n\t</button>\n\t<div class=\"dropdown-menu dropdown-menu-end\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${7:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${10:After divider action}</a>\n\t</div>\n</div>$0"
+    "body": "<div class=\"btn-group\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:This dropdown's menu is start/end-aligned}\n\t</button>\n\t<div class=\"dropdown-menu ${3|dropdown-menu-start,dropdown-menu-end|}\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${5:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${7:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${8:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${10:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${12:After divider action}</a>\n\t</div>\n</div>$0"
   },
   "bs5-dropdown-anchor": {
     "description": "Dropdown anchor",
@@ -342,37 +342,31 @@
     "body": "<div class=\"dropdown\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${7:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${10:After divider action}</a>\n\t</div>\n</div>$0"
   },
   "bs5-dropdown-sized": {
-    "description": "Dropdown sized",
+    "description": "Dropdown sized: sm,lg",
     "scope": "",
     "prefix": "bs5-dropdown-sized",
-    "body": "<div class=\"dropdown open\">\n\t<button class=\"btn btn-secondary ${2|btn-lg,btn-sm|} dropdown-toggle\" type=\"button\" id=\"${3:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${3:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${5:#}\">${4:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${7:#}\">${6:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${8:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${10:#}\">${9:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${12:#}\">${11:Ater divider action}</a>\n\t</div>\n</div>$0"
+    "body": "<div class=\"dropdown open\">\n\t<button class=\"btn btn-secondary ${2|btn-lg,btn-sm|} dropdown-toggle\" type=\"button\" id=\"${3:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${3:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${5:#}\">${4:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${7:#}\">${6:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${8:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${10:#}\">${9:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${12:#}\">${11:After divider action}</a>\n\t</div>\n</div>$0"
   },
   "bs5-dropdown-split": {
-    "description": "Dropdown split",
+    "description": "Dropdown split: button and arrow are splitted",
     "scope": "",
     "prefix": "bs5-dropdown-split",
     "body": "<div class=\"btn-group\">\n  <button type=\"button\" class=\"btn btn-secondary\">${1:Split dropdown}</button>\n  <button type=\"button\" class=\"btn btn-secondary dropdown-toggle dropdown-toggle-split\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n    <span class=\"visually-hidden\">Toggle Dropdown</span>\n  </button>\n  <div class=\"dropdown-menu\">\n    <a class=\"dropdown-item\" href=\"${3:#}\">${2:Action}</a>\n    <a class=\"dropdown-item disabled\" href=\"${5:#}\">${4:Disabled action}</a>\n    <div class=\"dropdown-divider\"></div>\n    <a class=\"dropdown-item\" href=\"${7:#}\">${6:Separated link}</a>\n  </div>\n</div>$0"
   },
   "bs5-dropdown-up-split": {
-    "description": "Dropdown up split",
+    "description": "Dropdown up split: button and arrow are splitted and open upwards",
     "scope": "",
     "prefix": "bs5-dropdown-up-split",
     "body": "<div class=\"btn-group dropup\">\n  <button type=\"button\" class=\"btn btn-secondary\">${1:Split dropup}</button>\n  <button type=\"button\" class=\"btn btn-secondary dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n    <span class=\"visually-hidden\">Toggle Dropdown</span>\n  </button>\n  <div class=\"dropdown-menu\">\n    <a class=\"dropdown-item\" href=\"${3:#}\">${2:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${5:#}\">${4:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${6:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${8:#}\">${7:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${10:#}\">${9:After divider action}</a>\n  </div>\n</div>$0"
   },
   "bs5-dropdown-up": {
-    "description": "Dropdown up",
+    "description": "Dropdown opens upwards",
     "scope": "",
     "prefix": "bs5-dropdown-up",
     "body": "<div class=\"dropup\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${7:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${10:After divider action}</a>\n\t</div>\n</div>$0"
   },
-  "bs5-form-checkbox-custom": {
-    "description": "Form checkbox custom",
-    "scope": "",
-    "prefix": "bs5-form-checkbox-custom",
-    "body": "<label class=\"custom-control custom-checkbox\">\n  <input type=\"checkbox\" name=\"$1\" id=\"$1\" value=\"${2:checkedValue}\" class=\"custom-control-input\">\n  <span class=\"custom-control-indicator\"></span>\n  <span class=\"custom-control-description\">$3</span>\n</label>$0"
-  },
   "bs5-form-checkbox-inline": {
-    "description": "Form checkbox inline",
+    "description": "Form checkbox inline, copy paste to multiply inline",
     "scope": "",
     "prefix": "bs5-form-checkbox-inline",
     "body": "<div class=\"form-check form-check-inline\">\n\t  <input type=\"checkbox\" class=\"form-check-input\" name=\"$2\" id=\"$2\" value=\"${3:checkedValue}\">\n\t  <label class=\"form-check-label\" for=\"$2\">\n\t\t${1:Display value}\n\t  </label>\n</div>$0"
@@ -393,22 +387,16 @@
     "description": "Form email",
     "scope": "",
     "prefix": "bs5-form-email",
-    "body": "<div class=\"mb-3\">\n  <label for=\"$3\" class=\"form-label\">$1</label>\n  <input type=\"email\" class=\"form-control\" name=\"$3\" id=\"$3\" aria-describedby=\"${4:emailHelpId}\" placeholder=\"$2\">\n  <small id=\"${4:emailHelpId}\" class=\"form-text text-muted\">${5:Help text}</small>\n</div>$0"
-  },
-  "bs5-form-file-custom": {
-    "description": "Form file custom",
-    "scope": "",
-    "prefix": "bs5-form-file-custom",
-    "body": "<div class=\"mb-3\">\n  <label class=\"custom-file\">\n    <input type=\"file\" name=\"$2\" id=\"$2\" placeholder=\"$1\" class=\"custom-file-input\" aria-describedby=\"${3:fileHelpId}\">\n    <span class=\"custom-file-control\"></span>\n  </label>\n  <small id=\"${3:fileHelpId}\" class=\"form-text text-muted\">${4:Help text}</small>\n</div>$0"
+    "body": "<div class=\"mb-3\">\n  <label for=\"$3\" class=\"form-label\">$1</label>\n  <input type=\"email\" class=\"form-control\" name=\"$3\" id=\"$3\" aria-describedby=\"${4:emailHelpId}\" placeholder=\"$2\">\n  <div id=\"${4:emailHelpId}\" class=\"form-text\">${5:Help text}</div>\n</div>$0"
   },
   "bs5-form-file": {
     "description": "Form file",
     "scope": "",
     "prefix": "bs5-form-file",
-    "body": "<div class=\"mb-3\">\n  <label for=\"$3\" class=\"form-label\">$1</label>\n  <input type=\"file\" class=\"form-control\" name=\"$3\" id=\"$3\" placeholder=\"$2\" aria-describedby=\"${4:fileHelpId}\">\n  <small id=\"${4:fileHelpId}\" class=\"form-text text-muted\">${5:Help text}</small>\n</div>$0"
+    "body": "<div class=\"mb-3\">\n  <label for=\"$3\" class=\"form-label\">$1</label>\n  <input type=\"file\" class=\"form-control\" name=\"$3\" id=\"$3\" placeholder=\"$2\" aria-describedby=\"${4:fileHelpId}\">\n  <div id=\"${4:fileHelpId}\" class=\"form-text\">${5:Help text}</div>\n</div>$0"
   },
   "bs5-form-floating": {
-    "description": "Form floating",
+    "description": "Forms with floating labels",
     "scope": "",
     "prefix": "bs5-form-floating",
     "body": "<div class=\"form-floating mb-3\">\n  <input\n    type=\"${2|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\"\n    class=\"form-control\" name=\"$3\" id=\"${3:Label}\" placeholder=\"$4\">\n  <label for=\"floatingLabel\">$1</label>\n</div>$0"
@@ -417,7 +405,7 @@
     "description": "Form grid",
     "scope": "",
     "prefix": "bs5-form-grid",
-    "body": "<div class=\"container\">\n\t<form>\n\t\t<div class=\"mb-3 row\">\n\t\t\t<label for=\"${6:inputName}\" class=\"${2|col-xs-4,col-sm-4,col-md-4,col-lg-4,col-xl-4,col-4|} col-form-label\">$1</label>\n\t\t\t<div class=\"${3|col-xs-4,col-sm-4,col-md-4,col-lg-4,col-xl-4,col-4|}\">\n\t\t\t\t<input type=\"${5|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" class=\"form-control\" name=\"${6:inputName}\" id=\"${6:inputName}\" placeholder=\"$4\">\n\t\t\t</div>\n\t\t</div>\n\t\t<fieldset class=\"mb-3 row\">\n\t\t\t<legend class=\"col-form-legend ${8|col-xs-4,col-sm-4,col-md-4,col-lg-4,col-xl-4,col-4|}\">${7:Group name}</legend>\n\t\t\t<div class=\"${10|col-xs-4,col-sm-4,col-md-4,col-lg-4,col-xl-4,col-4|}\">\n\t\t\t\t$9\n\t\t\t</div>\n\t\t</fieldset>\n\t\t<div class=\"mb-3 row\">\n\t\t\t<div class=\"${11:offset-sm-2 col-sm-10}\">\n\t\t\t\t<button type=\"${13:submit}\" class=\"btn btn-primary\">${12:Action}</button>\n\t\t\t</div>\n\t\t</div>\n\t</form>\n</div>$0"
+    "body": "<div class=\"container\">\n\t<form>\n\t\t<div class=\"mb-3 row\">\n\t\t\t<label for=\"${6:inputName}\" class=\"${2|col-xs-4,col-sm-4,col-md-4,col-lg-4,col-xl-4,col-4|} col-form-label\">$1</label>\n\t\t\t<div class=\"${3|col-xs-8,col-sm-8,col-md-8,col-lg-8,col-xl-8,col-8|}\">\n\t\t\t\t<input type=\"${5|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" class=\"form-control\" name=\"${6:inputName}\" id=\"${6:inputName}\" placeholder=\"$4\">\n\t\t\t</div>\n\t\t</div>\n\t\t<fieldset class=\"mb-3 row\">\n\t\t\t<legend class=\"col-form-legend ${8|col-xs-4,col-sm-4,col-md-4,col-lg-4,col-xl-4,col-4|}\">${7:Group name}</legend>\n\t\t\t<div class=\"${10|col-xs-8,col-sm-8,col-md-8,col-lg-8,col-xl-8,col-8|}\">\n\t\t\t\t${9:you can use radio and checkboxes here}\n\t\t\t</div>\n\t\t</fieldset>\n\t\t<div class=\"mb-3 row\">\n\t\t\t<div class=\"${11:offset-sm-4 col-sm-8}\">\n\t\t\t\t<button type=\"${13:submit}\" class=\"btn btn-primary\">${12:Action}</button>\n\t\t\t</div>\n\t\t</div>\n\t</form>\n</div>$0"
   },
   "bs5-form-group-text": {
     "description": "Form group text",
@@ -441,7 +429,7 @@
     "description": "Form help text",
     "scope": "",
     "prefix": "bs5-form-help-text",
-    "body": "<p class=\"form-text text-muted\">\n\t$1\n</p>$0"
+    "body": "<p class=\"form-text\">\n\t$1\n</p>$0"
   },
   "bs5-form-hidden": {
     "description": "Form hidden",
