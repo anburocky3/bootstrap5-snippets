@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand navbar-light bg-faded">
+    <div class="container">
+        <a class="navbar-brand" href="${2:#}">${1:Navbar}</a>
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="${4:#}">${3:Active} <span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="${6:#}">${5:Link}</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="${8:#}" id="${9:dropdownId}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${7:Dropdown}</a>
+                <div class="dropdown-menu" aria-labelledby="${9:dropdownId}">
+                    <a class="dropdown-item" href="${11:#}">${10:Action 1}</a>
+                    <a class="dropdown-item" href="${13:#}">${12:Action 2}</a>
+                </div>
+            </li>
+        </ul>
+        <form class="d-flex my-2 my-lg-0">
+            <input class="form-control me-sm-2" type="text" placeholder="${17:Search}">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">${18:Search}</button>
+        </form>
+    </div>
+</nav>

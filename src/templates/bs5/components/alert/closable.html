@@ -1,0 +1,11 @@
+<div class="alert ${1|alert-primary,alert-secondary,alert-success,alert-danger,alert-warning,alert-info,alert-light,alert-dark|} alert-dismissible fade show" role="alert">
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  <strong>${2:Alert Heading}</strong> ${3:Alert Content}
+</div>
+
+<script>
+  var alertList = document.querySelectorAll('.alert');
+  alertList.forEach(function (alert) {
+    new bootstrap.Alert(alert)
+  })
+</script>

@@ -1,0 +1,25 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#${2:modelId}">
+  ${1:Launch}
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="${2:modelId}" tabindex="-1" role="dialog" aria-labelledby="${4:modelTitleId}" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+				<div class="modal-header">
+						<h5 class="modal-title">${3:Modal title}</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					${7:Add rows here}
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">${5:Close}</button>
+				<button type="button" class="btn btn-primary">${6:Save}</button>
+			</div>
+		</div>
+	</div>
+</div>
