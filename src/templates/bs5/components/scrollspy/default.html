@@ -1,0 +1,22 @@
+<style>
+	${1:div|body} {
+		position: relative;
+	}
+</style>
+
+<${1:div|body} data-bs-spy="scroll" data-bs-target="#${2:navId}">
+	$4
+	<div id="${2:navId}">
+		<ul class="nav nav-tabs" role="tablist">
+			$3
+		</ul>
+	</div>
+	$5
+</${1:div|body}>
+
+
+<script>
+	var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+	  target: '#${2:navId}'
+	})
+</script>
