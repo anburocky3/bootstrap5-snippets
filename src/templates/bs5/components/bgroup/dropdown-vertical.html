@@ -1,14 +1,14 @@
 <div class="btn-group-vertical" role="group" aria-label="$1">
-	<button type="button" class="btn btn-secondary">$2</button>
-	<button type="button" class="btn btn-secondary">$3</button>
+	<button type="button" class="btn btn-secondary">${2:First One}</button>
+	<button type="button" class="btn btn-secondary">${3:Second One}</button>
 	<div class="btn-group" role="group">
 		<button id="${5:dropdownId}" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
 				aria-expanded="false">
-			$4
+				${4:More}
 		</button>
 		<div class="dropdown-menu" aria-labelledby="${5:dropdownId}">
-			<a class="dropdown-item" href="${7:#}">$6</a>
-			<a class="dropdown-item" href="${9:#}">$8</a>
+			<a class="dropdown-item" href="${7:#}">${6:First Dropdown}</a>
+			<a class="dropdown-item" href="${9:#}">${8:Second Dropdown}</a>
 		</div>
 	</div>
 </div>

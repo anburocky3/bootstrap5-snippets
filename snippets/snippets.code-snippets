@@ -21,217 +21,217 @@
     "description": "Alert additional content",
     "scope": "",
     "prefix": "bs5-alert-additional-content",
-    "body": "<div class=\"alert ${1|alert-primary,alert-secondary,alert-success,alert-danger,alert-warning,alert-info,alert-light,alert-dark|}\" role=\"alert\">\n  <h4 class=\"alert-heading\">${2:Alert Heading}</h4>\n  <p>${3:Alert Content}</p>\n  <hr>\n  <p class=\"mb-0\">${4:Alert Description}</p>\n</div>$0"
+    "body": "<div class=\"alert alert-success\" role=\"alert\">\n  <h4 class=\"alert-heading\">$1</h4>\n  <p>$2</p>\n  <hr>\n  <p class=\"mb-0\">$3</p>\n</div>$0"
   },
   "bs5-alert-closable": {
     "description": "Alert closable",
     "scope": "",
     "prefix": "bs5-alert-closable",
-    "body": "<div class=\"alert ${1|alert-primary,alert-secondary,alert-success,alert-danger,alert-warning,alert-info,alert-light,alert-dark|} alert-dismissible fade show\" role=\"alert\">\n  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>\n  <strong>${2:Alert Heading}</strong> ${3:Alert Content}\n</div>\n\n<script>\n  var alertList = document.querySelectorAll('.alert');\n  alertList.forEach(function (alert) {\n    new bootstrap.Alert(alert)\n  })\n</script>\n$0"
+    "body": "<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\n  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>\n  <strong>$1</strong> $2\n</div>\n\n<script>\n  var alertList = document.querySelectorAll('.alert');\n  alertList.forEach(function (alert) {\n    new bootstrap.Alert(alert)\n  })\n</script>\n$0"
   },
   "bs5-alert-default": {
     "description": "Alert default",
     "scope": "",
     "prefix": "bs5-alert-default",
-    "body": "<div class=\"alert ${1|alert-primary,alert-secondary,alert-success,alert-danger,alert-warning,alert-info,alert-light,alert-dark|}\" role=\"alert\">\n\t<strong>${2:Alert Heading}</strong>$3\n</div>\n$0"
+    "body": "<div class=\"alert alert-${1:primary|secondary|success|danger|warning|info|light|dark}\" role=\"alert\">\n\t<strong>${2:Check it out!}</strong>$3\n</div>\n$0"
   },
   "bs5-alert-dismissible": {
     "description": "Alert dismissible",
     "scope": "",
     "prefix": "bs5-alert-dismissible",
-    "body": "<div class=\"alert ${1|alert-primary,alert-secondary,alert-success,alert-danger,alert-warning,alert-info,alert-light,alert-dark|} alert-dismissible fade show\" role=\"alert\">\n\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>\n\n\t${2:<strong>Holy guacamole!</strong> You should check in on some of those fields below.}\n</div>\n$0"
+    "body": "<div class=\"alert alert-${1:primary|secondary|success|info|warning|danger|light|dark} alert-dismissible fade show\" role=\"alert\">\n\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>\n\n\t${2:<strong>Holy guacamole!</strong> You should check in on some of those fields below.}\n</div>\n$0"
   },
   "bs5-alert-link": {
     "description": "Alert link",
     "scope": "",
     "prefix": "bs5-alert-link",
-    "body": "<div class=\"alert ${1|alert-primary,alert-secondary,alert-success,alert-danger,alert-warning,alert-info,alert-light,alert-dark|}\" role=\"alert\">\n\t<strong>${2:Warning!}</strong> <a href=\"${4:#}\" class=\"alert-link\">$3</a>${5:Click Here}\n</div>$0"
+    "body": "<div class=\"alert alert-${1:primary|secondary|success|danger|warning|info|light|dark}\" role=\"alert\">\n\t<strong>${2:Warning!}</strong> <a href=\"${4:#}\" class=\"alert-link\">$3</a>$5\n</div>$0"
   },
   "bs5-badge-button": {
     "description": "Badge button",
     "scope": "",
     "prefix": "bs5-badge-button",
-    "body": "<button class=\"btn\">\n        ${1:Notification} <span class=\"badge ${2|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\">${3:New!}</span>\n</button>$0"
+    "body": "<button class=\"btn\">\n        ${1:Notification} <span class=\"badge bg-${3:primary|secondary|success|danger|warning|info|light|dark}\">$2</span>\n</button>$0"
   },
   "bs5-badge-default": {
     "description": "Badge default",
     "scope": "",
     "prefix": "bs5-badge-default",
-    "body": "<span class=\"badge ${1|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\">${3:New!}</span>$0"
+    "body": "<span class=\"badge bg-${1:primary|secondary|success|danger|warning|info|light|dark}\">$2</span>$0"
   },
   "bs5-badge-heading": {
     "description": "Badge heading",
     "scope": "",
     "prefix": "bs5-badge-heading",
-    "body": "<h${1:1-6}>${3:Example heading}<span class=\"badge ${2|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\">${4:New}</span></h${1:1-6}>$0"
+    "body": "<h${1:1-6}>${3:Example heading}<span class=\"badge bg-${2:primary|secondary|success|danger|warning|info|light|dark}\">${4:New}</span></h${1:1-6}>$0"
   },
   "bs5-badge-link": {
     "description": "Badge link",
     "scope": "",
     "prefix": "bs5-badge-link",
-    "body": "<a href=\"${1:#}\" class=\"badge ${3|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\">${3:New!}</a>$0"
+    "body": "<a href=\"${2:#}\" class=\"badge bg-${3:primary|secondary|success|danger|warning|info|light|dark}\">$1</a>$0"
   },
   "bs5-badge-pill": {
     "description": "Badge pill",
     "scope": "",
     "prefix": "bs5-badge-pill",
-    "body": "<span class=\"badge rounded-pill ${1|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\">${3:New!}</span>$0"
+    "body": "<span class=\"badge rounded-pill bg-${1:primary|secondary|success|danger|warning|info|light|dark}\">$2</span>$0"
   },
   "bs5-bgroup-checkbox": {
-    "description": "checkbox button group",
+    "description": "Bgroup checkbox",
     "scope": "",
     "prefix": "bs5-bgroup-checkbox",
-    "body": "<div class=\"btn-group\" role=\"group\" aria-label=\"${1:Basic checkbox toggle button group}\">\n  <input type=\"checkbox\" class=\"btn-check\" id=\"${3:btncheck1}\" autocomplete=\"off\">\n  <label class=\"btn ${4|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark,btn-outline-link|}\" for=\"${3:btncheck1}\">${2:First One}</label>\n\n  <input type=\"checkbox\" class=\"btn-check\" id=\"${6:btncheck2}\" autocomplete=\"off\">\n  <label class=\"btn ${7|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark,btn-outline-link|}\" for=\"${6:btncheck2}\">${5:Second One}</label>\n\n  <input type=\"checkbox\" class=\"btn-check\" id=\"${9:btncheck3}\" autocomplete=\"off\">\n  <label class=\"btn ${10|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark,btn-outline-link|}\" for=\"${9:btncheck3}\">${8:Third One}</label>\n</div>$0"
+    "body": "<div class=\"btn-group\" role=\"group\" aria-label=\"${1:Basic checkbox toggle button group}\">\n  <input type=\"checkbox\" class=\"btn-check\" id=\"${3:btncheck1}\" autocomplete=\"off\">\n  <label class=\"btn btn-outline-${4:primary|secondary|success|danger|warning|info|light|dark}\" for=\"${3:btncheck1}\">$2</label>\n\n  <input type=\"checkbox\" class=\"btn-check\" id=\"${6:btncheck2}\" autocomplete=\"off\">\n  <label class=\"btn btn-outline-${7:primary|secondary|success|danger|warning|info|light|dark}\" for=\"${6:btncheck2}\">$5</label>\n\n  <input type=\"checkbox\" class=\"btn-check\" id=\"${9:btncheck3}\" autocomplete=\"off\">\n  <label class=\"btn btn-outline-${9:primary|secondary|success|danger|warning|info|light|dark}\" for=\"${9:btncheck3}\">$8</label>\n</div>$0"
   },
   "bs5-bgroup-default": {
-    "description": "button group default",
+    "description": "Bgroup default",
     "scope": "",
     "prefix": "bs5-bgroup-default",
-    "body": "<div class=\"btn-group\" role=\"group\" aria-label=\"$2\">\n\t<button type=\"button\" class=\"btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">${3:First One}</button>\n\t<button type=\"button\" class=\"btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">${4:Second One}</button>\n\t<button type=\"button\" class=\"btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">${5:Third One}</button>\n</div>$0"
+    "body": "<div class=\"btn-group\" role=\"group\" aria-label=\"$2\">\n\t<button type=\"button\" class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">$3</button>\n\t<button type=\"button\" class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">$4</button>\n\t<button type=\"button\" class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">$5</button>\n</div>$0"
   },
   "bs5-bgroup-dropdown-vertical": {
-    "description": "button group dropdown vertical",
+    "description": "Bgroup dropdown vertical",
     "scope": "",
     "prefix": "bs5-bgroup-dropdown-vertical",
-    "body": "<div class=\"btn-group-vertical\" role=\"group\" aria-label=\"$1\">\n\t<button type=\"button\" class=\"btn btn-secondary\">${2:First One}</button>\n\t<button type=\"button\" class=\"btn btn-secondary\">${3:Second One}</button>\n\t<div class=\"btn-group\" role=\"group\">\n\t\t<button id=\"${5:dropdownId}\" type=\"button\" class=\"btn btn-secondary dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\t\taria-expanded=\"false\">\n\t\t\t${4:More}\n\t\t</button>\n\t\t<div class=\"dropdown-menu\" aria-labelledby=\"${5:dropdownId}\">\n\t\t\t<a class=\"dropdown-item\" href=\"${7:#}\">${6:First Dropdown}</a>\n\t\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Second Dropdown}</a>\n\t\t</div>\n\t</div>\n</div>$0"
+    "body": "<div class=\"btn-group-vertical\" role=\"group\" aria-label=\"$1\">\n\t<button type=\"button\" class=\"btn btn-secondary\">$2</button>\n\t<button type=\"button\" class=\"btn btn-secondary\">$3</button>\n\t<div class=\"btn-group\" role=\"group\">\n\t\t<button id=\"${5:dropdownId}\" type=\"button\" class=\"btn btn-secondary dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\t\taria-expanded=\"false\">\n\t\t\t$4\n\t\t</button>\n\t\t<div class=\"dropdown-menu\" aria-labelledby=\"${5:dropdownId}\">\n\t\t\t<a class=\"dropdown-item\" href=\"${7:#}\">$6</a>\n\t\t\t<a class=\"dropdown-item\" href=\"${9:#}\">$8</a>\n\t\t</div>\n\t</div>\n</div>$0"
   },
   "bs5-bgroup-dropdown": {
-    "description": "button group dropdown",
+    "description": "Bgroup dropdown",
     "scope": "",
     "prefix": "bs5-bgroup-dropdown",
-    "body": "<div class=\"btn-group\" role=\"group\" aria-label=\"$1\">\n\t<button type=\"button\" class=\"btn btn-secondary\">${2:First One}</button>\n\t<button type=\"button\" class=\"btn btn-secondary\">${3:Second One}</button>\n\t<div class=\"btn-group\" role=\"group\">\n\t\t<button id=\"${5:dropdownId}\" type=\"button\" class=\"btn btn-secondary dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\t\taria-expanded=\"false\">\n\t\t\t${4:More}\n\t\t</button>\n\t\t<div class=\"dropdown-menu\" aria-labelledby=\"${5:dropdownId}\">\n\t\t\t<a class=\"dropdown-item\" href=\"${7:#}\">${6:First Dropdown}</a>\n\t\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Second Dropdown}</a>\n\t\t</div>\n\t</div>\n</div>$0"
+    "body": "<div class=\"btn-group\" role=\"group\" aria-label=\"$1\">\n\t<button type=\"button\" class=\"btn btn-secondary\">$2</button>\n\t<button type=\"button\" class=\"btn btn-secondary\">$3</button>\n\t<div class=\"btn-group\" role=\"group\">\n\t\t<button id=\"${5:dropdownId}\" type=\"button\" class=\"btn btn-secondary dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\t\taria-expanded=\"false\">\n\t\t\t$4\n\t\t</button>\n\t\t<div class=\"dropdown-menu\" aria-labelledby=\"${5:dropdownId}\">\n\t\t\t<a class=\"dropdown-item\" href=\"${7:#}\">$6</a>\n\t\t\t<a class=\"dropdown-item\" href=\"${9:#}\">$8</a>\n\t\t</div>\n\t</div>\n</div>$0"
   },
   "bs5-bgroup-radio": {
-    "description": "button group radio",
+    "description": "Bgroup radio",
     "scope": "",
     "prefix": "bs5-bgroup-radio",
-    "body": "<div class=\"btn-group\" role=\"group\" aria-label=\"${1:Basic checkbox toggle button group}\">\n  <input type=\"radio\" class=\"btn-check\" name=\"${3:btnradio}\" id=\"${4:btncheck1}\" autocomplete=\"off\">\n  <label class=\"btn ${5|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark,btn-outline-link|}\" for=\"${4:btncheck1}\">${2:First One}</label>\n\n  <input type=\"radio\" class=\"btn-check\" name=\"${3:btnradio}\" id=\"${7:btncheck2}\" autocomplete=\"off\">\n  <label class=\"btn ${8|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark,btn-outline-link|}\" for=\"${7:btncheck2}\">${6:Second One}</label>\n\n  <input type=\"radio\" class=\"btn-check\" name=\"${3:btnradio}\" id=\"${10:btncheck3}\" autocomplete=\"off\">\n  <label class=\"btn ${9|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark,btn-outline-link|}\" for=\"${10:btncheck3}\">${11:Third One}</label>\n</div>$0"
+    "body": "<div class=\"btn-group\" role=\"group\" aria-label=\"${1:Basic checkbox toggle button group}\">\n  <input type=\"radio\" class=\"btn-check\" name=\"${3:btnradio}\" id=\"${4:btncheck1}\" autocomplete=\"off\">\n  <label class=\"btn btn-outline-${5:primary|secondary|success|danger|warning|info|light|dark}\" for=\"${4:btncheck1}\">$2</label>\n\n  <input type=\"radio\" class=\"btn-check\" name=\"${3:btnradio}\" id=\"${7:btncheck2}\" autocomplete=\"off\">\n  <label class=\"btn btn-outline-${8:primary|secondary|success|danger|warning|info|light|dark}\" for=\"${7:btncheck2}\">$6</label>\n\n  <input type=\"radio\" class=\"btn-check\" name=\"${3:btnradio}\" id=\"${10:btncheck3}\" autocomplete=\"off\">\n  <label class=\"btn btn-outline-${9:primary|secondary|success|danger|warning|info|light|dark}\" for=\"${10:btncheck3}\">$9</label>\n</div>$0"
   },
   "bs5-bgroup-size": {
-    "description": "button group size",
+    "description": "Bgroup size",
     "scope": "",
     "prefix": "bs5-bgroup-size",
-    "body": "<div class=\"btn-group ${1|btn-group-lg,btn-group-sm,btn-group-xs|}\" role=\"group\" aria-label=\"$2\">\n\t${3:Add buttons here}\n</div>$0"
+    "body": "<div class=\"btn-group btn-group-${1:lg|sm|xs}\" role=\"group\" aria-label=\"$2\">\n\t${3:Add buttons here}\n</div>$0"
   },
   "bs5-bgroup-toolbar": {
-    "description": "button group toolbar",
+    "description": "Bgroup toolbar",
     "scope": "",
     "prefix": "bs5-bgroup-toolbar",
-    "body": "<div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"$1\">\n\t<div class=\"btn-group\" role=\"group\" aria-label=\"$2\">\n\t\t<button type=\"button\" class=\"btn ${3|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">${4:Button}</button>\n\t\t<button type=\"button\" class=\"btn ${3|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">${5:Button}</button>\n\t\t<button type=\"button\" class=\"btn ${3|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">${6:Button}</button>\n\t</div>\n\t<div class=\"btn-group\" role=\"group\" aria-label=\"$7\">\n\t\t<button type=\"button\" class=\"btn ${3|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">${8:Button}</button>\n\t\t<button type=\"button\" class=\"btn ${3|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">${9:Button}</button>\n\t</div>\n</div>$0"
+    "body": "<div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"$1\">\n\t<div class=\"btn-group\" role=\"group\" aria-label=\"$2\">\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\">$4</button>\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\">$5</button>\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\">$6</button>\n\t</div>\n\t<div class=\"btn-group\" role=\"group\" aria-label=\"$7\">\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\">$8</button>\n\t\t<button type=\"button\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\">$9</button>\n\t</div>\n</div>$0"
   },
   "bs5-breadcrumb-default": {
     "description": "Breadcrumb default",
     "scope": "",
     "prefix": "bs5-breadcrumb-default",
-    "body": "<nav class=\"breadcrumb\">\n\t<a class=\"breadcrumb-item\" href=\"${2:#}\">${1:Main}</a>\n\t<a class=\"breadcrumb-item\" href=\"${4:#}\">${3:Sub}</a>\n\t<span class=\"breadcrumb-item active\" aria-current=\"page\">${5:Active}</span>\n</nav>$0"
+    "body": "<nav class=\"breadcrumb\">\n\t<a class=\"breadcrumb-item\" href=\"${2:#}\">$1</a>\n\t<a class=\"breadcrumb-item\" href=\"${4:#}\">$3</a>\n\t<span class=\"breadcrumb-item active\">$5</span>\n</nav>$0"
   },
   "bs5-breadcrumb-list": {
     "description": "Breadcrumb list",
     "scope": "",
     "prefix": "bs5-breadcrumb-list",
-    "body": "<nav aria-label=\"breadcrumb\">\n\t<ol class=\"breadcrumb\">\n\t<li class=\"breadcrumb-item\"><a href=\"${2:#}\">${1:Main}</a></li>\n\t<li class=\"breadcrumb-item\"><a href=\"${4:#}\">${3:Sub}</a></li>\n\t<li class=\"breadcrumb-item active\" aria-current=\"page\">${5:Active}</li>\n</ol>\n</nav>$0"
+    "body": "<ol class=\"breadcrumb\">\n\t<li class=\"breadcrumb-item\"><a href=\"${2:#}\">$1</a></li>\n\t<li class=\"breadcrumb-item\"><a href=\"${4:#}\">$3</a></li>\n\t<li class=\"breadcrumb-item active\">$5</li>\n</ol>$0"
   },
   "bs5-button-a": {
     "description": "Button a",
     "scope": "",
     "prefix": "bs5-button-a",
-    "body": "<a name=\"$4\" id=\"$4\" class=\"btn ${3|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\" href=\"${2:#}\" role=\"button\">${1:Button}</a>$0"
+    "body": "<a name=\"$4\" id=\"$4\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\" href=\"${2:#}\" role=\"button\">$1</a>$0"
   },
   "bs5-button-block": {
     "description": "Button block",
     "scope": "",
     "prefix": "bs5-button-block",
-    "body": "<div class=\"d-grid gap-2\">\n  <button type=\"button\" name=\"$3\" id=\"$3\" class=\"btn ${2|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">${1:Button}</button>\n</div>$0"
+    "body": "<div class=\"d-grid gap-2\">\n  <button type=\"button\" name=\"$3\" id=\"$3\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link}\">$1</button>\n</div>$0"
   },
   "bs5-button-checkbox": {
     "description": "Button checkbox",
     "scope": "",
     "prefix": "bs5-button-checkbox",
-    "body": "<div class=\"btn-group\" role=\"group\" data-bs-toggle=\"buttons\">\n\t<label class=\"btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|} active\">\n\t\t<input type=\"checkbox\" class=\"me-2\" name=\"$3\" id=\"$3\" checked autocomplete=\"off\"> ${2:Choice}\n\t</label>\n\t<label class=\"btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">\n\t\t<input type=\"checkbox\" class=\"me-2\" name=\"$5\" id=\"$5\" autocomplete=\"off\"> ${4:Choice}\n\t</label>\n\t<label class=\"btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">\n\t\t<input type=\"checkbox\" class=\"me-2\" name=\"$7\" id=\"$7\" autocomplete=\"off\"> ${6:Choice}\n\t</label>\n</div>$0"
+    "body": "<div class=\"btn-group\" role=\"group\" data-bs-toggle=\"buttons\">\n\t<label class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link} active\">\n\t\t<input type=\"checkbox\" class=\"me-2\" name=\"$3\" id=\"$3\" checked autocomplete=\"off\"> $2\n\t</label>\n\t<label class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">\n\t\t<input type=\"checkbox\" class=\"me-2\" name=\"$5\" id=\"$5\" autocomplete=\"off\"> $4\n\t</label>\n\t<label class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">\n\t\t<input type=\"checkbox\" class=\"me-2\" name=\"$7\" id=\"$7\" autocomplete=\"off\"> $6\n\t</label>\n</div>$0"
   },
   "bs5-button-default": {
     "description": "Button default",
     "scope": "",
     "prefix": "bs5-button-default",
-    "body": "<button type=\"button\" class=\"btn ${2|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">${1:Button}</button>$0"
+    "body": "<button type=\"button\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link}\">$1</button>$0"
   },
   "bs5-button-disabled-a": {
     "description": "Button disabled a",
     "scope": "",
     "prefix": "bs5-button-disabled-a",
-    "body": "<a href=\"${2:#}\" class=\"btn ${3|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|} ${4|active,disabled|}\" role=\"button\">${1:Button}</a>$0"
+    "body": "<a href=\"${2:#}\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link} ${4:active|disabled}\" role=\"button\">$1</a>$0"
   },
   "bs5-button-input": {
     "description": "Button input",
     "scope": "",
     "prefix": "bs5-button-input",
-    "body": "<input name=\"$2\" id=\"$2\" class=\"btn ${3|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\" type=\"button\" value=\"${1:Button}\">$0"
+    "body": "<input name=\"$2\" id=\"$2\" class=\"btn btn-${3:primary|secondary|success|danger|warning|info|light|dark|link}\" type=\"button\" value=\"$1\">$0"
   },
   "bs5-button-outline": {
     "description": "Button outline",
     "scope": "",
     "prefix": "bs5-button-outline",
-    "body": "<button type=\"button\" class=\"btn ${2|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark,btn-outline-link|}\">${1:Button}</button>\n$0"
+    "body": "<button type=\"button\" class=\"btn btn-outline-${2:primary|secondary|success|danger|warning|info|light|dark|link}\">$1</button>\n$0"
   },
   "bs5-button-radio": {
     "description": "Button radio",
     "scope": "",
     "prefix": "bs5-button-radio",
-    "body": "<div class=\"btn-group\" data-bs-toggle=\"buttons\">\n\t<label class=\"btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|} active\">\n\t\t<input type=\"radio\" class=\"me-2\" name=\"$2\" id=\"$2\" autocomplete=\"off\" checked> ${3:Choice}\n\t</label>\n\t<label class=\"btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">\n\t\t<input type=\"radio\" name=\"$2\" id=\"$2\" autocomplete=\"off\"> ${4:Choice}\n\t</label>\n\t<label class=\"btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">\n\t\t<input type=\"radio\" name=\"$2\" id=\"$2\" autocomplete=\"off\"> ${5:Choice}\n\t</label>\n</div>$0"
+    "body": "<div class=\"btn-group\" data-bs-toggle=\"buttons\">\n\t<label class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link} active\">\n\t\t<input type=\"radio\" class=\"me-2\" name=\"$2\" id=\"$2\" autocomplete=\"off\" checked> $3\n\t</label>\n\t<label class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">\n\t\t<input type=\"radio\" name=\"$2\" id=\"$2\" autocomplete=\"off\"> $4\n\t</label>\n\t<label class=\"btn btn-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">\n\t\t<input type=\"radio\" name=\"$2\" id=\"$2\" autocomplete=\"off\"> $5\n\t</label>\n</div>$0"
   },
   "bs5-button-sizes": {
     "description": "Button sizes",
     "scope": "",
     "prefix": "bs5-button-sizes",
-    "body": "<button type=\"button\" class=\"btn ${2|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|} ${3|btn-lg,btn-sm|}\">${1:Button}</button>$0"
+    "body": "<button type=\"button\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link} btn-${3:lg|sm}\">$1</button>$0"
   },
   "bs5-button-toggle": {
     "description": "Button toggle",
     "scope": "",
     "prefix": "bs5-button-toggle",
-    "body": "<button type=\"button\" class=\"btn ${2|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\" data-bs-toggle=\"button\" aria-pressed=\"false\" autocomplete=\"off\">${1:Button}</button>$0"
+    "body": "<button type=\"button\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link}\" data-bs-toggle=\"button\" aria-pressed=\"false\" autocomplete=\"off\">$1</button>$0"
   },
   "bs5-card-align": {
     "description": "Card align",
     "scope": "",
     "prefix": "bs5-card-align",
-    "body": "<div class=\"card ${3|text-start,text-center,text-end|}\">\n  <img class=\"card-img-top\" src=\"${1:holder.js/100px180/}\" alt=\"${4:Title}\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Body}</p>\n  </div>\n</div>$0"
+    "body": "<div class=\"card text-${3:start|center|end}\">\n  <img class=\"card-img-top\" src=\"${1:holder.js/100px180/}\" alt=\"$2\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Body}</p>\n  </div>\n</div>$0"
   },
   "bs5-card-background-custom": {
     "description": "Card background custom",
     "scope": "",
     "prefix": "bs5-card-background-custom",
-    "body": "<div class=\"card\" style=\"background-color:${1:orangered}; border-color:${2:darkblue};\">\n  <img class=\"card-img-top\" src=\"${3:holder.js/100x180/}\" alt=\"{5:Title}\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${5:Title}</h4>\n    <p class=\"card-text\">${6:Text}</p>\n  </div>\n</div>$0"
+    "body": "<div class=\"card\" style=\"background-color:${1:orangered}; border-color:${2:darkblue};\">\n  <img class=\"card-img-top\" src=\"${3:holder.js/100x180/}\" alt=\"$4\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${5:Title}</h4>\n    <p class=\"card-text\">${6:Text}</p>\n  </div>\n</div>$0"
   },
   "bs5-card-background": {
     "description": "Card background",
     "scope": "",
     "prefix": "bs5-card-background",
-    "body": "<div class=\"card text-white ${1|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\">\n  <img class=\"card-img-top\" src=\"${2:holder.js/100px180/}\" alt=\"${4:Title}\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Text}</p>\n  </div>\n</div>$0"
+    "body": "<div class=\"card text-white bg-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">\n  <img class=\"card-img-top\" src=\"${2:holder.js/100px180/}\" alt=\"$3\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Text}</p>\n  </div>\n</div>$0"
   },
   "bs5-card-blockquote": {
     "description": "Card blockquote",
     "scope": "",
     "prefix": "bs5-card-blockquote",
-    "body": "<div class=\"card\">\n  <div class=\"card-body\">\n    <blockquote class=\"blockquote mb-0\">\n      <p>${1:Quote}</p>\n      <footer class=\"blockquote-footer\">${2:Footer} <cite title=\"${3:Source title}\">${3:Source title}</cite></footer>\n    </blockquote>\n  </div>\n</div>$0"
+    "body": "<div class=\"card\">\n  <div class=\"card-body\">\n    <blockquote class=\"blockquote mb-0\">\n      <p>${1:Quote}</p>\n      <footer class=\"blockquote-footer\">${2:Footer}<cite title=\"${3:Source title}\">${3:Source title}</cite></footer>\n    </blockquote>\n  </div>\n</div>$0"
   },
   "bs5-card-border": {
     "description": "Card border",
     "scope": "",
     "prefix": "bs5-card-border",
-    "body": "<div class=\"card ${1|border-primary,border-secondary,border-success,border-danger,border-warning,border-info,border-light,border-dark,border-link|}\">\n  <img class=\"card-img-top\" src=\"${2:holder.js/100px180/}\" alt=\"${4:Title}\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Text}</p>\n  </div>\n</div>$0"
+    "body": "<div class=\"card border-${1:primary|secondary|success|danger|warning|info|light|dark|link}\">\n  <img class=\"card-img-top\" src=\"${2:holder.js/100px180/}\" alt=\"$3\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">${4:Title}</h4>\n    <p class=\"card-text\">${5:Text}</p>\n  </div>\n</div>$0"
   },
   "bs5-card-default": {
     "description": "Card default",
     "scope": "",
     "prefix": "bs5-card-default",
-    "body": "<div class=\"card\">\n\t<img class=\"card-img-top\" src=\"${1:holder.js/100x180/}\" alt=\"${4:Text}\">\n\t<div class=\"card-body\">\n\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t<p class=\"card-text\">${4:Text}</p>\n\t</div>\n</div>$0"
+    "body": "<div class=\"card\">\n\t<img class=\"card-img-top\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n\t<div class=\"card-body\">\n\t\t<h4 class=\"card-title\">${3:Title}</h4>\n\t\t<p class=\"card-text\">${4:Text}</p>\n\t</div>\n</div>$0"
   },
   "bs5-card-grid": {
     "description": "Card grid",
     "scope": "",
     "prefix": "bs5-card-grid",
-    "body": "<div class=\"row\">\n  <div class=\"${1|col-xs-4,col-sm-4,col-md-4,col-lg-4,col-xl-4,col-4|}\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n        <h3 class=\"card-title\">${3:Title}</h3>\n        <p class=\"card-text\">${4:Text}</p>\n      </div>\n    </div>\n  </div>\n  <div class=\"${5|col-xs-4,col-sm-4,col-md-4,col-lg-4,col-xl-4,col-4|}\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n        <h3 class=\"card-title\">${7:Title}</h3>\n        <p class=\"card-text\">${8:Text}</p>\n      </div>\n    </div>\n  </div>\n</div>$0"
+    "body": "<div class=\"row\">\n  <div class=\"col-${1:xs|sm|md|lg|xl}-${2:1-12}\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n        <h3 class=\"card-title\">${3:Title}</h3>\n        <p class=\"card-text\">${4:Text}</p>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-${5:xs|sm|md|lg|xl}-${6:1-12}\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n        <h3 class=\"card-title\">${7:Title}</h3>\n        <p class=\"card-text\">${8:Text}</p>\n      </div>\n    </div>\n  </div>\n</div>$0"
   },
   "bs5-card-groups": {
     "description": "Card groups",
@@ -261,7 +261,7 @@
     "description": "Card overlay",
     "scope": "",
     "prefix": "bs5-card-overlay",
-    "body": "<div class=\"card bg-dark text-white\">\n  <img class=\"card-img\" src=\"${1:holder.js/100x180/}\" alt=\"${3:Title}\">\n  <div class=\"card-img-overlay\">\n    <h4 class=\"card-title\">${3:Title}</h4>\n    <p class=\"card-text\">${4:Text}</p>\n  </div>\n</div>$0"
+    "body": "<div class=\"card bg-dark text-white\">\n  <img class=\"card-img\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n  <div class=\"card-img-overlay\">\n    <h4 class=\"card-title\">${3:Title}</h4>\n    <p class=\"card-text\">${4:Text}</p>\n  </div>\n</div>$0"
   },
   "bs5-card-pill-head": {
     "description": "Card pill head",
@@ -273,7 +273,7 @@
     "description": "Card placeholder",
     "scope": "",
     "prefix": "bs5-card-placeholder",
-    "body": "<div class=\"card\" aria-hidden=\"true\">\n\t<img class=\"card-img-top\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n\t<div class=\"card-body\">\n\t\t<h5 class=\"card-title placeholder-glow\">\n\t\t\t<span class=\"placeholder col-6\">${3:Some text}</span>\n\t\t</h5>\n\t\t<p class=\"card-text placeholder-glow\">\n\t\t\t<span class=\"placeholder col-7\">${4:Some text}</span>\n\t\t\t<span class=\"placeholder col-4\">${5:Some text}</span>\n\t\t\t<span class=\"placeholder col-4\">${6:Some text}</span>\n\t\t\t<span class=\"placeholder col-6\">${7:Some text}</span>\n\t\t\t<span class=\"placeholder col-8\">${8:Some text}</span>\n\t\t</p>\n\t\t<a href=\"#\" tabindex=\"-1\" class=\"btn btn-primary disabled placeholder col-6\">${9:Some text}</a>\n\t</div>\n</div>$0"
+    "body": "<div class=\"card\" aria-hidden=\"true\">\n\t<img class=\"card-img-top\" src=\"${1:holder.js/100x180/}\" alt=\"$2\">\n\t<div class=\"card-body\">\n\t\t<h5 class=\"card-title placeholder-glow\">\n\t\t\t<span class=\"placeholder col-6\"></span>\n\t\t</h5>\n\t\t<p class=\"card-text placeholder-glow\">\n\t\t\t<span class=\"placeholder col-7\"></span>\n\t\t\t<span class=\"placeholder col-4\"></span>\n\t\t\t<span class=\"placeholder col-4\"></span>\n\t\t\t<span class=\"placeholder col-6\"></span>\n\t\t\t<span class=\"placeholder col-8\"></span>\n\t\t</p>\n\t\t<a href=\"#\" tabindex=\"-1\" class=\"btn btn-primary disabled placeholder col-6\"></a>\n\t</div>\n</div>$0"
   },
   "bs5-card-subtitle": {
     "description": "Card subtitle",
@@ -291,13 +291,13 @@
     "description": "Carousel caption",
     "scope": "",
     "prefix": "bs5-carousel-caption",
-    "body": "<div id=\"${1:carouselId}\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n\t<ol class=\"carousel-indicators\">\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"${3:First slide}\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"1\"  aria-label=\"${7:Second slide}\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"2\"  aria-label=\"${11:Third slide}\"></li>\n\t</ol>\n\t<div class=\"carousel-inner\" role=\"listbox\">\n\t\t<div class=\"carousel-item active\">\n\t\t\t<img class=\"d-block w-100\" src=\"${2:holder.js/900x500/auto/#777:#555/text:First slide}\" alt=\"${3:First slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${4:Title}</h3>\n\t\t\t\t<p>${5:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img class=\"d-block w-100\" src=\"${6:holder.js/900x500/auto/#666:#444/text:Second slide}\" alt=\"${7:Second slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${8:Title}</h3>\n\t\t\t\t<p>${9:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img class=\"d-block w-100\" src=\"${10:holder.js/900x500/auto/#666:#444/text:Third slide}\" alt=\"${11:Third slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${12:Title}</h3>\n\t\t\t\t<p>${13:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"prev\">\n\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Previous</span>\n\t</button>\n\t<button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"next\">\n\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Next</span>\n  \t</button>\n</div>$0"
+    "body": "<div id=\"${1:carouselId}\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n\t<ol class=\"carousel-indicators\">\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"0\" class=\"active\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"1\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"2\"></li>\n\t</ol>\n\t<div class=\"carousel-inner\" role=\"listbox\">\n\t\t<div class=\"carousel-item active\">\n\t\t\t<img src=\"${2:holder.js/900x500/auto/#777:#555/text:First slide}\" alt=\"${3:First slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${4:Title}</h3>\n\t\t\t\t<p>${5:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img src=\"${6:holder.js/900x500/auto/#666:#444/text:Second slide}\" alt=\"${7:Second slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${8:Title}</h3>\n\t\t\t\t<p>${9:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img src=\"${10:holder.js/900x500/auto/#666:#444/text:Third slide}\" alt=\"${11:Third slide}\">\n\t\t\t<div class=\"carousel-caption d-none d-md-block\">\n\t\t\t\t<h3>${12:Title}</h3>\n\t\t\t\t<p>${13:Description}</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"prev\">\n\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Previous</span>\n\t</button>\n\t<button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"next\">\n\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Next</span>\n  \t</button>\n</div>$0"
   },
   "bs5-carousel-default": {
     "description": "Carousel default",
     "scope": "",
     "prefix": "bs5-carousel-default",
-    "body": "<div id=\"${1:carouselId}\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n\t<ol class=\"carousel-indicators\">\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"${3:First slide}\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"1\" aria-label=\"${5:Second slide}\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"2\" aria-label=\"${7:Third slide}\"></li>\n\t</ol>\n\t<div class=\"carousel-inner\" role=\"listbox\">\n\t\t<div class=\"carousel-item active\">\n\t\t\t<img src=\"${2:holder.js/900x500/auto/#777:#555/text:First slide}\" alt=\"${3:First slide}\">\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img src=\"${4:holder.js/900x500/auto/#666:#444/text:Second slide}\" alt=\"${5:Second slide}\">\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img src=\"${6:holder.js/900x500/auto/#666:#444/text:Third slide}\" alt=\"${7:Third slide}\">\n\t\t</div>\n\t</div>\n\t<button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"prev\">\n\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Previous</span>\n\t</button>\n\t<button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"next\">\n\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Next</span>\n  \t</button>\n</div>$0"
+    "body": "<div id=\"${1:carouselId}\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n\t<ol class=\"carousel-indicators\">\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"0\" class=\"active\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"1\"></li>\n\t\t<li data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"2\"></li>\n\t</ol>\n\t<div class=\"carousel-inner\" role=\"listbox\">\n\t\t<div class=\"carousel-item active\">\n\t\t\t<img src=\"${2:holder.js/900x500/auto/#777:#555/text:First slide}\" alt=\"${3:First slide}\">\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img src=\"${4:holder.js/900x500/auto/#666:#444/text:Second slide}\" alt=\"${5:Second slide}\">\n\t\t</div>\n\t\t<div class=\"carousel-item\">\n\t\t\t<img src=\"${6:holder.js/900x500/auto/#666:#444/text:Third slide}\" alt=\"${7:Third slide}\">\n\t\t</div>\n\t</div>\n\t<button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"prev\">\n\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Previous</span>\n\t</button>\n\t<button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"next\">\n\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n\t\t<span class=\"visually-hidden\">Next</span>\n  \t</button>\n</div>$0"
   },
   "bs5-collapse-button": {
     "description": "Collapse button",
@@ -312,10 +312,10 @@
     "body": "<p>\n\t<a class=\"btn btn-primary\" data-bs-toggle=\"collapse\" href=\"#${2:contentId}\" aria-expanded=\"false\" aria-controls=\"${2:contentId}\">\n\t\t${1:Show}\n\t</a>\n</p>\n<div class=\"collapse\" id=\"${2:contentId}\">\n\t$3\n</div>$0"
   },
   "bs5-dropdown-alignment": {
-    "description": "Dropdown alignment: you can change the alignment by changing justify-content- class",
+    "description": "Dropdown alignment",
     "scope": "",
     "prefix": "bs5-dropdown-alignment",
-    "body": "<div class=\"btn-group\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:This dropdown's menu is start/end-aligned}\n\t</button>\n\t<div class=\"dropdown-menu ${3|dropdown-menu-start,dropdown-menu-end|}\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${5:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${7:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${8:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${10:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${12:After divider action}</a>\n\t</div>\n</div>$0"
+    "body": "<div class=\"btn-group\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:This dropdown's menu is end-aligned}\n\t</button>\n\t<div class=\"dropdown-menu dropdown-menu-end\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${7:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${10:After divider action}</a>\n\t</div>\n</div>$0"
   },
   "bs5-dropdown-anchor": {
     "description": "Dropdown anchor",
@@ -333,7 +333,7 @@
     "description": "Dropdown colored",
     "scope": "",
     "prefix": "bs5-dropdown-colored",
-    "body": "<div class=\"dropdown open\">\n\t<button class=\"btn ${2|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|} dropdown-toggle\" type=\"button\" id=\"${3:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${3:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${5:#}\">${4:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${7:#}\">${6:Disabled action}</a>\n\t</div>\n</div>$0"
+    "body": "<div class=\"dropdown open\">\n\t<button class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link} dropdown-toggle\" type=\"button\" id=\"${3:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${3:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${5:#}\">${4:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${7:#}\">${6:Disabled action}</a>\n\t</div>\n</div>$0"
   },
   "bs5-dropdown-default": {
     "description": "Dropdown default",
@@ -342,31 +342,37 @@
     "body": "<div class=\"dropdown\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${7:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${10:After divider action}</a>\n\t</div>\n</div>$0"
   },
   "bs5-dropdown-sized": {
-    "description": "Dropdown sized: sm,lg",
+    "description": "Dropdown sized",
     "scope": "",
     "prefix": "bs5-dropdown-sized",
-    "body": "<div class=\"dropdown open\">\n\t<button class=\"btn btn-secondary ${2|btn-lg,btn-sm|} dropdown-toggle\" type=\"button\" id=\"${3:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${3:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${5:#}\">${4:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${7:#}\">${6:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${8:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${10:#}\">${9:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${12:#}\">${11:After divider action}</a>\n\t</div>\n</div>$0"
+    "body": "<div class=\"dropdown open\">\n\t<button class=\"btn btn-secondary btn-${2:sm|lg} dropdown-toggle\" type=\"button\" id=\"${3:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${3:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${5:#}\">${4:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${7:#}\">${6:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${8:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${10:#}\">${9:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${12:#}\">${11:Ater divider action}</a>\n\t</div>\n</div>$0"
   },
   "bs5-dropdown-split": {
-    "description": "Dropdown split: button and arrow are splitted",
+    "description": "Dropdown split",
     "scope": "",
     "prefix": "bs5-dropdown-split",
     "body": "<div class=\"btn-group\">\n  <button type=\"button\" class=\"btn btn-secondary\">${1:Split dropdown}</button>\n  <button type=\"button\" class=\"btn btn-secondary dropdown-toggle dropdown-toggle-split\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n    <span class=\"visually-hidden\">Toggle Dropdown</span>\n  </button>\n  <div class=\"dropdown-menu\">\n    <a class=\"dropdown-item\" href=\"${3:#}\">${2:Action}</a>\n    <a class=\"dropdown-item disabled\" href=\"${5:#}\">${4:Disabled action}</a>\n    <div class=\"dropdown-divider\"></div>\n    <a class=\"dropdown-item\" href=\"${7:#}\">${6:Separated link}</a>\n  </div>\n</div>$0"
   },
   "bs5-dropdown-up-split": {
-    "description": "Dropdown up split: button and arrow are splitted and open upwards",
+    "description": "Dropdown up split",
     "scope": "",
     "prefix": "bs5-dropdown-up-split",
     "body": "<div class=\"btn-group dropup\">\n  <button type=\"button\" class=\"btn btn-secondary\">${1:Split dropup}</button>\n  <button type=\"button\" class=\"btn btn-secondary dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n    <span class=\"visually-hidden\">Toggle Dropdown</span>\n  </button>\n  <div class=\"dropdown-menu\">\n    <a class=\"dropdown-item\" href=\"${3:#}\">${2:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${5:#}\">${4:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${6:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${8:#}\">${7:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${10:#}\">${9:After divider action}</a>\n  </div>\n</div>$0"
   },
   "bs5-dropdown-up": {
-    "description": "Dropdown opens upwards",
+    "description": "Dropdown up",
     "scope": "",
     "prefix": "bs5-dropdown-up",
     "body": "<div class=\"dropup\">\n\t<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"${2:triggerId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\"\n\t\t\taria-expanded=\"false\">\n\t\t\t\t${1:Dropdown}\n\t\t\t</button>\n\t<div class=\"dropdown-menu\" aria-labelledby=\"${2:triggerId}\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<h6 class=\"dropdown-header\">${7:Section header}</h6>\n\t\t<a class=\"dropdown-item\" href=\"${9:#}\">${8:Action}</a>\n\t\t<div class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${11:#}\">${10:After divider action}</a>\n\t</div>\n</div>$0"
   },
+  "bs5-form-checkbox-custom": {
+    "description": "Form checkbox custom",
+    "scope": "",
+    "prefix": "bs5-form-checkbox-custom",
+    "body": "<label class=\"custom-control custom-checkbox\">\n  <input type=\"checkbox\" name=\"$1\" id=\"$1\" value=\"${2:checkedValue}\" class=\"custom-control-input\">\n  <span class=\"custom-control-indicator\"></span>\n  <span class=\"custom-control-description\">$3</span>\n</label>$0"
+  },
   "bs5-form-checkbox-inline": {
-    "description": "Form checkbox inline, copy paste to multiply inline",
+    "description": "Form checkbox inline",
     "scope": "",
     "prefix": "bs5-form-checkbox-inline",
     "body": "<div class=\"form-check form-check-inline\">\n\t  <input type=\"checkbox\" class=\"form-check-input\" name=\"$2\" id=\"$2\" value=\"${3:checkedValue}\">\n\t  <label class=\"form-check-label\" for=\"$2\">\n\t\t${1:Display value}\n\t  </label>\n</div>$0"
@@ -387,25 +393,31 @@
     "description": "Form email",
     "scope": "",
     "prefix": "bs5-form-email",
-    "body": "<div class=\"mb-3\">\n  <label for=\"$3\" class=\"form-label\">$1</label>\n  <input type=\"email\" class=\"form-control\" name=\"$3\" id=\"$3\" aria-describedby=\"${4:emailHelpId}\" placeholder=\"$2\">\n  <div id=\"${4:emailHelpId}\" class=\"form-text\">${5:Help text}</div>\n</div>$0"
+    "body": "<div class=\"mb-3\">\n  <label for=\"$3\" class=\"form-label\">$1</label>\n  <input type=\"email\" class=\"form-control\" name=\"$3\" id=\"$3\" aria-describedby=\"${4:emailHelpId}\" placeholder=\"$2\">\n  <small id=\"${4:emailHelpId}\" class=\"form-text text-muted\">${5:Help text}</small>\n</div>$0"
+  },
+  "bs5-form-file-custom": {
+    "description": "Form file custom",
+    "scope": "",
+    "prefix": "bs5-form-file-custom",
+    "body": "<div class=\"mb-3\">\n  <label class=\"custom-file\">\n    <input type=\"file\" name=\"$2\" id=\"$2\" placeholder=\"$1\" class=\"custom-file-input\" aria-describedby=\"${3:fileHelpId}\">\n    <span class=\"custom-file-control\"></span>\n  </label>\n  <small id=\"${3:fileHelpId}\" class=\"form-text text-muted\">${4:Help text}</small>\n</div>$0"
   },
   "bs5-form-file": {
     "description": "Form file",
     "scope": "",
     "prefix": "bs5-form-file",
-    "body": "<div class=\"mb-3\">\n  <label for=\"$3\" class=\"form-label\">$1</label>\n  <input type=\"file\" class=\"form-control\" name=\"$3\" id=\"$3\" placeholder=\"$2\" aria-describedby=\"${4:fileHelpId}\">\n  <div id=\"${4:fileHelpId}\" class=\"form-text\">${5:Help text}</div>\n</div>$0"
+    "body": "<div class=\"mb-3\">\n  <label for=\"$3\" class=\"form-label\">$1</label>\n  <input type=\"file\" class=\"form-control\" name=\"$3\" id=\"$3\" placeholder=\"$2\" aria-describedby=\"${4:fileHelpId}\">\n  <small id=\"${4:fileHelpId}\" class=\"form-text text-muted\">${5:Help text}</small>\n</div>$0"
   },
   "bs5-form-floating": {
-    "description": "Forms with floating labels",
+    "description": "Form floating",
     "scope": "",
     "prefix": "bs5-form-floating",
-    "body": "<div class=\"form-floating mb-3\">\n  <input\n    type=\"${2|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\"\n    class=\"form-control\" name=\"$3\" id=\"${3:Label}\" placeholder=\"$4\">\n  <label for=\"floatingLabel\">$1</label>\n</div>$0"
+    "body": "<div class=\"form-floating mb-3\">\n  <input\n    type=\"${2:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\"\n    class=\"form-control\" name=\"$3\" id=\"${3:Label}\" placeholder=\"$4\">\n  <label for=\"floatingLabel\">$1</label>\n</div>$0"
   },
   "bs5-form-grid": {
     "description": "Form grid",
     "scope": "",
     "prefix": "bs5-form-grid",
-    "body": "<div class=\"container\">\n\t<form>\n\t\t<div class=\"mb-3 row\">\n\t\t\t<label for=\"${6:inputName}\" class=\"${2|col-xs-4,col-sm-4,col-md-4,col-lg-4,col-xl-4,col-4|} col-form-label\">$1</label>\n\t\t\t<div class=\"${3|col-xs-8,col-sm-8,col-md-8,col-lg-8,col-xl-8,col-8|}\">\n\t\t\t\t<input type=\"${5|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" class=\"form-control\" name=\"${6:inputName}\" id=\"${6:inputName}\" placeholder=\"$4\">\n\t\t\t</div>\n\t\t</div>\n\t\t<fieldset class=\"mb-3 row\">\n\t\t\t<legend class=\"col-form-legend ${8|col-xs-4,col-sm-4,col-md-4,col-lg-4,col-xl-4,col-4|}\">${7:Group name}</legend>\n\t\t\t<div class=\"${10|col-xs-8,col-sm-8,col-md-8,col-lg-8,col-xl-8,col-8|}\">\n\t\t\t\t${9:you can use radio and checkboxes here}\n\t\t\t</div>\n\t\t</fieldset>\n\t\t<div class=\"mb-3 row\">\n\t\t\t<div class=\"${11:offset-sm-4 col-sm-8}\">\n\t\t\t\t<button type=\"${13:submit}\" class=\"btn btn-primary\">${12:Action}</button>\n\t\t\t</div>\n\t\t</div>\n\t</form>\n</div>$0"
+    "body": "<div class=\"container\">\n\t<form>\n\t\t<div class=\"mb-3 row\">\n\t\t\t<label for=\"${6:inputName}\" class=\"col-sm-${2:1-12} col-form-label\">$1</label>\n\t\t\t<div class=\"col-sm-${3:1-12}\">\n\t\t\t\t<input type=\"${5:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\" class=\"form-control\" name=\"${6:inputName}\" id=\"${6:inputName}\" placeholder=\"$4\">\n\t\t\t</div>\n\t\t</div>\n\t\t<fieldset class=\"mb-3 row\">\n\t\t\t<legend class=\"col-form-legend col-sm-${8:1-12}\">${7:Group name}</legend>\n\t\t\t<div class=\"col-sm-${10:1-12}\">\n\t\t\t\t$9\n\t\t\t</div>\n\t\t</fieldset>\n\t\t<div class=\"mb-3 row\">\n\t\t\t<div class=\"${11:offset-sm-2 col-sm-10}\">\n\t\t\t\t<button type=\"${13:submit}\" class=\"btn btn-primary\">${12:Action}</button>\n\t\t\t</div>\n\t\t</div>\n\t</form>\n</div>$0"
   },
   "bs5-form-group-text": {
     "description": "Form group text",
@@ -417,7 +429,7 @@
     "description": "Form group",
     "scope": "",
     "prefix": "bs5-form-group",
-    "body": "<div class=\"mb-3\">\n  <label for=\"$4\" class=\"form-label\">$1</label>\n  <input type=\"${3|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" name=\"$4\" id=\"$4\" class=\"form-control\" placeholder=\"$2\" aria-describedby=\"${5:helpId}\">\n  <small id=\"${5:helpId}\" class=\"text-muted\">${6:Help text}</small>\n</div>$0"
+    "body": "<div class=\"mb-3\">\n  <label for=\"$4\" class=\"form-label\">$1</label>\n  <input type=\"${3:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\" name=\"$4\" id=\"$4\" class=\"form-control\" placeholder=\"$2\" aria-describedby=\"${5:helpId}\">\n  <small id=\"${5:helpId}\" class=\"text-muted\">${6:Help text}</small>\n</div>$0"
   },
   "bs5-form-help-text-inline": {
     "description": "Form help text inline",
@@ -429,25 +441,25 @@
     "description": "Form help text",
     "scope": "",
     "prefix": "bs5-form-help-text",
-    "body": "<p class=\"form-text\">\n\t$1\n</p>$0"
+    "body": "<p class=\"form-text text-muted\">\n\t$1\n</p>$0"
   },
   "bs5-form-hidden": {
     "description": "Form hidden",
     "scope": "",
     "prefix": "bs5-form-hidden",
-    "body": "<div class=\"mb-3\">\n\t<label class=\"visually-hidden\" for=\"${4:inputName}\">${1:Hidden input label}</label>\n\t<input type=\"${3|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" class=\"form-control\" name=\"${4:inputName}\" id=\"${4:inputName}\" placeholder=\"$2\">\n</div>$0"
+    "body": "<div class=\"mb-3\">\n\t<label class=\"visually-hidden\" for=\"${4:inputName}\">${1:Hidden input label}</label>\n\t<input type=\"${3:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\" class=\"form-control\" name=\"${4:inputName}\" id=\"${4:inputName}\" placeholder=\"$2\">\n</div>$0"
   },
   "bs5-form-inline": {
     "description": "Form inline",
     "scope": "",
     "prefix": "bs5-form-inline",
-    "body": "<form class=\"d-flex\">\n\t<div class=\"col\">\n\t\t<div class=\"mb-3\">\n\t\t\t<label for=\"$4\" class=\"form-label\">$1</label>\n\t\t\t<input type=\"${3|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" name=\"$4\" id=\"$4\" class=\"form-control\" placeholder=\"$2\" aria-describedby=\"${5:helpId}\">\n\t\t\t<small id=\"${5:helpId}\" class=\"text-muted\">${6:Help text}</small>\n\t\t</div>\n\t</div>\n</form>$0"
+    "body": "<form class=\"d-flex\">\n\t<div class=\"col\">\n\t\t<div class=\"mb-3\">\n\t\t\t<label for=\"$4\" class=\"form-label\">$1</label>\n\t\t\t<input type=\"${3:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\" name=\"$4\" id=\"$4\" class=\"form-control\" placeholder=\"$2\" aria-describedby=\"${5:helpId}\">\n\t\t\t<small id=\"${5:helpId}\" class=\"text-muted\">${6:Help text}</small>\n\t\t</div>\n\t</div>\n</form>$0"
   },
   "bs5-form-input-sizing": {
     "description": "Form input sizing",
     "scope": "",
     "prefix": "bs5-form-input-sizing",
-    "body": "<div class=\"mb-3\">\n  <label for=\"$5\" class=\"form-label\">$1</label>\n  <input type=\"${3|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\"\n      class=\"form-control ${4|form-control-sm,form-control-lg|}\" name=\"$5\" id=\"$5\" aria-describedby=\"${6:helpId}\" placeholder=\"$2\">\n  <small id=\"${6:helpId}\" class=\"form-text text-muted\">${7:Help text}</small>\n</div>\n$0"
+    "body": "<div class=\"mb-3\">\n  <label for=\"$5\" class=\"form-label\">$1</label>\n  <input type=\"${3:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\"\n      class=\"form-control form-control-${4:sm|lg}\" name=\"$5\" id=\"$5\" aria-describedby=\"${6:helpId}\" placeholder=\"$2\">\n  <small id=\"${6:helpId}\" class=\"form-text text-muted\">${7:Help text}</small>\n</div>\n$0"
   },
   "bs5-form-input-text": {
     "description": "Form input text",
@@ -459,7 +471,7 @@
     "description": "Form input",
     "scope": "",
     "prefix": "bs5-form-input",
-    "body": "<div class=\"mb-3\">\n  <label for=\"$4\" class=\"form-label\">$1</label>\n  <input type=\"${3|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\"\n    class=\"form-control\" name=\"$4\" id=\"$4\" aria-describedby=\"${5:helpId}\" placeholder=\"$2\">\n  <small id=\"${5:helpId}\" class=\"form-text text-muted\">${6:Help text}</small>\n</div>$0"
+    "body": "<div class=\"mb-3\">\n  <label for=\"$4\" class=\"form-label\">$1</label>\n  <input type=\"${3:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\"\n    class=\"form-control\" name=\"$4\" id=\"$4\" aria-describedby=\"${5:helpId}\" placeholder=\"$2\">\n  <small id=\"${5:helpId}\" class=\"form-text text-muted\">${6:Help text}</small>\n</div>$0"
   },
   "bs5-form-multi-select-custom": {
     "description": "Form multi select custom",
@@ -471,7 +483,7 @@
     "description": "Form multi select sizing",
     "scope": "",
     "prefix": "bs5-form-multi-select-sizing",
-    "body": "<div class=\"mb-3\">\n  <label for=\"$2\" class=\"form-label\">$1</label>\n  <select multiple class=\"form-control ${3|form-control-sm,form-control-lg|}\" name=\"$2\" id=\"$2\">\n    <option>$4</option>\n    <option>$5</option>\n    <option>$6</option>\n  </select>\n</div>\n$0"
+    "body": "<div class=\"mb-3\">\n  <label for=\"$2\" class=\"form-label\">$1</label>\n  <select multiple class=\"form-control form-control-${3:sm|lg}\" name=\"$2\" id=\"$2\">\n    <option>$4</option>\n    <option>$5</option>\n    <option>$6</option>\n  </select>\n</div>\n$0"
   },
   "bs5-form-multi-select": {
     "description": "Form multi select",
@@ -513,7 +525,7 @@
     "description": "Form reset",
     "scope": "",
     "prefix": "bs5-form-reset",
-    "body": "<button type=\"reset\" class=\"btn ${2|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">${1:Reset}</button>$0"
+    "body": "<button type=\"reset\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link}\">${1:Reset}</button>$0"
   },
   "bs5-form-select-custom": {
     "description": "Form select custom",
@@ -525,7 +537,7 @@
     "description": "Form select sizing",
     "scope": "",
     "prefix": "bs5-form-select-sizing",
-    "body": "<div class=\"mb-3\">\n  <label for=\"$2\" class=\"form-label\">$1</label>\n  <select class=\"form-control ${3|form-control-sm,form-control-lg|}\" name=\"$2\" id=\"$2\">\n    <option>$4</option>\n    <option>$5</option>\n    <option>$6</option>\n  </select>\n</div>\n$0"
+    "body": "<div class=\"mb-3\">\n  <label for=\"$2\" class=\"form-label\">$1</label>\n  <select class=\"form-control form-control-${3:sm|lg}\" name=\"$2\" id=\"$2\">\n    <option>$4</option>\n    <option>$5</option>\n    <option>$6</option>\n  </select>\n</div>\n$0"
   },
   "bs5-form-select": {
     "description": "Form select",
@@ -537,7 +549,7 @@
     "description": "Form submit",
     "scope": "",
     "prefix": "bs5-form-submit",
-    "body": "<button type=\"submit\" class=\"btn ${2|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\">${1:Submit}</button>$0"
+    "body": "<button type=\"submit\" class=\"btn btn-${2:primary|secondary|success|danger|warning|info|light|dark|link}\">${1:Submit}</button>$0"
   },
   "bs5-form-textarea": {
     "description": "Form textarea",
@@ -549,55 +561,55 @@
     "description": "Form validation",
     "scope": "",
     "prefix": "bs5-form-validation",
-    "body": "<label for=\"${2:inputName}\" class=\"form-label\">${1:Input label}</label>\n<input type=\"text\" class=\"form-control ${3|is-valid,is-invalid|}\" name=\"${2:inputName}\" id=\"${2:inputName}\">\n<div class=\"invalid-feedback\">\n\t${4:Validation message}\n</div>\n<!-- TODO: This is for server side, there is another version for browser defaults -->$0"
+    "body": "<label for=\"${2:inputName}\" class=\"form-label\">${1:Input label}</label>\n<input type=\"text\" class=\"form-control ${3:is-valid|is-invalid}\" name=\"${2:inputName}\" id=\"${2:inputName}\">\n<div class=\"invalid-feedback\">\n\t${4:Validation message}\n</div>\n<!-- TODO: This is for server side, there is another version for browser defaults -->$0"
   },
   "bs5-igroup-button": {
     "description": "Igroup button",
     "scope": "",
     "prefix": "bs5-igroup-button",
-    "body": "<div class=\"input-group mb-3\">\n\t<span class=\"input-group-btn\">\n\t\t<button class=\"btn btn-secondary\" type=\"button\" aria-label=\"$2\">${1:Action}</button>\n  </span>\n\t<input type=\"${3|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" class=\"form-control\" name=\"${5:name}\" id=\"${5:name}\" placeholder=\"$3\" aria-label=\"$6\">\n</div>$0"
+    "body": "<div class=\"input-group mb-3\">\n\t<span class=\"input-group-btn\">\n\t\t<button class=\"btn btn-secondary\" type=\"button\" aria-label=\"$2\">${1:Action}</button>\n  </span>\n\t<input type=\"${4:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\" class=\"form-control\" name=\"${5:name}\" id=\"${5:name}\" placeholder=\"$3\" aria-label=\"$6\">\n</div>$0"
   },
   "bs5-igroup-checkbox-radio": {
     "description": "Igroup checkbox radio",
     "scope": "",
     "prefix": "bs5-igroup-checkbox-radio",
-    "body": "<div class=\"input-group mb-3\">\n  <span class=\"input-group-text\">\n    <input type=\"${1|checkbox,radio|}\" class=\"form-check-input mt-0\" name=\"${2:name}\" id=\"${2:name}\" aria-label=\"$3\">\n  </span>\n  <input type=\"${5|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" class=\"form-control\" name=\"${6:name}\" id=\"${6:name}\" placeholder=\"$4\" aria-label=\"$7\">\n</div>$0"
+    "body": "<div class=\"input-group mb-3\">\n  <span class=\"input-group-text\">\n    <input type=\"${1:checkbox|radio}\" class=\"form-check-input mt-0\" name=\"${2:name}\" id=\"${2:name}\" aria-label=\"$3\">\n  </span>\n  <input type=\"${5:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\" class=\"form-control\" name=\"${6:name}\" id=\"${6:name}\" placeholder=\"$4\" aria-label=\"$7\">\n</div>$0"
   },
   "bs5-igroup-dropdown-segmented": {
     "description": "Igroup dropdown segmented",
     "scope": "",
     "prefix": "bs5-igroup-dropdown-segmented",
-    "body": "<div class=\"input-group mb-3\">\n\t\t<button type=\"button\" class=\"btn btn-outline-secondary \">${1:Dropdown}</button>\n\t\t<button type=\"button\" class=\"btn btn-outline-secondary dropdown-toggle dropdown-toggle-split\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t    <span class=\"visually-hidden\">Toggle Dropdown</span>\n\t\t</button>\n\t<div class=\"dropdown-menu\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<div role=\"separator\" class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${8:#}\">${7:Separated link}</a>\n\t</div>\n\t<input type=\"${10|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" class=\"form-control\" name=\"${11:name}\" id=\"${11:name}\" placeholder=\"$9\" aria-label=\"$12\">\n</div>$0"
+    "body": "<div class=\"input-group mb-3\">\n\t\t<button type=\"button\" class=\"btn btn-outline-secondary \">${1:Dropdown}</button>\n\t\t<button type=\"button\" class=\"btn btn-outline-secondary dropdown-toggle dropdown-toggle-split\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t    <span class=\"visually-hidden\">Toggle Dropdown</span>\n\t\t</button>\n\t<div class=\"dropdown-menu\">\n\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled action}</a>\n\t\t<div role=\"separator\" class=\"dropdown-divider\"></div>\n\t\t<a class=\"dropdown-item\" href=\"${8:#}\">${7:Separated link}</a>\n\t</div>\n\t<input type=\"${10:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\" class=\"form-control\" name=\"${11:name}\" id=\"${11:name}\" placeholder=\"$9\" aria-label=\"$12\">\n</div>$0"
   },
   "bs5-igroup-dropdown": {
     "description": "Igroup dropdown",
     "scope": "",
     "prefix": "bs5-igroup-dropdown",
-    "body": "<div class=\"input-group mb-3\">\n\t<span class=\"input-group-btn\">\n\t\t<button type=\"button\" class=\"btn btn-secondary dropdown-toggle\" aria-label=\"$2\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t\t${1:Dropdown}\n\t\t</button>\n\t\t<div class=\"dropdown-menu\">\n\t\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled link}</a>\n\t\t\t<div role=\"separator\" class=\"dropdown-divider\"></div>\n\t\t\t<a class=\"dropdown-item\" href=\"${8:#}\">${7:Separated link}</a>\n\t\t</div>\n  </span>\n\t<input type=\"${10|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" class=\"form-control\" name=\"${11:name}\" id=\"${11:name}\" placeholder=\"$9\" aria-label=\"$12\">\n</div>$0"
+    "body": "<div class=\"input-group mb-3\">\n\t<span class=\"input-group-btn\">\n\t\t<button type=\"button\" class=\"btn btn-secondary dropdown-toggle\" aria-label=\"$2\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n\t\t\t${1:Dropdown}\n\t\t</button>\n\t\t<div class=\"dropdown-menu\">\n\t\t\t<a class=\"dropdown-item\" href=\"${4:#}\">${3:Action}</a>\n\t\t\t<a class=\"dropdown-item disabled\" href=\"${6:#}\">${5:Disabled link}</a>\n\t\t\t<div role=\"separator\" class=\"dropdown-divider\"></div>\n\t\t\t<a class=\"dropdown-item\" href=\"${8:#}\">${7:Separated link}</a>\n\t\t</div>\n  </span>\n\t<input type=\"${10:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\" class=\"form-control\" name=\"${11:name}\" id=\"${11:name}\" placeholder=\"$9\" aria-label=\"$12\">\n</div>$0"
   },
   "bs5-igroup-size": {
     "description": "Igroup size",
     "scope": "",
     "prefix": "bs5-igroup-size",
-    "body": "<div class=\"input-group ${1|input-group-sm,input-group-lg|} mb-3\">\n\t<span class=\"input-group-text\" id=\"${3:prefixId}\">${2:prefix}</span>\n\t<input type=\"${5|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" name=\"${6:name}\" id=\"${6:name}\" class=\"form-control\" placeholder=\"${4:placeholder}\" aria-describedby=\"${3:prefixId}\">\n</div>$0"
+    "body": "<div class=\"input-group input-group-${1:sm|lg} mb-3\">\n\t<span class=\"input-group-text\" id=\"${3:prefixId}\">${2:prefix}</span>\n\t<input type=\"${5:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\" name=\"${6:name}\" id=\"${6:name}\" class=\"form-control\" placeholder=\"${4:placeholder}\" aria-describedby=\"${3:prefixId}\">\n</div>$0"
   },
   "bs5-igroup-text-both": {
     "description": "Igroup text both",
     "scope": "",
     "prefix": "bs5-igroup-text-both",
-    "body": "<div class=\"input-group mb-3\">\n\t<span class=\"input-group-text\">${1:prefix}</span>\n\t<input type=\"${3|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" name=\"${4:name}\" id=\"${4:name}\" class=\"form-control\" placeholder=\"${2:placeholder}\">\n\t<span class=\"input-group-text\">${5:suffix}</span>\n</div>$0"
+    "body": "<div class=\"input-group mb-3\">\n\t<span class=\"input-group-text\">${1:prefix}</span>\n\t<input type=\"${3:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\" name=\"${4:name}\" id=\"${4:name}\" class=\"form-control\" placeholder=\"${2:placeholder}\">\n\t<span class=\"input-group-text\">${5:suffix}</span>\n</div>$0"
   },
   "bs5-igroup-text-prefix": {
     "description": "Igroup text prefix",
     "scope": "",
     "prefix": "bs5-igroup-text-prefix",
-    "body": "<div class=\"input-group mb-3\">\n\t<span class=\"input-group-text\" id=\"${2:prefixId}\">${1:prefix}</span>\n\t<input type=\"${4|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" name=\"${5:name}\" id=\"${5:name}\" class=\"form-control\" placeholder=\"$3\" aria-describedby=\"${2:prefixId}\">\n</div>$0"
+    "body": "<div class=\"input-group mb-3\">\n\t<span class=\"input-group-text\" id=\"${2:prefixId}\">${1:prefix}</span>\n\t<input type=\"${4:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\" name=\"${5:name}\" id=\"${5:name}\" class=\"form-control\" placeholder=\"$3\" aria-describedby=\"${2:prefixId}\">\n</div>$0"
   },
   "bs5-igroup-text-suffix": {
     "description": "Igroup text suffix",
     "scope": "",
     "prefix": "bs5-igroup-text-suffix",
-    "body": "<div class=\"input-group mb-3\">\n\t<input type=\"${2|text,password,email,number,submit,date,datetime,datetime-local,month,color,range,search,tel,time,url,week|}\" name=\"${3:name}\" id=\"${3:name}\" class=\"form-control\" placeholder=\"${1:placeholder}\" aria-describedby=\"${5:suffixId}\">\n\t<span class=\"input-group-text\" id=\"${5:suffixId}\">${4:suffix}</span>\n</div>$0"
+    "body": "<div class=\"input-group mb-3\">\n\t<input type=\"${2:text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week}\" name=\"${3:name}\" id=\"${3:name}\" class=\"form-control\" placeholder=\"${1:placeholder}\" aria-describedby=\"${5:suffixId}\">\n\t<span class=\"input-group-text\" id=\"${5:suffixId}\">${4:suffix}</span>\n</div>$0"
   },
   "bs5-jumbotron-default": {
     "description": "Jumbotron default",
@@ -633,7 +645,7 @@
     "description": "List colors",
     "scope": "",
     "prefix": "bs5-list-colors",
-    "body": "<div class=\"list-group\">\n\t<a href=\"${2:#}\" class=\"list-group-item list-group-item-action ${3|list-group-item-primary,list-group-item-secondary,list-group-item-success,list-group-item-danger,list-group-item-warning,list-group-item-info,list-group-item-light,list-group-item-dark|} active\">${1:Active item}</a>\n\t<a href=\"${5:#}\" class=\"list-group-item list-group-item-action ${6|list-group-item-primary,list-group-item-secondary,list-group-item-success,list-group-item-danger,list-group-item-warning,list-group-item-info,list-group-item-light,list-group-item-dark|}\">${4:Item}</a>\n\t<a href=\"${8:#}\" class=\"list-group-item list-group-item-action ${9|list-group-item-primary,list-group-item-secondary,list-group-item-success,list-group-item-danger,list-group-item-warning,list-group-item-info,list-group-item-light,list-group-item-dark|} disabled\">${7:Disabled item}</a>\n</div>$0"
+    "body": "<div class=\"list-group\">\n\t<a href=\"${2:#}\" class=\"list-group-item list-group-item-action list-group-item-${3:primary|secondary|success|danger|warning|info|light|dark} active\">${1:Active item}</a>\n\t<a href=\"${5:#}\" class=\"list-group-item list-group-item-action list-group-item-${6:primary|secondary|success|danger|warning|info|light|dark}\">${4:Item}</a>\n\t<a href=\"${8:#}\" class=\"list-group-item list-group-item-action list-group-item-${9:primary|secondary|success|danger|warning|info|light|dark} disabled\">${7:Disabled item}</a>\n</div>$0"
   },
   "bs5-list-custom": {
     "description": "List custom",
@@ -669,67 +681,67 @@
     "description": "Modal sizes",
     "scope": "",
     "prefix": "bs5-modal-sizes",
-    "body": "<!-- Button trigger modal -->\n<button type=\"button\" class=\"btn btn-primary btn-lg\" data-bs-toggle=\"modal\" data-bs-target=\"#${2:modelId}\">\n  ${1:Launch}\n</button>\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"${2:modelId}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"${5:modelTitleId}\" aria-hidden=\"true\">\n\t<div class=\"modal-dialog ${3|modal-sm,modal-lg|}\" role=\"document\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div class=\"modal-header\">\n\t\t\t\t<h5 class=\"modal-title\">${3:Modal title}</h5>\n\t\t\t\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\n\n\t\t\t</div>\n\t\t\t<div class=\"modal-body\">\n\t\t\t\t${8:Body}\n\t\t\t</div>\n\t\t\t<div class=\"modal-footer\">\n\t\t\t\t<button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">${6:Close}</button>\n\t\t\t\t<button type=\"button\" class=\"btn btn-primary\">${7:Save}</button>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n$0"
+    "body": "<!-- Button trigger modal -->\n<button type=\"button\" class=\"btn btn-primary btn-lg\" data-bs-toggle=\"modal\" data-bs-target=\"#${2:modelId}\">\n  ${1:Launch}\n</button>\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"${2:modelId}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"${5:modelTitleId}\" aria-hidden=\"true\">\n\t<div class=\"modal-dialog modal-${3:sm|lg}\" role=\"document\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div class=\"modal-header\">\n\t\t\t\t<h5 class=\"modal-title\">${3:Modal title}</h5>\n\t\t\t\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\n\n\t\t\t</div>\n\t\t\t<div class=\"modal-body\">\n\t\t\t\t${8:Body}\n\t\t\t</div>\n\t\t\t<div class=\"modal-footer\">\n\t\t\t\t<button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">${6:Close}</button>\n\t\t\t\t<button type=\"button\" class=\"btn btn-primary\">${7:Save}</button>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n$0"
   },
   "bs5-nav-a": {
     "description": "Nav a",
     "scope": "",
     "prefix": "bs5-nav-a",
-    "body": "<nav class=\"nav ${1|justify-content-center,justify-content-end|}\">\n  <a class=\"nav-link active\" href=\"${3:#}\">${2:Active link}</a>\n  <a class=\"nav-link\" href=\"${5:#}\">${4:Link}</a>\n  <a class=\"nav-link disabled\" href=\"${7:#}\">${6:Disabled link}</a>\n</nav>$0"
+    "body": "<nav class=\"nav ${1:justify-content-center|justify-content-end}\">\n  <a class=\"nav-link active\" href=\"${3:#}\">${2:Active link}</a>\n  <a class=\"nav-link\" href=\"${5:#}\">${4:Link}</a>\n  <a class=\"nav-link disabled\" href=\"${7:#}\">${6:Disabled link}</a>\n</nav>$0"
   },
   "bs5-nav-complete": {
     "description": "Nav complete",
     "scope": "",
     "prefix": "bs5-nav-complete",
-    "body": "<!-- Nav tabs -->\n<ul class=\"nav ${2|nav-tabs,nav-pills|}\" id=\"${1:navId}\" role=\"tablist\">\n\t<li class=\"nav-item\">\n\t\t<a href=\"#${4:tab1Id}\" class=\"nav-link active\" data-bs-toggle=\"tab\">${3:Active}</a>\n\t</li>\n\t<li class=\"nav-item dropdown\">\n\t\t<a class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">${5:Dropdown}</a>\n\t\t<div class=\"dropdown-menu\">\n\t\t\t<a class=\"dropdown-item\" href=\"#${7:tab2Id}\">${6:Action}</a>\n\t\t\t<a class=\"dropdown-item\" href=\"#${9:tab3Id}\">${8:Another action}</a>\n\t\t\t<div class=\"dropdown-divider\"></div>\n\t\t\t<a class=\"dropdown-item\" href=\"#${11:tab4Id}\">${10:Action}</a>\n\t\t</div>\n\t</li>\n\t<li class=\"nav-item\" role=\"presentation\">\n\t\t<a href=\"#${13:tab5Id}\" class=\"nav-link\" data-bs-toggle=\"tab\">${12:Another link}</a>\n\t</li>\n\t<li class=\"nav-item\" role=\"presentation\">\n\t\t<a href=\"#\" class=\"nav-link disabled\" data-bs-toggle=\"tab\">${14:Disabled}</a>\n\t</li>\n</ul>\n\n<!-- Tab panes -->\n<div class=\"tab-content\" id=\"myTabContent\">\n\t<div class=\"tab-pane fade show active\" id=\"${4:tab1Id}\" role=\"tabpanel\">$15</div>\n\t<div class=\"tab-pane fade\" id=\"${7:tab2Id}\" role=\"tabpanel\">$16</div>\n\t<div class=\"tab-pane fade\" id=\"${9:tab3Id}\" role=\"tabpanel\">$17</div>\n\t<div class=\"tab-pane fade\" id=\"${11:tab4Id}\" role=\"tabpanel\">$18</div>\n\t<div class=\"tab-pane fade\" id=\"${13:tab5Id}\" role=\"tabpanel\">$19</div>\n</div>\n\n<!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->\n<script>\n\tvar triggerEl = document.querySelector('#${1:navId} a')\n\tbootstrap.Tab.getInstance(triggerEl).show() // Select tab by name\n</script>\n$0"
+    "body": "<!-- Nav tabs -->\n<ul class=\"nav nav-${2:tabs|pills}\" id=\"${1:navId}\" role=\"tablist\">\n\t<li class=\"nav-item\">\n\t\t<a href=\"#${4:tab1Id}\" class=\"nav-link active\" data-bs-toggle=\"tab\">${3:Active}</a>\n\t</li>\n\t<li class=\"nav-item dropdown\">\n\t\t<a class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">${5:Dropdown}</a>\n\t\t<div class=\"dropdown-menu\">\n\t\t\t<a class=\"dropdown-item\" href=\"#${7:tab2Id}\">${6:Action}</a>\n\t\t\t<a class=\"dropdown-item\" href=\"#${9:tab3Id}\">${8:Another action}</a>\n\t\t\t<div class=\"dropdown-divider\"></div>\n\t\t\t<a class=\"dropdown-item\" href=\"#${11:tab4Id}\">${10:Action}</a>\n\t\t</div>\n\t</li>\n\t<li class=\"nav-item\" role=\"presentation\">\n\t\t<a href=\"#${13:tab5Id}\" class=\"nav-link\" data-bs-toggle=\"tab\">${12:Another link}</a>\n\t</li>\n\t<li class=\"nav-item\" role=\"presentation\">\n\t\t<a href=\"#\" class=\"nav-link disabled\" data-bs-toggle=\"tab\">${14:Disabled}</a>\n\t</li>\n</ul>\n\n<!-- Tab panes -->\n<div class=\"tab-content\" id=\"myTabContent\">\n\t<div class=\"tab-pane fade show active\" id=\"${4:tab1Id}\" role=\"tabpanel\">$15</div>\n\t<div class=\"tab-pane fade\" id=\"${7:tab2Id}\" role=\"tabpanel\">$16</div>\n\t<div class=\"tab-pane fade\" id=\"${9:tab3Id}\" role=\"tabpanel\">$17</div>\n\t<div class=\"tab-pane fade\" id=\"${11:tab4Id}\" role=\"tabpanel\">$18</div>\n\t<div class=\"tab-pane fade\" id=\"${13:tab5Id}\" role=\"tabpanel\">$19</div>\n</div>\n\n<!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->\n<script>\n\tvar triggerEl = document.querySelector('#${1:navId} a')\n\tbootstrap.Tab.getInstance(triggerEl).show() // Select tab by name\n</script>\n$0"
   },
   "bs5-nav-tabs-pills-a-variation": {
     "description": "Nav tabs pills a variation",
     "scope": "",
     "prefix": "bs5-nav-tabs-pills-a-variation",
-    "body": "<nav class=\"nav ${1|nav-tabs,nav-pills|} ${2:flex-column}\">\n\t<a class=\"nav-link active\" href=\"${4:#}\">${3:Active link}</a>\n\t<a class=\"nav-link\" href=\"${6:#}\">${5:Link}</a>\n\t<a class=\"nav-link disabled\" href=\"#\">${7:Disabled link}</a>\n</nav>$0"
+    "body": "<nav class=\"nav nav-${1:tabs|pills} ${2:flex-column}\">\n\t<a class=\"nav-link active\" href=\"${4:#}\">${3:Active link}</a>\n\t<a class=\"nav-link\" href=\"${6:#}\">${5:Link}</a>\n\t<a class=\"nav-link disabled\" href=\"#\">${7:Disabled link}</a>\n</nav>$0"
   },
   "bs5-nav-tabs-pills-dropdown": {
     "description": "Nav tabs pills dropdown",
     "scope": "",
     "prefix": "bs5-nav-tabs-pills-dropdown",
-    "body": "<ul class=\"nav ${1|nav-tabs,nav-pills|}\">\n\t<li class=\"nav-item\">\n\t\t<a href=\"${3:#}\" class=\"nav-link active\">${2:Active}</a>\n\t</li>\n\t<li class=\"nav-item dropdown\">\n\t\t<a class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">${4:Dropdown}</a>\n\t\t<div class=\"dropdown-menu\">\n\t\t\t<a class=\"dropdown-item\" href=\"${6:#}\">${5:Action}</a>\n\t\t\t<a class=\"dropdown-item\" href=\"${8:#}\">${7:Another action}</a>\n\t\t\t<div class=\"dropdown-divider\"></div>\n\t\t\t<a class=\"dropdown-item\" href=\"${10:#}\">${9:Action}</a>\n\t\t</div>\n\t</li>\n\t<li class=\"nav-item\">\n\t\t<a href=\"${12:#}\" class=\"nav-link\">${11:Another link}</a>\n\t</li>\n\t<li class=\"nav-item\">\n\t\t<a href=\"#\" class=\"nav-link disabled\">${13:Disabled}</a>\n\t</li>\n</ul>$0"
+    "body": "<ul class=\"nav nav-${1:tabs|pills}\">\n\t<li class=\"nav-item\">\n\t\t<a href=\"${3:#}\" class=\"nav-link active\">${2:Active}</a>\n\t</li>\n\t<li class=\"nav-item dropdown\">\n\t\t<a class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">${4:Dropdown}</a>\n\t\t<div class=\"dropdown-menu\">\n\t\t\t<a class=\"dropdown-item\" href=\"${6:#}\">${5:Action}</a>\n\t\t\t<a class=\"dropdown-item\" href=\"${8:#}\">${7:Another action}</a>\n\t\t\t<div class=\"dropdown-divider\"></div>\n\t\t\t<a class=\"dropdown-item\" href=\"${10:#}\">${9:Action}</a>\n\t\t</div>\n\t</li>\n\t<li class=\"nav-item\">\n\t\t<a href=\"${12:#}\" class=\"nav-link\">${11:Another link}</a>\n\t</li>\n\t<li class=\"nav-item\">\n\t\t<a href=\"#\" class=\"nav-link disabled\">${13:Disabled}</a>\n\t</li>\n</ul>$0"
   },
   "bs5-nav-tabs-pills-ul-variation": {
     "description": "Nav tabs pills ul variation",
     "scope": "",
     "prefix": "bs5-nav-tabs-pills-ul-variation",
-    "body": "<ul class=\"nav ${1|nav-tabs,nav-pills|} ${2:flex-column}\">\n\t<li class=\"nav-item\">\n\t\t<a href=\"${4:#}\" class=\"nav-link active\">${3:Active}</a>\n\t</li>\n\t<li class=\"nav-item\">\n\t\t<a href=\"${6:#}\" class=\"nav-link\">${5:Link}</a>\n\t</li>\n\t<li class=\"nav-item disabled\">\n\t\t<a href=\"#\" class=\"nav-link\">${7:Disabled}</a>\n\t</li>\n</ul>$0"
+    "body": "<ul class=\"nav nav-${1:tabs|pills} ${2:flex-column}\">\n\t<li class=\"nav-item\">\n\t\t<a href=\"${4:#}\" class=\"nav-link active\">${3:Active}</a>\n\t</li>\n\t<li class=\"nav-item\">\n\t\t<a href=\"${6:#}\" class=\"nav-link\">${5:Link}</a>\n\t</li>\n\t<li class=\"nav-item disabled\">\n\t\t<a href=\"#\" class=\"nav-link\">${7:Disabled}</a>\n\t</li>\n</ul>$0"
   },
   "bs5-nav-tabs": {
     "description": "Nav tabs",
     "scope": "",
     "prefix": "bs5-nav-tabs",
-    "body": "<!-- Nav tabs -->\n<ul class=\"nav ${1|nav-tabs,nav-pills|}\" id=\"${2:myTab}\" role=\"tablist\">\n  <li class=\"nav-item\" role=\"presentation\">\n    <button class=\"nav-link active\" id=\"${4:home}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${4:home}\" type=\"button\" role=\"tab\" aria-controls=\"${4:home}\" aria-selected=\"true\">${3:Home}</button>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <button class=\"nav-link\" id=\"${6:profile}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${6:profile}\" type=\"button\" role=\"tab\" aria-controls=\"${6:profile}\" aria-selected=\"false\">${5:Profile}</button>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <button class=\"nav-link\" id=\"${8:messages}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${8:messages}\" type=\"button\" role=\"tab\" aria-controls=\"${8:messages}\" aria-selected=\"false\">${7:Messages}</button>\n  </li>\n</ul>\n\n<!-- Tab panes -->\n<div class=\"tab-content\">\n  <div class=\"tab-pane active\" id=\"${4:home}\" role=\"tabpanel\" aria-labelledby=\"${4:home}-tab\">${9: ${4:home} }</div>\n  <div class=\"tab-pane\" id=\"${6:profile}\" role=\"tabpanel\" aria-labelledby=\"${6:profile}-tab\">${10: ${6:profile} }</div>\n  <div class=\"tab-pane\" id=\"${8:messages}\" role=\"tabpanel\" aria-labelledby=\"${8:messages}-tab\">${11: ${8:messages} }</div>\n</div>$0"
+    "body": "<!-- Nav tabs -->\n<ul class=\"nav nav-${1:tabs|pills}\" id=\"${2:myTab}\" role=\"tablist\">\n  <li class=\"nav-item\" role=\"presentation\">\n    <button class=\"nav-link active\" id=\"${4:home}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${4:home}\" type=\"button\" role=\"tab\" aria-controls=\"${4:home}\" aria-selected=\"true\">${3:Home}</button>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <button class=\"nav-link\" id=\"${6:profile}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${6:profile}\" type=\"button\" role=\"tab\" aria-controls=\"${6:profile}\" aria-selected=\"false\">${5:Profile}</button>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <button class=\"nav-link\" id=\"${8:messages}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${8:messages}\" type=\"button\" role=\"tab\" aria-controls=\"${8:messages}\" aria-selected=\"false\">${7:Messages}</button>\n  </li>\n</ul>\n\n<!-- Tab panes -->\n<div class=\"tab-content\">\n  <div class=\"tab-pane active\" id=\"${4:home}\" role=\"tabpanel\" aria-labelledby=\"${4:home}-tab\">${9: ${4:home} }</div>\n  <div class=\"tab-pane\" id=\"${6:profile}\" role=\"tabpanel\" aria-labelledby=\"${6:profile}-tab\">${10: ${6:profile} }</div>\n  <div class=\"tab-pane\" id=\"${8:messages}\" role=\"tabpanel\" aria-labelledby=\"${8:messages}-tab\">${11: ${8:messages} }</div>\n</div>$0"
   },
   "bs5-nav-ul": {
     "description": "Nav ul",
     "scope": "",
     "prefix": "bs5-nav-ul",
-    "body": "<ul class=\"nav ${1|justify-content-center,justify-content-end|}\">\n    <li class=\"nav-item\">\n        <a class=\"nav-link active\" href=\"${3:#}\">${2:Active link}</a>\n    </li>\n    <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"${5:#}\">${4:Link}</a>\n    </li>\n    <li class=\"nav-item\">\n        <a class=\"nav-link disabled\" href=\"#\">${6:Disabled link}</a>\n    </li>\n</ul>$0"
+    "body": "<ul class=\"nav ${1:justify-content-center|justify-content-end}\">\n    <li class=\"nav-item\">\n        <a class=\"nav-link active\" href=\"${3:#}\">${2:Active link}</a>\n    </li>\n    <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"${5:#}\">${4:Link}</a>\n    </li>\n    <li class=\"nav-item\">\n        <a class=\"nav-link disabled\" href=\"#\">${6:Disabled link}</a>\n    </li>\n</ul>$0"
   },
   "bs5-navbar-background-color": {
     "description": "Navbar background color",
     "scope": "",
     "prefix": "bs5-navbar-background-color",
-    "body": "<nav class=\"navbar ${1|navbar-expand-sm,navbar-expand-md,navbar-expand-lg,navbar-expand-xl|} ${2|navbar-dark,navbar-light|}\" style=\"background-color: ${3:#e3f2fd;}\">\n    <a class=\"navbar-brand\" href=\"${5:#}\">${4:Navbar}</a>\n    <button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#${6:collapsibleNavId}\" aria-controls=\"${6:collapsibleNavId}\"\n        aria-expanded=\"false\" aria-label=\"${7:Toggle navigation}\"></button>\n    <div class=\"collapse navbar-collapse\" id=\"${6:collapsibleNavId}\">\n        <ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">\n            <li class=\"nav-item active\">\n                <a class=\"nav-link\" href=\"${9:#}\">${8:Home} <span class=\"visually-hidden\">(current)</span></a>\n            </li>\n            <li class=\"nav-item\">\n                <a class=\"nav-link\" href=\"${11:#}\">${10:Link}</a>\n            </li>\n            <li class=\"nav-item dropdown\">\n                <a class=\"nav-link dropdown-toggle\" href=\"${13:#}\" id=\"${14:dropdownId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${12:Dropdown}</a>\n                <div class=\"dropdown-menu\" aria-labelledby=\"${14:dropdownId}\">\n                    <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 1}</a>\n                    <a class=\"dropdown-item\" href=\"${18:#}\">${17:Action 2}</a>\n                </div>\n            </li>\n        </ul>\n        <form class=\"d-flex my-2 my-lg-0\">\n            <input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"${19:Search}\">\n            <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${20:Search}</button>\n        </form>\n    </div>\n</nav>$0"
+    "body": "<nav class=\"navbar navbar-expand-${1:sm|md|lg|-xl} navbar-${2:dark|light}\" style=\"background-color: ${3:#e3f2fd;}\">\n    <a class=\"navbar-brand\" href=\"${5:#}\">${4:Navbar}</a>\n    <button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#${6:collapsibleNavId}\" aria-controls=\"${6:collapsibleNavId}\"\n        aria-expanded=\"false\" aria-label=\"${7:Toggle navigation}\"></button>\n    <div class=\"collapse navbar-collapse\" id=\"${6:collapsibleNavId}\">\n        <ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">\n            <li class=\"nav-item active\">\n                <a class=\"nav-link\" href=\"${9:#}\">${8:Home} <span class=\"visually-hidden\">(current)</span></a>\n            </li>\n            <li class=\"nav-item\">\n                <a class=\"nav-link\" href=\"${11:#}\">${10:Link}</a>\n            </li>\n            <li class=\"nav-item dropdown\">\n                <a class=\"nav-link dropdown-toggle\" href=\"${13:#}\" id=\"${14:dropdownId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${12:Dropdown}</a>\n                <div class=\"dropdown-menu\" aria-labelledby=\"${14:dropdownId}\">\n                    <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 1}</a>\n                    <a class=\"dropdown-item\" href=\"${18:#}\">${17:Action 2}</a>\n                </div>\n            </li>\n        </ul>\n        <form class=\"d-flex my-2 my-lg-0\">\n            <input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"${19:Search}\">\n            <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${20:Search}</button>\n        </form>\n    </div>\n</nav>$0"
   },
   "bs5-navbar-background": {
     "description": "Navbar background",
     "scope": "",
     "prefix": "bs5-navbar-background",
-    "body": "<nav class=\"navbar ${1|navbar-expand-sm,navbar-expand-md,navbar-expand-lg,navbar-expand-xl|} ${2|navbar-dark,navbar-light|} ${3|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\">\n    <a class=\"navbar-brand\" href=\"${5:#}\">${4:Navbar}</a>\n    <button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#${6:collapsibleNavId}\" aria-controls=\"${6:collapsibleNavId}\"\n        aria-expanded=\"false\" aria-label=\"${7:Toggle navigation}\"></button>\n    <div class=\"collapse navbar-collapse\" id=\"${6:collapsibleNavId}\">\n        <ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">\n            <li class=\"nav-item active\">\n                <a class=\"nav-link\" href=\"${9:#}\">${8:Home} <span class=\"visually-hidden\">(current)</span></a>\n            </li>\n            <li class=\"nav-item\">\n                <a class=\"nav-link\" href=\"${11:#}\">${10:Link}</a>\n            </li>\n            <li class=\"nav-item dropdown\">\n                <a class=\"nav-link dropdown-toggle\" href=\"${13:#}\" id=\"${14:dropdownId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${12:Dropdown}</a>\n                <div class=\"dropdown-menu\" aria-labelledby=\"${14:dropdownId}\">\n                    <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 1}</a>\n                    <a class=\"dropdown-item\" href=\"${18:#}\">${17:Action 2}</a>\n                </div>\n            </li>\n        </ul>\n        <form class=\"d-flex my-2 my-lg-0\">\n            <input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"${19:Search}\">\n            <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${20:Search}</button>\n        </form>\n    </div>\n</nav>$0"
+    "body": "<nav class=\"navbar navbar-expand-${1:sm|md|lg|-xl} navbar-${2:dark|light} bg-${3:primary|secondary|success|danger|warning|info|light|dark}\">\n    <a class=\"navbar-brand\" href=\"${5:#}\">${4:Navbar}</a>\n    <button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#${6:collapsibleNavId}\" aria-controls=\"${6:collapsibleNavId}\"\n        aria-expanded=\"false\" aria-label=\"${7:Toggle navigation}\"></button>\n    <div class=\"collapse navbar-collapse\" id=\"${6:collapsibleNavId}\">\n        <ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">\n            <li class=\"nav-item active\">\n                <a class=\"nav-link\" href=\"${9:#}\">${8:Home} <span class=\"visually-hidden\">(current)</span></a>\n            </li>\n            <li class=\"nav-item\">\n                <a class=\"nav-link\" href=\"${11:#}\">${10:Link}</a>\n            </li>\n            <li class=\"nav-item dropdown\">\n                <a class=\"nav-link dropdown-toggle\" href=\"${13:#}\" id=\"${14:dropdownId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${12:Dropdown}</a>\n                <div class=\"dropdown-menu\" aria-labelledby=\"${14:dropdownId}\">\n                    <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 1}</a>\n                    <a class=\"dropdown-item\" href=\"${18:#}\">${17:Action 2}</a>\n                </div>\n            </li>\n        </ul>\n        <form class=\"d-flex my-2 my-lg-0\">\n            <input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"${19:Search}\">\n            <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${20:Search}</button>\n        </form>\n    </div>\n</nav>$0"
   },
   "bs5-navbar-default": {
     "description": "Navbar default",
     "scope": "",
     "prefix": "bs5-navbar-default",
-    "body": "<nav class=\"navbar ${1|navbar-expand-sm,navbar-expand-md,navbar-expand-lg,navbar-expand-xl|} navbar-light bg-light\">\n\t  <div class=\"container\">\n\t\t<a class=\"navbar-brand\" href=\"${3:#}\">${2:Navbar}</a>\n\t\t<button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#${4:collapsibleNavId}\" aria-controls=\"${4:collapsibleNavId}\"\n\t\t\taria-expanded=\"false\" aria-label=\"${5:Toggle navigation}\">\n\t\t\t<span class=\"navbar-toggler-icon\"></span>\n\t\t</button>\n\t\t<div class=\"collapse navbar-collapse\" id=\"${4:collapsibleNavId}\">\n\t\t\t<ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">\n\t\t\t\t<li class=\"nav-item active\">\n\t\t\t\t\t<a class=\"nav-link\" href=\"${7:#}\">${6:Home} <span class=\"visually-hidden\">(current)</span></a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"nav-link\" href=\"${9:#}\">${8:Link}</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item dropdown\">\n\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"${11:#}\" id=\"${12:dropdownId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${10:Dropdown}</a>\n\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"${12:dropdownId}\">\n\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"${14:#}\">${13:Action 1}</a>\n\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 2}</a>\n\t\t\t\t\t</div>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t\t<form class=\"d-flex my-2 my-lg-0\">\n\t\t\t\t<input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"${17:Search}\">\n\t\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${18:Search}</button>\n\t\t\t</form>\n\t\t</div>\n  </div>\n</nav>\n$0"
+    "body": "<nav class=\"navbar navbar-expand-${1:sm|md|lg|-xl} navbar-light bg-light\">\n\t  <div class=\"container\">\n\t\t<a class=\"navbar-brand\" href=\"${3:#}\">${2:Navbar}</a>\n\t\t<button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#${4:collapsibleNavId}\" aria-controls=\"${4:collapsibleNavId}\"\n\t\t\taria-expanded=\"false\" aria-label=\"${5:Toggle navigation}\">\n\t\t\t<span class=\"navbar-toggler-icon\"></span>\n\t\t</button>\n\t\t<div class=\"collapse navbar-collapse\" id=\"${4:collapsibleNavId}\">\n\t\t\t<ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">\n\t\t\t\t<li class=\"nav-item active\">\n\t\t\t\t\t<a class=\"nav-link\" href=\"${7:#}\">${6:Home} <span class=\"visually-hidden\">(current)</span></a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"nav-link\" href=\"${9:#}\">${8:Link}</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item dropdown\">\n\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"${11:#}\" id=\"${12:dropdownId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${10:Dropdown}</a>\n\t\t\t\t\t<div class=\"dropdown-menu\" aria-labelledby=\"${12:dropdownId}\">\n\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"${14:#}\">${13:Action 1}</a>\n\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 2}</a>\n\t\t\t\t\t</div>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t\t<form class=\"d-flex my-2 my-lg-0\">\n\t\t\t\t<input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"${17:Search}\">\n\t\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${18:Search}</button>\n\t\t\t</form>\n\t\t</div>\n  </div>\n</nav>\n$0"
   },
   "bs5-navbar-minimal-a": {
     "description": "Navbar minimal a",
@@ -759,13 +771,13 @@
     "description": "Navbar placement",
     "scope": "",
     "prefix": "bs5-navbar-placement",
-    "body": "<nav class=\"navbar navbar-expand-lg navbar-light bg-light ${1|fixed-top,fixed-bottom,sticky-top|}\">\n  <div class=\"container\">\n    <a class=\"navbar-brand\" href=\"${3:#}\">${2:Navbar}</a>\n    <button class=\"navbar-toggler hidden-lg-up\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#${4:collapsibleNavId}\" aria-controls=\"${4:collapsibleNavId}\"\n        aria-expanded=\"false\" aria-label=\"${5:Toggle navigation}\"></button>\n    <div class=\"collapse navbar-collapse\" id=\"${4:collapsibleNavId}\">\n      <ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">\n        <li class=\"nav-item active\">\n          <a class=\"nav-link\" href=\"${7:#}\">${6:Home} <span class=\"visually-hidden\">(current)</span></a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"${9:#}\">${8:Link}</a>\n        </li>\n        <li class=\"nav-item dropdown\">\n          <a class=\"nav-link dropdown-toggle\" href=\"${11:#}\" id=\"${12:dropdownId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${10:Dropdown}</a>\n          <div class=\"dropdown-menu\" aria-labelledby=\"${12:dropdownId}\">\n            <a class=\"dropdown-item\" href=\"${14:#}\">${13:Action 1}</a>\n            <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 2}</a>\n          </div>\n        </li>\n      </ul>\n      <form class=\"d-flex my-2 my-lg-0\">\n        <input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"${17:Search}\">\n        <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${18:Search}</button>\n      </form>\n    </div>\n  </div>\n</nav>$0"
+    "body": "<nav class=\"navbar navbar-expand-lg navbar-light bg-light ${1:fixed-top|fixed-bottom|sticky-top}\">\n  <div class=\"container\">\n    <a class=\"navbar-brand\" href=\"${3:#}\">${2:Navbar}</a>\n    <button class=\"navbar-toggler hidden-lg-up\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#${4:collapsibleNavId}\" aria-controls=\"${4:collapsibleNavId}\"\n        aria-expanded=\"false\" aria-label=\"${5:Toggle navigation}\"></button>\n    <div class=\"collapse navbar-collapse\" id=\"${4:collapsibleNavId}\">\n      <ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">\n        <li class=\"nav-item active\">\n          <a class=\"nav-link\" href=\"${7:#}\">${6:Home} <span class=\"visually-hidden\">(current)</span></a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"${9:#}\">${8:Link}</a>\n        </li>\n        <li class=\"nav-item dropdown\">\n          <a class=\"nav-link dropdown-toggle\" href=\"${11:#}\" id=\"${12:dropdownId}\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${10:Dropdown}</a>\n          <div class=\"dropdown-menu\" aria-labelledby=\"${12:dropdownId}\">\n            <a class=\"dropdown-item\" href=\"${14:#}\">${13:Action 1}</a>\n            <a class=\"dropdown-item\" href=\"${16:#}\">${15:Action 2}</a>\n          </div>\n        </li>\n      </ul>\n      <form class=\"d-flex my-2 my-lg-0\">\n        <input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"${17:Search}\">\n        <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">${18:Search}</button>\n      </form>\n    </div>\n  </div>\n</nav>$0"
   },
   "bs5-pagination-alignment": {
     "description": "Pagination alignment",
     "scope": "",
     "prefix": "bs5-pagination-alignment",
-    "body": "<nav aria-label=\"${1:Page navigation}\">\n  <ul class=\"pagination ${2|justify-content-center,justify-content-end|}\">\n    <li class=\"page-item disabled\">\n      <a class=\"page-link\" href=\"${4:#}\" aria-label=\"${3:Previous}\">\n        <span aria-hidden=\"true\">&laquo;</span>\n        <span class=\"visually-hidden\">${3:Previous}</span>\n      </a>\n    </li>\n    <li class=\"page-item active\"><a class=\"page-link\" href=\"${6:#}\">$5</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"${8:#}\">$7</a></li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"${10:#}\" aria-label=\"${9:Next}\">\n        <span aria-hidden=\"true\">&raquo;</span>\n        <span class=\"visually-hidden\">${9:Next}</span>\n      </a>\n    </li>\n  </ul>\n</nav>$0"
+    "body": "<nav aria-label=\"${1:Page navigation}\">\n  <ul class=\"pagination justify-content-${2:center|end}\">\n    <li class=\"page-item disabled\">\n      <a class=\"page-link\" href=\"${4:#}\" aria-label=\"${3:Previous}\">\n        <span aria-hidden=\"true\">&laquo;</span>\n        <span class=\"visually-hidden\">${3:Previous}</span>\n      </a>\n    </li>\n    <li class=\"page-item active\"><a class=\"page-link\" href=\"${6:#}\">$5</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"${8:#}\">$7</a></li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"${10:#}\" aria-label=\"${9:Next}\">\n        <span aria-hidden=\"true\">&raquo;</span>\n        <span class=\"visually-hidden\">${9:Next}</span>\n      </a>\n    </li>\n  </ul>\n</nav>$0"
   },
   "bs5-pagination-default": {
     "description": "Pagination default",
@@ -777,7 +789,7 @@
     "description": "Pagination sized",
     "scope": "",
     "prefix": "bs5-pagination-sized",
-    "body": "<nav aria-label=\"${1:Page navigation}\">\n  <ul class=\"pagination ${2|pagination-lg,pagination-sm|}\">\n    <li class=\"page-item disabled\">\n      <a class=\"page-link\" href=\"${4:#}\" aria-label=\"${3:Previous}\">\n        <span aria-hidden=\"true\">&laquo;</span>\n        <span class=\"visually-hidden\">${3:Previous}</span>\n      </a>\n    </li>\n    <li class=\"page-item active\"><a class=\"page-link\" href=\"${6:#}\">$5</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"${8:#}\">$7</a></li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"${10:#}\" aria-label=\"${9:Next}\">\n        <span aria-hidden=\"true\">&raquo;</span>\n        <span class=\"visually-hidden\">${9:Next}</span>\n      </a>\n    </li>\n  </ul>\n</nav>$0"
+    "body": "<nav aria-label=\"${1:Page navigation}\">\n  <ul class=\"pagination pagination-${2:lg|sm}\">\n    <li class=\"page-item disabled\">\n      <a class=\"page-link\" href=\"${4:#}\" aria-label=\"${3:Previous}\">\n        <span aria-hidden=\"true\">&laquo;</span>\n        <span class=\"visually-hidden\">${3:Previous}</span>\n      </a>\n    </li>\n    <li class=\"page-item active\"><a class=\"page-link\" href=\"${6:#}\">$5</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"${8:#}\">$7</a></li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"${10:#}\" aria-label=\"${9:Next}\">\n        <span aria-hidden=\"true\">&raquo;</span>\n        <span class=\"visually-hidden\">${9:Next}</span>\n      </a>\n    </li>\n  </ul>\n</nav>$0"
   },
   "bs5-popover-default": {
     "description": "Popover default",
@@ -789,7 +801,7 @@
     "description": "Popover direction",
     "scope": "",
     "prefix": "bs5-popover-direction",
-    "body": "<button type=\"button\" class=\"btn btn-secondary\" data-bs-toggle=\"popover\" data-bs-placement=\"${4|top,right,bottom,left|}\" title=\"${2:Popup title}\" data-bs-content=\"${3:Popup content}\">${1:Trigger}</button>$0"
+    "body": "<button type=\"button\" class=\"btn btn-secondary\" data-bs-toggle=\"popover\" data-bs-placement=\"${4:top|right|bottom|left}\" title=\"${2:Popup title}\" data-bs-content=\"${3:Popup content}\">${1:Trigger}</button>$0"
   },
   "bs5-popover-dismissible": {
     "description": "Popover dismissible",
@@ -801,7 +813,7 @@
     "description": "Progress colored",
     "scope": "",
     "prefix": "bs5-progress-colored",
-    "body": "<div class=\"progress\">\n    <div class=\"progress-bar ${5|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\" role=\"progressbar\" style=\"width: ${4:25}%;\"\n        aria-valuenow=\"${4:25}\" aria-valuemin=\"${2:0}\" aria-valuemax=\"${3:100}\">${1:Description}</div>\n</div>$0"
+    "body": "<div class=\"progress\">\n    <div class=\"progress-bar bg-${5:primary|secondary|success|danger|warning|info|light|dark}\" role=\"progressbar\" style=\"width: ${4:25}%;\"\n        aria-valuenow=\"${4:25}\" aria-valuemin=\"${2:0}\" aria-valuemax=\"${3:100}\">${1:Description}</div>\n</div>$0"
   },
   "bs5-progress-default": {
     "description": "Progress default",
@@ -819,13 +831,13 @@
     "description": "Progress striped",
     "scope": "",
     "prefix": "bs5-progress-striped",
-    "body": "<div class=\"progress\">\n    <div class=\"progress-bar progress-bar-striped ${6:progress-bar-animated} ${5|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\" role=\"progressbar\"\n        style=\"width: ${4:25}%;\" aria-valuenow=\"${4:25}\" aria-valuemin=\"${2:0}\" aria-valuemax=\"${3:100}\">${1:Description}</div>\n</div>$0"
+    "body": "<div class=\"progress\">\n    <div class=\"progress-bar progress-bar-striped ${6:progress-bar-animated} bg-${5:primary|secondary|success|danger|warning|info|light|dark}\" role=\"progressbar\"\n        style=\"width: ${4:25}%;\" aria-valuenow=\"${4:25}\" aria-valuemin=\"${2:0}\" aria-valuemax=\"${3:100}\">${1:Description}</div>\n</div>$0"
   },
   "bs5-scrollspy-default": {
     "description": "Scrollspy default",
     "scope": "",
     "prefix": "bs5-scrollspy-default",
-    "body": "<style>\n\t${1|div,body|} {\n\t\tposition: relative;\n\t}\n</style>\n\n<${1|div,body|} data-bs-spy=\"scroll\" data-bs-target=\"#${2:navId}\">\n\t$4\n\t<div id=\"${2:navId}\">\n\t\t<ul class=\"nav nav-tabs\" role=\"tablist\">\n\t\t\t$3\n\t\t</ul>\n\t</div>\n\t$5\n</${1|div,body|}>\n\n\n<script>\n\tvar scrollSpy = new bootstrap.ScrollSpy(document.body, {\n\t  target: '#${2:navId}'\n\t})\n</script>$0"
+    "body": "<style>\n\t${1:div|body} {\n\t\tposition: relative;\n\t}\n</style>\n\n<${1:div|body} data-bs-spy=\"scroll\" data-bs-target=\"#${2:navId}\">\n\t$4\n\t<div id=\"${2:navId}\">\n\t\t<ul class=\"nav nav-tabs\" role=\"tablist\">\n\t\t\t$3\n\t\t</ul>\n\t</div>\n\t$5\n</${1:div|body}>\n\n\n<script>\n\tvar scrollSpy = new bootstrap.ScrollSpy(document.body, {\n\t  target: '#${2:navId}'\n\t})\n</script>$0"
   },
   "bs5-scrollspy-nav": {
     "description": "Scrollspy nav",
@@ -837,7 +849,7 @@
     "description": "Tooltip default",
     "scope": "",
     "prefix": "bs5-tooltip-default",
-    "body": "<button type=\"button\" class=\"btn btn-secondary\" data-bs-toggle=\"tooltip\" data-bs-placement=\"${2|top,end,bottom,start|}\" title=\"$1\">\n\t${3:Button name}\n</button>$0"
+    "body": "<button type=\"button\" class=\"btn btn-secondary\" data-bs-toggle=\"tooltip\" data-bs-placement=\"${2:top|end|bottom|start}\" title=\"$1\">\n\t${3:Button name}\n</button>$0"
   },
   "bs5-figure-default": {
     "description": "Figure default",
@@ -849,7 +861,7 @@
     "description": "Image default",
     "scope": "",
     "prefix": "bs5-image-default",
-    "body": "<img src=\"$1\" class=\"${2|img-fluid,img-thumbnail|} ${3|rounded-top,rounded-end,rounded-bottom,rounded-start,rounded-circle|}\" alt=\"$4\">$0"
+    "body": "<img src=\"$1\" class=\"img-${2:fluid|thumbnail} ${3:rounded-top|rounded-end|rounded-bottom|rounded-start|rounded-circle|}\" alt=\"$4\">$0"
   },
   "bs5-table-default": {
     "description": "Table default",
@@ -861,7 +873,7 @@
     "description": "Table special",
     "scope": "",
     "prefix": "bs5-table-special",
-    "body": "<table class=\"table ${1|table-striped,table-sm,table-bordered,table-hover,table-inverse|} ${2:table-inverse} ${3:table-responsive}\">\n\t<thead class=\"${4|thead-inverse,thead-default|}\">\n\t\t<tr>\n\t\t\t<th>$5</th>\n\t\t\t<th>$6</th>\n\t\t\t<th>$7</th>\n\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td scope=\"row\">$8</td>\n\t\t\t\t<td>$9</td>\n\t\t\t\t<td>$10</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td scope=\"row\">$11</td>\n\t\t\t\t<td>$12</td>\n\t\t\t\t<td>$13</td>\n\t\t\t</tr>\n\t\t</tbody>\n</table>\n$0"
+    "body": "<table class=\"table table-${1:striped|sm|bordered|hover|inverse} ${2:table-inverse} ${3:table-responsive}\">\n\t<thead class=\"${4:thead-inverse|thead-default}\">\n\t\t<tr>\n\t\t\t<th>$5</th>\n\t\t\t<th>$6</th>\n\t\t\t<th>$7</th>\n\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td scope=\"row\">$8</td>\n\t\t\t\t<td>$9</td>\n\t\t\t\t<td>$10</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td scope=\"row\">$11</td>\n\t\t\t\t<td>$12</td>\n\t\t\t\t<td>$13</td>\n\t\t\t</tr>\n\t\t</tbody>\n</table>\n$0"
   },
   "bs5-typography-blockquote-reverse": {
     "description": "Typography blockquote reverse",
@@ -885,7 +897,7 @@
     "description": "Typography display heading",
     "scope": "",
     "prefix": "bs5-typography-display-heading",
-    "body": "<h1 class=\"${1|display-1,display-2,display-3,display-4|}\">$2</h1>$0"
+    "body": "<h1 class=\"display-${1:1|2|3|4}\">$2</h1>$0"
   },
   "bs5-typography-lead": {
     "description": "Typography lead",
@@ -915,7 +927,7 @@
     "description": "Grid col",
     "scope": "",
     "prefix": "bs5-grid-col",
-    "body": "<div class=\"${1|col-xs-4,col-sm-4,col-md-4,col-lg-4,col-xl-4,col-4|}\">\n\t$3\n</div>$0"
+    "body": "<div class=\"col-${1:xs|sm|md|lg|xl}-${2:1-12}\">\n\t$3\n</div>$0"
   },
   "bs5-grid-container-fluid": {
     "description": "Grid container fluid",
@@ -933,7 +945,7 @@
     "description": "Grid default",
     "scope": "",
     "prefix": "bs5-grid-default",
-    "body": "<div class=\"container\">\n\t<div class=\"row\">\n\t\t<div class=\"${1|col-xs-4,col-sm-4,col-md-4,col-lg-4,col-xl-4,col-4|}\">\n\t\t\t$3\n\t\t</div>\n\t\t$4\n\t</div>\n</div>$0"
+    "body": "<div class=\"container\">\n\t<div class=\"row\">\n\t\t<div class=\"col-${1:xs|sm|md|lg|xl}-${2:1-12}\">\n\t\t\t$3\n\t\t</div>\n\t\t$4\n\t</div>\n</div>$0"
   },
   "bs5-grid-row": {
     "description": "Grid row",
@@ -987,19 +999,19 @@
     "description": "Responsive hide down",
     "scope": "",
     "prefix": "bs5-responsive-hide-down",
-    "body": "<div class=\"d-none ${1|d-sm,d-md,d-lg,d-xl|}-block\">\n\t$2\n</div>$0"
+    "body": "<div class=\"d-none d-${1:sm|md|lg|xl}-block\">\n\t$2\n</div>$0"
   },
   "bs5-responsive-hide-up": {
     "description": "Responsive hide up",
     "scope": "",
     "prefix": "bs5-responsive-hide-up",
-    "body": "<div class=\"${1|d-sm,d-md,d-lg,d-xl|}-none\">\n\t$2\n</div>$0"
+    "body": "<div class=\"d-${1:sm|md|lg|xl}-none\">\n\t$2\n</div>$0"
   },
   "bs5-responsive-print-show": {
     "description": "Responsive print show",
     "scope": "",
     "prefix": "bs5-responsive-print-show",
-    "body": "<div class=\"${1|d-print-block,d-print-inline,d-print-inline-block,d-print-none|}\">\n  \t$2\n</div>$0"
+    "body": "<div class=\"d-print-${1:block|inline|inline-block|none}\">\n  \t$2\n</div>$0"
   },
   "fa5-cdn": {
     "description": "FontAwesome CDN",
