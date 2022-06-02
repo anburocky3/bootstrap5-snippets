@@ -2,6 +2,11 @@
 
 We are updating the **Bootstrap 5 Quick Snippet** extension in regular basis to give you the best performance while developing projects.
 
+## [0.3.0] - 2022-06-01
+
+- feat(templates): Snippet suggestion & code improvements [@uguryuruk][https://github.com/uguryuruk]
+- Updated templates to: Bootstrap 5.2.0-beta1 & fontawesome-cdn
+
 ## [0.2.3] - 2022-05-29
 
 - feat(docs): Contribution page along with html templates.
@@ -18,9 +23,9 @@ We are updating the **Bootstrap 5 Quick Snippet** extension in regular basis to 
 
 - Added support for `.svelte` support.
 - Added the following:
-  - `bs5-navbar-offcanvas` snippet [(Docs)](https://getbootstrap.com/docs/5.1/components/navbar/#offcanvas)
-  - `bs5-card-placeholder` snippet [(Docs)](https://getbootstrap.com/docs/5.1/components/placeholders/)
-  - `bs5-form-floating` snippet [(Docs)](https://getbootstrap.com/docs/5.1/forms/floating-labels/#example)
+  - `bs5-navbar-offcanvas` snippet [(Docs)](https://getbootstrap.com/docs/5.2/components/navbar/#offcanvas)
+  - `bs5-card-placeholder` snippet [(Docs)](https://getbootstrap.com/docs/5.2/components/placeholders/)
+  - `bs5-form-floating` snippet [(Docs)](https://getbootstrap.com/docs/5.2/forms/floating-labels/#example)
   - Please tell us if you have any thing to add to the list.
   - #### Improves:
     - Added emoji to `openCyberDudeChannel`command
