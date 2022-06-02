@@ -2,8 +2,9 @@
 
 ![release badge](https://img.shields.io/visual-studio-marketplace/v/anbuselvanrocky.bootstrap5-vscode?logo=visual-studio-code)
 ![license badge](https://img.shields.io/github/license/anburocky3/bootstrap5-snippets)
+![Install badge](https://img.shields.io/visual-studio-marketplace/azure-devops/installs/total/AnbuselvanRocky.bootstrap5-vscode)
 
-Simple yet effective **Quick snippet extension** for **Visual Studio Code** ([VSCode](https://code.visualstudio.com/)). It contains **172** code snippets to build Bootstrap UI faster. This plugin works both in the stable & the insiders build.
+Simple yet effective **Quick snippet extension** for **Visual Studio Code** ([VSCode](https://code.visualstudio.com/)). It contains **173** code snippets to build Bootstrap UI faster. This plugin works both in the stable & the insiders build.
 
 ![Plugin in action](https://github.com/anburocky3/bootstrap5-snippets/blob/master/screenshots/help.gif?raw=true)
 
@@ -23,7 +24,7 @@ Suggestions, feedback, and other comments welcome via [@anbuselvanrocky](https:/
 
 1. Install plugin
    2 Press `F1`, paste `ext install bootstrap5-vscode` & then press `enter` (or)
-2. Goto extensions by pressing `Ctrl-Shift-X` (Windows/Linux) or `Cmd-Shift-X` (Mac) & Search for `Bootstrap 5 Quick Snippets`, click on install
+2. Go to extensions by pressing `Ctrl-Shift-X` (Windows/Linux) or `Cmd-Shift-X` (Mac) & Search for `Bootstrap 5 Quick Snippets`, click on install
 3. Reload your editor
 
 You are good to go.
@@ -42,15 +43,15 @@ If a template trigger starts with `@` variation, this snippet targets the attrib
 
 `@` => Targets HTML attribute
 
-## Changelog
+## 🤖 Changelog
 
-See [here](https://github.com/anburocky3/bootstrap5-snippets/blob/master/CHANGELOG.md)
+We do track all our changes in our changelog. [Check the changelog here](https://github.com/anburocky3/bootstrap5-snippets/blob/master/CHANGELOG.md)
 
-## Documentation
+## 📝 How to Contribute?
 
-Here are available live templates
+Make the snippet more cool by contributing. [Contributing instructions here](https://github.com/anburocky3/bootstrap5-snippets/blob/master/CONTRIBUTION.md)
 
-### Bootstrap 5 snippets
+## 📃 Documentation - Bootstrap 5 snippets
 
 | Trigger                               | Description                   |
 | ------------------------------------- | ----------------------------- |
@@ -146,6 +147,7 @@ Here are available live templates
 | bs5-**form-select-sizing**            | Form select sizing            |
 | bs5-**form-select**                   | Form select                   |
 | bs5-**form-submit**                   | Form submit                   |
+| bs5-**form-switch**                   | Form switch                   |
 | bs5-**form-textarea**                 | Form textarea                 |
 | bs5-**form-validation**               | Form validation               |
 | bs5-**igroup-button**                 | Igroup button                 |
@@ -261,6 +263,11 @@ Here are available live templates
 
 - [Anbuselvan Rocky](https://facebook.com/anburocky3)
 - Special thanks to [Ashok Koyi](https://github.com/thekalinga)
+
+## Contributors
+
+- [Adam Kortus](https://github.com/dealeros)
+- [Ugur y](https://github.com/uguryuruk)
 
 ## License
 
