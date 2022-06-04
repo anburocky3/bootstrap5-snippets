@@ -1,14 +1,14 @@
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#${2:modelId}">
+<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#${2:modalId}">
   ${1:Launch}
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="${2:modelId}" tabindex="-1" role="dialog" aria-labelledby="${4:modelTitleId}" aria-hidden="true">
+<div class="modal fade" id="${2:modalId}" tabindex="-1" role="dialog" aria-labelledby="${4:modalTitleId}" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 				<div class="modal-header">
-						<h5 class="modal-title">${3:Modal title}</h5>
+						<h5 class="modal-title" id="${4:modalTitleId}">${3:Modal title}</h5>
 					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 			<div class="modal-body">
@@ -25,9 +25,9 @@
 </div>
 
 <script>
-	var ${2:modelId} = document.getElementById('${2:modelId}');
+	var ${2:modalId} = document.getElementById('${2:modalId}');
 
-	${2:modelId}.addEventListener('show.bs.modal', function (event) {
+	${2:modalId}.addEventListener('show.bs.modal', function (event) {
 		  // Button that triggered the modal
 		  let button = event.relatedTarget;
 		  // Extract info from data-bs-* attributes

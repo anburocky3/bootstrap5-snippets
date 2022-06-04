@@ -1,5 +1,5 @@
-<nav class="nav ${1|justify-content-center,justify-content-end|}">
-  <a class="nav-link active" href="${3:#}">${2:Active link}</a>
-  <a class="nav-link" href="${5:#}">${4:Link}</a>
-  <a class="nav-link disabled" href="${7:#}">${6:Disabled link}</a>
+<nav class="nav ${1|justify-content-center,justify-content-start,justify-content-end|} ${2| ,flex-column,flex-sm-column,flex-md-column,flex-lg-column,flex-xl-column,flex-xxl-column|}">
+  <a class="nav-link active" href="${4:#}" aria-current="page">${3:Active link}</a>
+  <a class="nav-link" href="${6:#}">${5:Link}</a>
+  <a class="nav-link disabled" href="${8:#}">${7:Disabled link}</a>
 </nav>
