@@ -1,21 +1,23 @@
-<table class="table">
-	<thead>
-		<tr>
-			<th>$1</th>
-			<th>$2</th>
-			<th>$3</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td scope="row">$4</td>
-			<td>$5</td>
-			<td>$6</td>
-		</tr>
-		<tr>
-			<td scope="row">$7</td>
-			<td>$8</td>
-			<td>$9</td>
-		</tr>
-	</tbody>
-</table>
+<div class="${1|table-responsive,table-responsive-sm,table-responsive-md,table-responsive-lg,table-responsive-xl,table-responsive-xxl|}">
+	<table class="table ${2|table-primary,table-secondary,table-success,table-danger,table-warning,table-info,table-light,table-dark|}">
+		<thead>
+			<tr>
+				<th scope="col">${3:Column 1}</th>
+				<th scope="col">${4:Column 2}</th>
+				<th scope="col">${5:Column 3}</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="">
+				<td scope="row">${6:R1C1}</td>
+				<td>${7:R1C2}</td>
+				<td>${8:R1C3}</td>
+			</tr>
+			<tr class="">
+				<td scope="row">${9:Item}</td>
+				<td>${10:Item}</td>
+				<td>${11:Item}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
