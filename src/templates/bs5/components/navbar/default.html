@@ -1,14 +1,14 @@
-<nav class="navbar ${1|navbar-expand-sm,navbar-expand-md,navbar-expand-lg,navbar-expand-xl|} navbar-light bg-light">
+<nav class="navbar ${1|navbar-expand-sm,navbar-expand-md,navbar-expand-lg,navbar-expand-xl,navbar-expand-xxl|} navbar-light bg-light">
 	  <div class="container">
-		<a class="navbar-brand" href="${3:#}">${2:Navbar}</a>
+		<a class="navbar-brand" href="${3:#}">${2|Navbar,img|}</a>
 		<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#${4:collapsibleNavId}" aria-controls="${4:collapsibleNavId}"
 			aria-expanded="false" aria-label="${5:Toggle navigation}">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="${4:collapsibleNavId}">
 			<ul class="navbar-nav me-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-					<a class="nav-link" href="${7:#}">${6:Home} <span class="visually-hidden">(current)</span></a>
+				<li class="nav-item">
+					<a class="nav-link active" href="${7:#}" aria-current="page">${6:Home} <span class="visually-hidden">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="${9:#}">${8:Link}</a>
