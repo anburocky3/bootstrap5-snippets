@@ -1,4 +1,8 @@
-<blockquote class="blockquote">
-	<p>$1</p>
-	<footer class="blockquote-footer">$2 <cite title="${3:Source Title}">${3:Source Title}</cite></footer>
-</blockquote>
+<figure class="${1|text-start,text-center,text-end|}">
+	<blockquote class="blockquote">
+	  <p>${2:A well-known quote, contained in a blockquote element.}</p>
+	</blockquote>
+	<figcaption class="blockquote-footer">
+	  ${3:Someone famous in} <cite title="${4:Source Title}">${4:Source Title}</cite>
+	</figcaption>
+  </figure>

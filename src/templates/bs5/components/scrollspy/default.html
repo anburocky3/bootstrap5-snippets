@@ -3,8 +3,9 @@
 		position: relative;
 	}
 </style>
+<!-- Ids in the navbar a-href and ids in the content should match-->
 
-<${1|div,body|} data-bs-spy="scroll" data-bs-target="#${2:navId}">
+<${1|div,body|} data-bs-spy="scroll" data-bs-target="#${2:navId}" data-bs-smooth-scroll="true">
 	$4
 	<div id="${2:navId}">
 		<ul class="nav nav-tabs" role="tablist">
