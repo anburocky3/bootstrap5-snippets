@@ -2,6 +2,11 @@
 
 We are updating the **Bootstrap 5 Quick Snippet** extension in regular basis to give you the best performance while developing projects.
 
+## [0.4.0] - 2022-08-29
+
+- feat(templates): Snippet suggestion & code improvements [@uguryuruk][https://github.com/uguryuruk]
+- Updated templates to: Bootstrap 5.2.0
+
 ## [0.3.0] - 2022-06-01
 
 - feat(templates): Snippet suggestion & code improvements [@uguryuruk][https://github.com/uguryuruk]
