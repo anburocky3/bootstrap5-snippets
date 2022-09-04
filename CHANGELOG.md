@@ -2,6 +2,10 @@
 
 We are updating the **Bootstrap 5 Quick Snippet** extension in regular basis to give you the best performance while developing projects.
 
+## [0.4.1] - 2022-09-04
+
+- docs: Readme table not aligned properly
+
 ## [0.4.0] - 2022-08-29
 
 - feat(templates): Snippet suggestion & code improvements [@uguryuruk][https://github.com/uguryuruk]
