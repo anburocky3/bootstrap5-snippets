@@ -16,6 +16,8 @@ Inspired from [Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets](
 
 The detailed list of supported template triggers are listed [below](#documentation)
 
+Would you like to watch a quick tutorial on [Youtube](https://www.youtube.com/watch?v=vEF5mhRcFLw)?
+
 Feel free to let me know what else you want to be added via the [issues](https://github.com/anburocky3/bootstrap5-snippets/issues)
 
 Suggestions, feedback, and other comments welcome via [@anbuselvanrocky](https://twitter.com/anbuselvanrocky) on Twitter.
