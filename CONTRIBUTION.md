@@ -11,3 +11,4 @@ You can fork this repository and you can modify the snippet formats which is loc
 ### Our Contributors 💓
 
 - [dealeros](https://github.com/dealeros) Adam Kortus
+- [Ugur y](https://github.com/uguryuruk) (Special Thanks)

@@ -4,7 +4,7 @@
 ![license badge](https://img.shields.io/github/license/anburocky3/bootstrap5-snippets)
 ![Install badge](https://img.shields.io/visual-studio-marketplace/azure-devops/installs/total/AnbuselvanRocky.bootstrap5-vscode)
 
-Simple yet effective **Quick snippet extension** for **Visual Studio Code** ([VSCode](https://code.visualstudio.com/)). It contains **195** code snippets to build Bootstrap UI faster. This plugin works both in the stable & the insiders build.
+Simple yet effective **Quick snippet extension** for **Visual Studio Code** ([VSCode](https://code.visualstudio.com/)). It contains **179** code snippets to build Bootstrap UI faster. This plugin works both in the stable & the insiders build.
 
 ![Plugin in action](https://github.com/anburocky3/bootstrap5-snippets/blob/master/screenshots/help.gif?raw=true)
 
@@ -14,7 +14,7 @@ Inspired from [Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets](
 
 ## Help
 
-The detailed list of supported template triggers are listed [below](#documentation)
+The detailed list of supported template triggers are listed [below](#📃-documentation-bootstrap-5-snippets)
 
 Would you like to watch a quick tutorial on [Youtube](https://www.youtube.com/watch?v=vEF5mhRcFLw)?
 
@@ -121,49 +121,37 @@ Make the snippet more cool by contributing. [Contributing instructions here](htt
 | bs5-**dropdown-split**                  | Dropdown split                  |
 | bs5-**dropdown-up-split**               | Dropdown up split               |
 | bs5-**dropdown-up**                     | Dropdown up                     |
-| bs5-**form-checkbox-custom**            | Form checkbox custom            |
 | bs5-**form-checkbox-inline**            | Form checkbox inline            |
 | bs5-**form-checkbox-nolabel**           | Form checkbox nolabel           |
 | bs5-**form-checkbox**                   | Form checkbox                   |
 | bs5-**form-email**                      | Form email                      |
-| bs5-**form-file-custom**                | Form file custom                |
 | bs5-**form-file**                       | Form file                       |
 | bs5-**form-floating**                   | Form floating                   |
 | bs5-**form-grid**                       | Form grid                       |
-| bs5-**form-group-text**                 | Form group text                 |
 | bs5-**form-group**                      | Form group                      |
 | bs5-**form-help-text-inline**           | Form help text inline           |
 | bs5-**form-help-text**                  | Form help text                  |
 | bs5-**form-hidden**                     | Form hidden                     |
 | bs5-**form-inline**                     | Form inline                     |
 | bs5-**form-input-sizing**               | Form input sizing               |
-| bs5-**form-input-text**                 | Form input text                 |
 | bs5-**form-input**                      | Form input                      |
 | bs5-**form-multi-select-custom**        | Form multi select custom        |
-| bs5-**form-multi-select-sizing**        | Form multi select sizing        |
-| bs5-**form-multi-select**               | Form multi select               |
 | bs5-**form-password**                   | Form password                   |
-| bs5-**form-radio-custom**               | Form radio custom               |
 | bs5-**form-radio-inline**               | Form radio inline               |
 | bs5-**form-radio-nolabel**              | Form radio nolabel              |
 | bs5-**form-radio**                      | Form radio                      |
 | bs5-**form-reset**                      | Form reset                      |
 | bs5-**form-select-custom**              | Form select custom              |
-| bs5-**form-select-sizing**              | Form select sizing              |
-| bs5-**form-select**                     | Form select                     |
 | bs5-**form-submit**                     | Form submit                     |
 | bs5-**form-switch**                     | Form switch                     |
 | bs5-**form-textarea**                   | Form textarea                   |
 | bs5-**form-validation**                 | Form validation                 |
 | bs5-**igroup-button**                   | Igroup button                   |
-| bs5-**igroup-checkbox-radio**           | Igroup checkbox radio           |
 | bs5-**igroup-checkbox**                 | Igroup checkbox                 |
 | bs5-**igroup-dropdown-end**             | Igroup dropdown end             |
 | bs5-**igroup-dropdown-segmented-end**   | Igroup dropdown segmented end   |
 | bs5-**igroup-dropdown-segmented-start** | Igroup dropdown segmented start |
-| bs5-**igroup-dropdown-segmented**       | Igroup dropdown segmented       |
 | bs5-**igroup-dropdown-start**           | Igroup dropdown start           |
-| bs5-**igroup-dropdown**                 | Igroup dropdown                 |
 | bs5-**igroup-radio**                    | Igroup radio                    |
 | bs5-**igroup-size**                     | Igroup size                     |
 | bs5-**igroup-text-both**                | Igroup text both                |
@@ -202,9 +190,7 @@ Make the snippet more cool by contributing. [Contributing instructions here](htt
 | bs5-**navbar-placement**                | Navbar placement                |
 | bs5-**offcanvas-scrollableandbackdrop** | Offcanvas scrollableandbackdrop |
 | bs5-**offcanvas-static**                | Offcanvas static                |
-| bs5-**pagination-alignment**            | Pagination alignment            |
 | bs5-**pagination-default**              | Pagination default              |
-| bs5-**pagination-sized**                | Pagination sized                |
 | bs5-**placeholder-default**             | Placeholder default             |
 | bs5-**popover-default**                 | Popover default                 |
 | bs5-**popover-direction**               | Popover direction               |
@@ -226,7 +212,6 @@ Make the snippet more cool by contributing. [Contributing instructions here](htt
 | bs5-**image-picture**                   | Image picture                   |
 | bs5-**table-default**                   | Table default                   |
 | bs5-**table-special**                   | Table special                   |
-| bs5-**typography-blockquote-reverse**   | Typography blockquote reverse   |
 | bs5-**typography-blockquote**           | Typography blockquote           |
 | bs5-**typography-description-list**     | Typography description list     |
 | bs5-**typography-display-heading**      | Typography display heading      |
@@ -235,7 +220,6 @@ Make the snippet more cool by contributing. [Contributing instructions here](htt
 | bs5-**typography-list-unstyled**        | Typography list unstyled        |
 | bs5-**typography-muted-text**           | Typography muted text           |
 | bs5-**grid-col**                        | Grid col                        |
-| bs5-**grid-container-fluid**            | Grid container fluid            |
 | bs5-**grid-container**                  | Grid container                  |
 | bs5-**grid-default**                    | Grid default                    |
 | bs5-**grid-row**                        | Grid row                        |
@@ -250,7 +234,7 @@ Make the snippet more cool by contributing. [Contributing instructions here](htt
 | bs5-**responsive-hide-up**              | Responsive hide up              |
 | bs5-**responsive-print-show**           | Responsive print show           |
 | css-**comment-block**                   | Comment block                   |
-| fa5-**cdn**                             | Cdn                             |
+| fa6-**cdn**                             | Cdn                             |
 | html-**comment-block**                  | Comment block                   |
 
 ### Commands
@@ -279,7 +263,7 @@ Make the snippet more cool by contributing. [Contributing instructions here](htt
 - [jinja-html](https://jinja.palletsprojects.com/)
 - [erb](https://www.stuartellis.name/articles/erb/)
 - HTML (Eex)
-- volt
+- [volt](http://www.volt-lang.org/)
 - [nunjucks](https://mozilla.github.io/)
 - [svelte](https://svelte.dev/)
 
@@ -291,7 +275,7 @@ Make the snippet more cool by contributing. [Contributing instructions here](htt
 ## Contributors
 
 - [Adam Kortus](https://github.com/dealeros)
-- [Ugur y](https://github.com/uguryuruk)
+- [Ugur y](https://github.com/uguryuruk) (Special Thanks)
 
 ## License
 
