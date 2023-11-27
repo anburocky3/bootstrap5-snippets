@@ -2,7 +2,7 @@
 
 ## What's in the folder
 
-- This folder contains all of the files necessary for your extension.
+- This folder contains all the files necessary for your extension.
 - `package.json` - this is the manifest file that defines the location of the snippet file and specifies the language of the snippets.
 - `snippets/snippets.json` - the file containing all snippets.
 

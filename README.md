@@ -4,13 +4,17 @@
 ![license badge](https://img.shields.io/github/license/anburocky3/bootstrap5-snippets)
 ![Install badge](https://img.shields.io/visual-studio-marketplace/azure-devops/installs/total/AnbuselvanRocky.bootstrap5-vscode)
 
-Simple yet effective **Quick snippet extension** for **Visual Studio Code** ([VSCode](https://code.visualstudio.com/)). It contains **179** code snippets to build Bootstrap UI faster. This plugin works both in the stable & the insiders build.
+Simple yet effective **Quick snippet extension** for **Visual Studio Code** ([VSCode](https://code.visualstudio.com/)).
+It contains **179** code snippets to build Bootstrap UI faster. This plugin works both in the stable & the insiders
+build.
 
 ![Plugin in action](https://github.com/anburocky3/bootstrap5-snippets/blob/master/screenshots/help.gif?raw=true)
 
 ## Idea
 
-Inspired from [Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode) plugin. We thought it would be cool if we have only [Bootstrap 5](https://get.bootstrap.com) snippets. So created it.
+Inspired
+from [Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode)
+plugin. We thought it would be cool if we have only [Bootstrap 5](https://get.bootstrap.com) snippets. So created it.
 
 ## Help
 
@@ -18,28 +22,33 @@ The detailed list of supported template triggers are listed [below](#📃-docume
 
 Would you like to watch a quick tutorial on [Youtube](https://www.youtube.com/watch?v=vEF5mhRcFLw)?
 
-Feel free to let me know what else you want to be added via the [issues](https://github.com/anburocky3/bootstrap5-snippets/issues)
+Feel free to let me know what else you want to be added via
+the [issues](https://github.com/anburocky3/bootstrap5-snippets/issues)
 
-Suggestions, feedback, and other comments welcome via [@anbuselvanrocky](https://twitter.com/anbuselvanrocky) on Twitter.
+Suggestions, feedback, and other comments welcome via [@anbuselvanrocky](https://twitter.com/anbuselvanrocky) on
+Twitter.
 
 ## Installation (in 2 easy steps)
 
 1. Install plugin
-   2 Press `F1`, paste `ext install bootstrap5-vscode` & then press `enter` (or)
-2. Go to extensions by pressing `Ctrl-Shift-X` (Windows/Linux) or `Cmd-Shift-X` (Mac) & Search for `Bootstrap 5 Quick Snippets`, click on install
-3. Reload your editor
+2. Press `F1`, paste `ext install bootstrap5-vscode` & then press `enter` (or)
+3. Go to extensions by pressing `Ctrl-Shift-X` (Windows/Linux) or `Cmd-Shift-X` (Mac) & Search
+   for `Bootstrap 5 Quick Snippets`, click on install
+4. Reload your editor
 
 You are good to go.
 
 ## Usage
 
-To use the bootstrap snippets, open an HTML file, and start typing `b5-`, followed by pressing `Ctrl+Space`. A list of bootstrap snippets will show up
+To use the bootstrap snippets, open an HTML file, and start typing `b5-`, followed by pressing `Ctrl+Space`. A list of
+bootstrap snippets will show up
 
 The detailed list of supported actions are listed below under the documentation section
 
 Here are the conventions that will make it easy to lookup templates
 
-If a template trigger starts with `@` variation, this snippet targets the attribute of an HTML element in your markup. Think of `@` as `HTML attribute`
+If a template trigger starts with `@` variation, this snippet targets the attribute of an HTML element in your markup.
+Think of `@` as `HTML attribute`
 
 ## Mind map
 
@@ -47,11 +56,13 @@ If a template trigger starts with `@` variation, this snippet targets the attrib
 
 ## 🤖 Changelog
 
-We do track all our changes in our changelog. [Check the changelog here](https://github.com/anburocky3/bootstrap5-snippets/blob/master/CHANGELOG.md)
+We do track all our changes in our
+changelog. [Check the changelog here](https://github.com/anburocky3/bootstrap5-snippets/blob/master/CHANGELOG.md)
 
 ## 📝 How to Contribute?
 
-Make the snippet more cool by contributing. [Contributing instructions here](https://github.com/anburocky3/bootstrap5-snippets/blob/master/CONTRIBUTION.md)
+Make the snippet more cool by
+contributing. [Contributing instructions here](https://github.com/anburocky3/bootstrap5-snippets/blob/master/CONTRIBUTION.md)
 
 ## 📃 Documentation - Bootstrap 5 snippets
 
@@ -239,7 +250,11 @@ Make the snippet more cool by contributing. [Contributing instructions here](htt
 
 ### Commands
 
-- **[ Experimental ]** - Added new command "`Open CyberDude YT Channel`" that will open cyberdude channel from inside `VSCode`. Just press `CTRL + P` and type `cyberdude` it will open the [`CyberDude YouTube Channel`](https://www.youtube.com/user/CyberDudeNetworks) and has the ability to visit [`cyberdude website`](https://cyberdudenetworks.com) as well. This feature is experimental and can be removed in the future.
+- **[ Experimental ]** - Added new command "`Open CyberDude YT Channel`" that will open cyberdude channel from
+  inside `VSCode`. Just press `CTRL + P` and type `cyberdude` it will open
+  the [`CyberDude YouTube Channel`](https://www.youtube.com/user/CyberDudeNetworks) and has the ability to
+  visit [`cyberdude website`](https://cyberdudenetworks.com) as well. This feature is experimental and can be removed in
+  the future.
 
 ## Supported languages
 

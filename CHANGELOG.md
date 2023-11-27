@@ -2,6 +2,10 @@
 
 We are updating the **Bootstrap 5 Quick Snippet** extension in regular basis to give you the best performance while developing projects.
 
+## [0.4.3] - 2023-11-27
+
+- fix(templates): Updated Bootstrap CDN to `5.2.1` to `5.2.3`
+
 ## [0.4.1] - 2022-09-04
 
 - docs: Readme table not aligned properly
