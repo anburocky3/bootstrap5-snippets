@@ -1,31 +1,37 @@
-<div class="${1|table-responsive,table-responsive-sm,table-responsive-md,table-responsive-lg,table-responsive-xl,table-responsive-xxl|}">
-	<table class="table ${2|table-striped,table-striped-columns,table-sm|}
-	${3:table-hover}	
-	${4|table-borderless,table-bordered|}
-	${5|table-primary,table-secondary,table-success,table-danger,table-warning,table-info,table-light,table-dark|}
-	${6|align-middle,align-botton,align-top|}">
+<div
+	class="${1|table-responsive,table-responsive-sm,table-responsive-md,table-responsive-lg,table-responsive-xl,table-responsive-xxl|}"
+>
+	<table
+		class="table ${2|table-striped,table-striped-columns,table-sm|} ${3:table-hover} ${4|table-borderless,table-bordered|} ${5|table-primary,table-secondary,table-success,table-danger,table-warning,table-info,table-light,table-dark|} ${6|align-middle,align-botton,align-top|}"
+	>
 		<thead class="${7|table-light,table-dark|}">
-			<caption>${8:Table Name}</caption>
+			<caption>
+				${8:Table Name}
+			</caption>
 			<tr>
 				<th>${9:Column 1}</th>
 				<th>${10:Column 2}</th>
 				<th>${11:Column 3}</th>
 			</tr>
-			</thead>
-			<tbody class="${12:table-group-divider}">
-				<tr class="${13|table-primary,table-secondary,table-success,table-danger,table-warning,table-info,table-light,table-dark|}" >
-					<td scope="row">${14:Item}</td>
-					<td>${15:Item}</td>
-					<td>${16:Item}</td>
-				</tr>
-				<tr class="${17|table-primary,table-secondary,table-success,table-danger,table-warning,table-info,table-light,table-dark|}">
-					<td scope="row">${18:Item}</td>
-					<td>${19:Item}</td>
-					<td>${20:Item}</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				$21
-			</tfoot>
+		</thead>
+		<tbody class="${12:table-group-divider}">
+			<tr
+				class="${13|table-primary,table-secondary,table-success,table-danger,table-warning,table-info,table-light,table-dark|}"
+			>
+				<td scope="row">${14:Item}</td>
+				<td>${15:Item}</td>
+				<td>${16:Item}</td>
+			</tr>
+			<tr
+				class="${17|table-primary,table-secondary,table-success,table-danger,table-warning,table-info,table-light,table-dark|}"
+			>
+				<td scope="row">${18:Item}</td>
+				<td>${19:Item}</td>
+				<td>${20:Item}</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			$21
+		</tfoot>
 	</table>
 </div>

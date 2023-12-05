@@ -1,26 +1,51 @@
-<nav class="navbar ${1|navbar-expand-sm,navbar-expand-md,navbar-expand-lg,navbar-expand-xl,navbar-expand-xxl|} ${2|navbar-dark,navbar-light|} ${3|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}">
-    <a class="navbar-brand" href="${5:#}">${4|Navbar,img|}</a>
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#${6:collapsibleNavId}" aria-controls="${6:collapsibleNavId}"
-        aria-expanded="false" aria-label="${7:Toggle navigation}"></button>
-    <div class="collapse navbar-collapse" id="${6:collapsibleNavId}">
-        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" href="${9:#}" aria-current="page">${8:Home} <span class="visually-hidden">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="${11:#}">${10:Link}</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="${13:#}" id="${14:dropdownId}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${12:Dropdown}</a>
-                <div class="dropdown-menu" aria-labelledby="${14:dropdownId}">
-                    <a class="dropdown-item" href="${16:#}">${15:Action 1}</a>
-                    <a class="dropdown-item" href="${18:#}">${17:Action 2}</a>
-                </div>
-            </li>
-        </ul>
-        <form class="d-flex my-2 my-lg-0">
-            <input class="form-control me-sm-2" type="text" placeholder="${19:Search}">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">${20:Search}</button>
-        </form>
-    </div>
+<nav
+	class="navbar ${1|navbar-expand-sm,navbar-expand-md,navbar-expand-lg,navbar-expand-xl,navbar-expand-xxl|} ${2|navbar-dark,navbar-light|} ${3|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}"
+>
+	<a class="navbar-brand" href="${5:#}">${4|Navbar,img|}</a>
+	<button
+		class="navbar-toggler d-lg-none"
+		type="button"
+		data-bs-toggle="collapse"
+		data-bs-target="#${6:collapsibleNavId}"
+		aria-controls="${6:collapsibleNavId}"
+		aria-expanded="false"
+		aria-label="${7:Toggle navigation}"
+	></button>
+	<div class="collapse navbar-collapse" id="${6:collapsibleNavId}">
+		<ul class="navbar-nav me-auto mt-2 mt-lg-0">
+			<li class="nav-item">
+				<a class="nav-link active" href="${9:#}" aria-current="page"
+					>${8:Home} <span class="visually-hidden">(current)</span></a
+				>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${11:#}">${10:Link}</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a
+					class="nav-link dropdown-toggle"
+					href="${13:#}"
+					id="${14:dropdownId}"
+					data-bs-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false"
+					>${12:Dropdown}</a
+				>
+				<div class="dropdown-menu" aria-labelledby="${14:dropdownId}">
+					<a class="dropdown-item" href="${16:#}">${15:Action 1}</a>
+					<a class="dropdown-item" href="${18:#}">${17:Action 2}</a>
+				</div>
+			</li>
+		</ul>
+		<form class="d-flex my-2 my-lg-0">
+			<input
+				class="form-control me-sm-2"
+				type="text"
+				placeholder="${19:Search}"
+			/>
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+				${20:Search}
+			</button>
+		</form>
+	</div>
 </nav>

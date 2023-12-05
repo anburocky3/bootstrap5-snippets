@@ -1,19 +1,73 @@
 <!-- Nav tabs -->
 <ul class="nav ${1|nav-tabs,nav-pills|}" id="${2:myTab}" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="${4:home}-tab" data-bs-toggle="tab" data-bs-target="#${4:home}" type="button" role="tab" aria-controls="${4:home}" aria-selected="true">${3:Home}</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="${6:profile}-tab" data-bs-toggle="tab" data-bs-target="#${6:profile}" type="button" role="tab" aria-controls="${6:profile}" aria-selected="false">${5:Profile}</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="${8:messages}-tab" data-bs-toggle="tab" data-bs-target="#${8:messages}" type="button" role="tab" aria-controls="${8:messages}" aria-selected="false">${7:Messages}</button>
-  </li>
+	<li class="nav-item" role="presentation">
+		<button
+			class="nav-link active"
+			id="${4:home}-tab"
+			data-bs-toggle="tab"
+			data-bs-target="#${4:home}"
+			type="button"
+			role="tab"
+			aria-controls="${4:home}"
+			aria-selected="true"
+		>
+			${3:Home}
+		</button>
+	</li>
+	<li class="nav-item" role="presentation">
+		<button
+			class="nav-link"
+			id="${6:profile}-tab"
+			data-bs-toggle="tab"
+			data-bs-target="#${6:profile}"
+			type="button"
+			role="tab"
+			aria-controls="${6:profile}"
+			aria-selected="false"
+		>
+			${5:Profile}
+		</button>
+	</li>
+	<li class="nav-item" role="presentation">
+		<button
+			class="nav-link"
+			id="${8:messages}-tab"
+			data-bs-toggle="tab"
+			data-bs-target="#${8:messages}"
+			type="button"
+			role="tab"
+			aria-controls="${8:messages}"
+			aria-selected="false"
+		>
+			${7:Messages}
+		</button>
+	</li>
 </ul>
 
 <!-- Tab panes -->
 <div class="tab-content">
-  <div class="tab-pane active" id="${4:home}" role="tabpanel" aria-labelledby="${4:home}-tab">${9: ${4:home} }</div>
-  <div class="tab-pane" id="${6:profile}" role="tabpanel" aria-labelledby="${6:profile}-tab">${10: ${6:profile} }</div>
-  <div class="tab-pane" id="${8:messages}" role="tabpanel" aria-labelledby="${8:messages}-tab">${11: ${8:messages} }</div>
+	<div
+		class="tab-pane active"
+		id="${4:home}"
+		role="tabpanel"
+		aria-labelledby="${4:home}-tab"
+	>
+		${9: ${4:home} }
+	</div>
+	<div
+		class="tab-pane"
+		id="${6:profile}"
+		role="tabpanel"
+		aria-labelledby="${6:profile}-tab"
+	>
+		${10: ${6:profile} }
+	</div>
+	<div
+		class="tab-pane"
+		id="${8:messages}"
+		role="tabpanel"
+		aria-labelledby="${8:messages}-tab"
+	>
+		${11: ${8:messages} }
+	</div>
 </div>

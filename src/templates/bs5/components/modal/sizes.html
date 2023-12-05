@@ -1,27 +1,49 @@
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#${2:modalId}">
-  ${1:Launch}
+<button
+	type="button"
+	class="btn btn-primary btn-lg"
+	data-bs-toggle="modal"
+	data-bs-target="#${2:modalId}"
+>
+	${1:Launch}
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="${2:modalId}" tabindex="-1" role="dialog" aria-labelledby="${6:modalTitleId}" aria-hidden="true">
-	<div class="modal-dialog ${3|modal-sm,modal-lg,modal-xl|} ${4|modal-fullscreen,modal-fullscreen-sm-down,modal-fullscreen-md-down,modal-fullscreen-lg-down,modal-fullscreen-xl-down,modal-fullscreen-xxl-down|}" role="document">
+<div
+	class="modal fade"
+	id="${2:modalId}"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="${6:modalTitleId}"
+	aria-hidden="true"
+>
+	<div
+		class="modal-dialog ${3|modal-sm,modal-lg,modal-xl|} ${4|modal-fullscreen,modal-fullscreen-sm-down,modal-fullscreen-md-down,modal-fullscreen-lg-down,modal-fullscreen-xl-down,modal-fullscreen-xxl-down|}"
+		role="document"
+	>
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="${6:modalTitleId}">${5:Modal title}</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
+				<h5 class="modal-title" id="${6:modalTitleId}">
+					${5:Modal title}
+				</h5>
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="modal"
+					aria-label="Close"
+				></button>
 			</div>
-			<div class="modal-body">
-				${9:Body}
-			</div>
+			<div class="modal-body">${9:Body}</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">${7:Close}</button>
+				<button
+					type="button"
+					class="btn btn-secondary"
+					data-bs-dismiss="modal"
+				>
+					${7:Close}
+				</button>
 				<button type="button" class="btn btn-primary">${8:Save}</button>
 			</div>
 		</div>
 	</div>
 </div>
-
-
-

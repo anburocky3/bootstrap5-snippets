@@ -1,15 +1,27 @@
 <div class="accordion" id="${1:accordionExample}">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="${2:headingOne}">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#${3:collapseOne}" aria-expanded="true" aria-controls="${3:collapseOne}">
-        ${4:Accordion Item #1}
-      </button>
-    </h2>
-    <div id="${3:collapseOne}" class="accordion-collapse collapse show" aria-labelledby="${2:headingOne}" data-bs-parent="#${1:accordionExample}">
-      <div class="accordion-body">
-        ${5:This is the first item's accordion body.}
-      </div>
-    </div>
-  </div>
-  $6
+	<div class="accordion-item">
+		<h2 class="accordion-header" id="${2:headingOne}">
+			<button
+				class="accordion-button"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#${3:collapseOne}"
+				aria-expanded="true"
+				aria-controls="${3:collapseOne}"
+			>
+				${4:Accordion Item #1}
+			</button>
+		</h2>
+		<div
+			id="${3:collapseOne}"
+			class="accordion-collapse collapse show"
+			aria-labelledby="${2:headingOne}"
+			data-bs-parent="#${1:accordionExample}"
+		>
+			<div class="accordion-body">
+				${5:This is the first item's accordion body.}
+			</div>
+		</div>
+	</div>
+	$6
 </div>

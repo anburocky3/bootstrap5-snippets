@@ -1,9 +1,18 @@
 <div class="btn-group">
-	<button class="btn btn-secondary dropdown-toggle" type="button" id="${2:triggerId}" data-bs-toggle="dropdown" aria-haspopup="true"
-			aria-expanded="false">
-				${1:This dropdown's menu is start/end-aligned}
+	<button
+		class="btn btn-secondary dropdown-toggle"
+		type="button"
+		id="${2:triggerId}"
+		data-bs-toggle="dropdown"
+		aria-haspopup="true"
+		aria-expanded="false"
+	>
+		${1:This dropdown's menu is start/end-aligned}
 	</button>
-	<div class="dropdown-menu ${3|dropdown-menu-start,dropdown-menu-end|}" aria-labelledby="${2:triggerId}">
+	<div
+		class="dropdown-menu ${3|dropdown-menu-start,dropdown-menu-end|}"
+		aria-labelledby="${2:triggerId}"
+	>
 		<a class="dropdown-item" href="${4:#}">${5:Action}</a>
 		<a class="dropdown-item disabled" href="${6:#}">${7:Disabled action}</a>
 		<h6 class="dropdown-header">${8:Section header}</h6>

@@ -1,11 +1,35 @@
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#${1:Id1}" aria-controls="${1:Id1}">${2:Enable both scrolling & backdrop}</button>
+<button
+	class="btn btn-primary"
+	type="button"
+	data-bs-toggle="offcanvas"
+	data-bs-target="#${1:Id1}"
+	aria-controls="${1:Id1}"
+>
+	${2:Enable both scrolling & backdrop}
+</button>
 
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="${1:Id1}" aria-labelledby="${3:Enable both scrolling & backdrop}">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="${3:Enable both scrolling & backdrop}">${4:Backdrop with scrolling}</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <p>${5:Try scrolling the rest of the page to see this option in action.}</p>
-  </div>
+<div
+	class="offcanvas offcanvas-start"
+	data-bs-scroll="true"
+	tabindex="-1"
+	id="${1:Id1}"
+	aria-labelledby="${3:Enable both scrolling & backdrop}"
+>
+	<div class="offcanvas-header">
+		<h5 class="offcanvas-title" id="${3:Enable both scrolling & backdrop}">
+			${4:Backdrop with scrolling}
+		</h5>
+		<button
+			type="button"
+			class="btn-close"
+			data-bs-dismiss="offcanvas"
+			aria-label="Close"
+		></button>
+	</div>
+	<div class="offcanvas-body">
+		<p>
+			${5:Try scrolling the rest of the page to see this option in
+			action.}
+		</p>
+	</div>
 </div>

@@ -1,10 +1,28 @@
 <!-- Nav tabs -->
-<ul class="nav ${2|nav-tabs,nav-pills,nav-pills nav-fill,nav-pills nav-justified|}" id="${1:navId}" role="tablist">
+<ul
+	class="nav ${2|nav-tabs,nav-pills,nav-pills nav-fill,nav-pills nav-justified|}"
+	id="${1:navId}"
+	role="tablist"
+>
 	<li class="nav-item">
-		<a href="#${4:tab1Id}" class="nav-link active" data-bs-toggle="tab" aria-current="page">${3:Active}</a>
+		<a
+			href="#${4:tab1Id}"
+			class="nav-link active"
+			data-bs-toggle="tab"
+			aria-current="page"
+			>${3:Active}</a
+		>
 	</li>
 	<li class="nav-item dropdown">
-		<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">${5:Dropdown}</a>
+		<a
+			class="nav-link dropdown-toggle"
+			data-bs-toggle="dropdown"
+			href="#"
+			role="button"
+			aria-haspopup="true"
+			aria-expanded="false"
+			>${5:Dropdown}</a
+		>
 		<div class="dropdown-menu">
 			<a class="dropdown-item" href="#${7:tab2Id}">${6:Action}</a>
 			<a class="dropdown-item" href="#${9:tab3Id}">${8:Another action}</a>
@@ -13,16 +31,22 @@
 		</div>
 	</li>
 	<li class="nav-item" role="presentation">
-		<a href="#${13:tab5Id}" class="nav-link" data-bs-toggle="tab">${12:Another link}</a>
+		<a href="#${13:tab5Id}" class="nav-link" data-bs-toggle="tab"
+			>${12:Another link}</a
+		>
 	</li>
 	<li class="nav-item" role="presentation">
-		<a href="#" class="nav-link disabled" data-bs-toggle="tab">${14:Disabled}</a>
+		<a href="#" class="nav-link disabled" data-bs-toggle="tab"
+			>${14:Disabled}</a
+		>
 	</li>
 </ul>
 
 <!-- Tab panes -->
 <div class="tab-content" id="myTabContent">
-	<div class="tab-pane fade show active" id="${4:tab1Id}" role="tabpanel">$15</div>
+	<div class="tab-pane fade show active" id="${4:tab1Id}" role="tabpanel">
+		$15
+	</div>
 	<div class="tab-pane fade" id="${7:tab2Id}" role="tabpanel">$16</div>
 	<div class="tab-pane fade" id="${9:tab3Id}" role="tabpanel">$17</div>
 	<div class="tab-pane fade" id="${11:tab4Id}" role="tabpanel">$18</div>
@@ -31,6 +55,6 @@
 
 <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
 <script>
-	var triggerEl = document.querySelector('#${1:navId} a')
-	bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
+	var triggerEl = document.querySelector("#${1:navId} a");
+	bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
 </script>

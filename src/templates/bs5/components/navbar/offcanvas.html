@@ -1,38 +1,80 @@
 <nav class="navbar navbar-light bg-light fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="${2:#}">${1|Navbar,img|}</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#${4:offcanvasNavbar}"
-      aria-controls="${4:offcanvasNavbar}">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="${4:offcanvasNavbar}"
-      aria-labelledby="${4:offcanvasNavbar}Label">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="${4:offcanvasNavbar}Label">${5:Offcanvas}</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="${7:#}">${6:Home}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="${9:#}">${8:Link}</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="${11:#}" id="${12:dropdownId}" data-bs-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">${10:Dropdown}</a>
-            <div class="dropdown-menu" aria-labelledby="${12:dropdownId}">
-              <a class="dropdown-item" href="${14:#}">${13:Action 1}</a>
-              <a class="dropdown-item" href="${16:#}">${15:Action 2}</a>
-            </div>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="${17:Search}" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">${18:Search}</button>
-        </form>
-      </div>
-    </div>
-  </div>
+	<div class="container-fluid">
+		<a class="navbar-brand" href="${2:#}">${1|Navbar,img|}</a>
+		<button
+			class="navbar-toggler"
+			type="button"
+			data-bs-toggle="offcanvas"
+			data-bs-target="#${4:offcanvasNavbar}"
+			aria-controls="${4:offcanvasNavbar}"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div
+			class="offcanvas offcanvas-end"
+			tabindex="-1"
+			id="${4:offcanvasNavbar}"
+			aria-labelledby="${4:offcanvasNavbar}Label"
+		>
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="${4:offcanvasNavbar}Label">
+					${5:Offcanvas}
+				</h5>
+				<button
+					type="button"
+					class="btn-close text-reset"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item">
+						<a
+							class="nav-link active"
+							aria-current="page"
+							href="${7:#}"
+							>${6:Home}</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="${9:#}">${8:Link}</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="${11:#}"
+							id="${12:dropdownId}"
+							data-bs-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							>${10:Dropdown}</a
+						>
+						<div
+							class="dropdown-menu"
+							aria-labelledby="${12:dropdownId}"
+						>
+							<a class="dropdown-item" href="${14:#}"
+								>${13:Action 1}</a
+							>
+							<a class="dropdown-item" href="${16:#}"
+								>${15:Action 2}</a
+							>
+						</div>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input
+						class="form-control me-2"
+						type="search"
+						placeholder="${17:Search}"
+						aria-label="Search"
+					/>
+					<button class="btn btn-outline-success" type="submit">
+						${18:Search}
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
 </nav>

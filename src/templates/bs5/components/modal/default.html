@@ -1,31 +1,61 @@
 <!-- Modal trigger button -->
-<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#${2:modalId}">
-  ${1:Launch}
+<button
+	type="button"
+	class="btn btn-primary btn-lg"
+	data-bs-toggle="modal"
+	data-bs-target="#${2:modalId}"
+>
+	${1:Launch}
 </button>
 
 <!-- Modal Body -->
 <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-<div class="modal fade" id="${2:modalId}" tabindex="-1" ${11:data-bs-backdrop="static" data-bs-keyboard="false"} role="dialog" aria-labelledby="${4:modalTitleId}" aria-hidden="true">
-	<div class="modal-dialog ${8:modal-dialog-scrollable} ${9:modal-dialog-centered} ${10|modal-sm,modal-lg,modal-xl|}" role="document">
+<div
+	class="modal fade"
+	id="${2:modalId}"
+	tabindex="-1"
+	${11:data-bs-backdrop="static"
+	data-bs-keyboard="false"
+	}
+	role="dialog"
+	aria-labelledby="${4:modalTitleId}"
+	aria-hidden="true"
+>
+	<div
+		class="modal-dialog ${8:modal-dialog-scrollable} ${9:modal-dialog-centered} ${10|modal-sm,modal-lg,modal-xl|}"
+		role="document"
+	>
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="${4:modalTitleId}">${3:Modal title}</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<h5 class="modal-title" id="${4:modalTitleId}">
+					${3:Modal title}
+				</h5>
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="modal"
+					aria-label="Close"
+				></button>
 			</div>
-			<div class="modal-body">
-				${7:Body}
-			</div>
+			<div class="modal-body">${7:Body}</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">${5:Close}</button>
+				<button
+					type="button"
+					class="btn btn-secondary"
+					data-bs-dismiss="modal"
+				>
+					${5:Close}
+				</button>
 				<button type="button" class="btn btn-primary">${6:Save}</button>
 			</div>
 		</div>
 	</div>
 </div>
 
-
 <!-- Optional: Place to the bottom of scripts -->
 <script>
-	const myModal = new bootstrap.Modal(document.getElementById('${2:modalId}'), options)
-
+	const myModal = new bootstrap.Modal(
+		document.getElementById("${2:modalId}"),
+		options,
+	);
 </script>

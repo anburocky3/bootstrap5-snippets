@@ -1,36 +1,78 @@
-<div class="modal fade" id="${1:exampleModalToggle}" aria-hidden="true" aria-labelledby="${2:exampleModalToggleLabel}" tabindex="-1">
+<div
+	class="modal fade"
+	id="${1:exampleModalToggle}"
+	aria-hidden="true"
+	aria-labelledby="${2:exampleModalToggleLabel}"
+	tabindex="-1"
+>
 	<div class="modal-dialog modal-dialog-centered">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="${2:exampleModalToggleLabel}">${3:Modal 1}</h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="${2:exampleModalToggleLabel}">
+					${3:Modal 1}
+				</h5>
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="modal"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="modal-body">
+				${4:Show a second modal and hide this one with the button
+				below.}
+			</div>
+			<div class="modal-footer">
+				<button
+					class="btn btn-primary"
+					data-bs-target="#${6:exampleModalToggle2}"
+					data-bs-toggle="modal"
+				>
+					${5:Open second modal}
+				</button>
+			</div>
 		</div>
-		<div class="modal-body">
-		  ${4:Show a second modal and hide this one with the button below.}
-		</div>
-		<div class="modal-footer">
-		  <button class="btn btn-primary" data-bs-target="#${6:exampleModalToggle2}" data-bs-toggle="modal">${5:Open second modal}</button>
-		</div>
-	  </div>
 	</div>
-  </div>
-  <div class="modal fade" id="${6:exampleModalToggle2}" aria-hidden="true" aria-labelledby="${7:exampleModalToggleLabel2}" tabindex="-1">
+</div>
+<div
+	class="modal fade"
+	id="${6:exampleModalToggle2}"
+	aria-hidden="true"
+	aria-labelledby="${7:exampleModalToggleLabel2}"
+	tabindex="-1"
+>
 	<div class="modal-dialog modal-dialog-centered">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="${7:exampleModalToggleLabel2}">${8:Modal 2}</h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="${7:exampleModalToggleLabel2}">
+					${8:Modal 2}
+				</h5>
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="modal"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="modal-body">
+				${9:Hide this modal and show the first with the button below.}
+			</div>
+			<div class="modal-footer">
+				<button
+					class="btn btn-primary"
+					data-bs-target="#${1:exampleModalToggle}"
+					data-bs-toggle="modal"
+				>
+					${10:Back to first}
+				</button>
+			</div>
 		</div>
-		<div class="modal-body">
-		  ${9:Hide this modal and show the first with the button below.}
-		</div>
-		<div class="modal-footer">
-		  <button class="btn btn-primary" data-bs-target="#${1:exampleModalToggle}" data-bs-toggle="modal">${10:Back to first}</button>
-		</div>
-	  </div>
 	</div>
-  </div>
-  <a class="btn btn-primary" data-bs-toggle="modal" href="#${1:exampleModalToggle}" role="button">${11:Open first modal}</a>
-
-
-
+</div>
+<a
+	class="btn btn-primary"
+	data-bs-toggle="modal"
+	href="#${1:exampleModalToggle}"
+	role="button"
+	>${11:Open first modal}</a
+>

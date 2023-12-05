@@ -1,15 +1,32 @@
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#${1:Id2}" aria-controls="${1:Id2}">
+<button
+	class="btn btn-primary"
+	type="button"
+	data-bs-toggle="offcanvas"
+	data-bs-target="#${1:Id2}"
+	aria-controls="${1:Id2}"
+>
 	${2:Toggle static offcanvas}
-  </button>
-  
-  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="${1:Id2}" aria-labelledby="${3:staticBackdropLabel}">
+</button>
+
+<div
+	class="offcanvas offcanvas-start"
+	data-bs-backdrop="static"
+	tabindex="-1"
+	id="${1:Id2}"
+	aria-labelledby="${3:staticBackdropLabel}"
+>
 	<div class="offcanvas-header">
-	  <h5 class="offcanvas-title" id="${3:staticBackdropLabel}">${4:Offcanvas}</h5>
-	  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		<h5 class="offcanvas-title" id="${3:staticBackdropLabel}">
+			${4:Offcanvas}
+		</h5>
+		<button
+			type="button"
+			class="btn-close"
+			data-bs-dismiss="offcanvas"
+			aria-label="Close"
+		></button>
 	</div>
 	<div class="offcanvas-body">
-	  <div>
-		${5:I will not close if you click outside of me.}
-	  </div>
+		<div>${5:I will not close if you click outside of me.}</div>
 	</div>
-  </div>
+</div>
