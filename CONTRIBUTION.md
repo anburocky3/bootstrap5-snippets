@@ -4,9 +4,15 @@ You can fork this repository and you can modify the snippet formats which is loc
 
 ## Contribution Guide
 
-1. Fork & Modify the files which is located in <code>src/templates</code>
-2. Push it and send a PR.
-3. We will initiate a code generation which will build all the templates into respective snippet format with some naming conventions. This should also create the readme file automatically. (We are planning to make this process easier, currently creating an vscode-snippet generator package, once its been completed. This process will be seemless.)
+1. Fork and update templates in <code>src/templates</code>.
+2. For icon CDNs, place files under <code>src/templates/icons/&lt;provider&gt;/</code> (example: <code>src/templates/icons/bootstrap-icons/cdn.html</code>).
+3. Run <code>bun run generate:snippets</code>.
+4. Verify generated output in:
+    - <code>snippets/snippets.code-snippets</code>
+    - <code>snippets/css.code-snippets</code>
+    - <code>snippets/icons.code-snippets</code>
+    - README snippets table section
+5. Push changes and send a PR.
 
 ### Our Contributors 💓
 

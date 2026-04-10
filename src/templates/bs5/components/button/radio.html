@@ -1,25 +1,45 @@
-<div class="btn-group" data-bs-toggle="buttons">
+<div
+	class="btn-group"
+	role="group"
+	aria-label="Basic radio toggle button group"
+>
+	<input
+		type="radio"
+		class="btn-check"
+		name="${2:btnradio}"
+		id="${3:btnradio1}"
+		autocomplete="off"
+		checked
+	/>
 	<label
-		class="btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|} active"
+		class="btn ${1|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark|}"
+		for="${3:btnradio1}"
+		>${4:Radio 1}</label
 	>
-		<input
-			type="radio"
-			class="me-2"
-			name="$2"
-			id="$2"
-			autocomplete="off"
-			checked
-		/>
-		${3:Choice}
-	</label>
+
+	<input
+		type="radio"
+		class="btn-check"
+		name="${2:btnradio}"
+		id="${5:btnradio2}"
+		autocomplete="off"
+	/>
 	<label
-		class="btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}"
+		class="btn ${1|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark|}"
+		for="${5:btnradio2}"
+		>${6:Radio 2}</label
 	>
-		<input type="radio" name="$2" id="$2" autocomplete="off" /> ${4:Choice}
-	</label>
+
+	<input
+		type="radio"
+		class="btn-check"
+		name="${2:btnradio}"
+		id="${7:btnradio3}"
+		autocomplete="off"
+	/>
 	<label
-		class="btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}"
+		class="btn ${1|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark|}"
+		for="${7:btnradio3}"
+		>${8:Radio 3}</label
 	>
-		<input type="radio" name="$2" id="$2" autocomplete="off" /> ${5:Choice}
-	</label>
 </div>

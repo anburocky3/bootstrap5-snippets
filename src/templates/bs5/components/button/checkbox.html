@@ -1,39 +1,42 @@
-<div class="btn-group" role="group" data-bs-toggle="buttons">
+<div
+	class="btn-group"
+	role="group"
+	aria-label="Basic checkbox toggle button group"
+>
+	<input
+		type="checkbox"
+		class="btn-check"
+		id="${2:btncheck1}"
+		autocomplete="off"
+		checked
+	/>
 	<label
-		class="btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|} active"
+		class="btn ${1|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark|}"
+		for="${2:btncheck1}"
+		>${3:Checkbox 1}</label
 	>
-		<input
-			type="checkbox"
-			class="me-2"
-			name="$3"
-			id="$3"
-			checked
-			autocomplete="off"
-		/>
-		${2:Choice}
-	</label>
+
+	<input
+		type="checkbox"
+		class="btn-check"
+		id="${4:btncheck2}"
+		autocomplete="off"
+	/>
 	<label
-		class="btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}"
+		class="btn ${1|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark|}"
+		for="${4:btncheck2}"
+		>${5:Checkbox 2}</label
 	>
-		<input
-			type="checkbox"
-			class="me-2"
-			name="$5"
-			id="$5"
-			autocomplete="off"
-		/>
-		${4:Choice}
-	</label>
+
+	<input
+		type="checkbox"
+		class="btn-check"
+		id="${6:btncheck3}"
+		autocomplete="off"
+	/>
 	<label
-		class="btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}"
+		class="btn ${1|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark|}"
+		for="${6:btncheck3}"
+		>${7:Checkbox 3}</label
 	>
-		<input
-			type="checkbox"
-			class="me-2"
-			name="$7"
-			id="$7"
-			autocomplete="off"
-		/>
-		${6:Choice}
-	</label>
 </div>

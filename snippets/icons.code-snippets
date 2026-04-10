@@ -1,0 +1,14 @@
+{
+	"icons-bootstrap-icons-cdn": {
+		"description": "Icons Bootstrap Icons Cdn",
+		"scope": "",
+		"prefix": "icons-bootstrap-icons-cdn",
+		"body": "<!-- Bootstrap Icons CDN -->\n<link\n\trel=\"stylesheet\"\n\thref=\"${1:https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css}\"\n/>\n\n<!-- Example icon usage -->\n<i class=\"bi ${2:bi-alarm}\"></i>\n$0"
+	},
+	"icons-fa6-cdn": {
+		"description": "Icons Fa6 Cdn",
+		"scope": "",
+		"prefix": "icons-fa6-cdn",
+		"body": "<!-- Font Awesome 6 CDN -->\n<link\n\trel=\"stylesheet\"\n\thref=\"${1:https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css}\"\n\tintegrity=\"${2:sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==}\"\n\tcrossorigin=\"anonymous\"\n\treferrerpolicy=\"no-referrer\"\n/>\n\n<!-- Optional: Font Awesome JS -->\n<script\n\tsrc=\"${3:https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js}\"\n\tintegrity=\"${4:sha512-0X0pG62hJNN3vP6fQtbDNRsTA70vsK1tnE+bBZ5qTqL0U8nyJlcQFV3ayhtq/Y5cHIzoHmr18bODsPwhj/KgkQ==}\"\n\tcrossorigin=\"anonymous\"\n\treferrerpolicy=\"no-referrer\"\n></script>\n$0"
+	}
+}
